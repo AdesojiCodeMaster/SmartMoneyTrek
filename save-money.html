@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+/* ---------- GLOBAL STYLES ---------- */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -16,18 +17,34 @@ body {
   color: #0f172a;
 }
 
+/* ---------- HEADER ---------- */
 header {
-  background: white;
-  padding: 20px 40px;
+  background: #ffffff;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .logo {
-  font-weight: 700;
   font-size: 22px;
+  font-weight: 700;
   color: #0f766e;
 }
 
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #334155;
+}
+
+nav a:hover {
+  color: #0f766e;
+}
+
+/* ---------- HERO ---------- */
 .hero {
   background: linear-gradient(135deg, #ecfeff, #ffffff);
   padding: 80px 40px;
@@ -44,6 +61,7 @@ header {
   color: #475569;
 }
 
+/* ---------- GRID ---------- */
 .grid {
   padding: 60px 40px;
   display: grid;
@@ -52,7 +70,7 @@ header {
 }
 
 .card {
-  background: white;
+  background: #ffffff;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -81,73 +99,118 @@ header {
   text-decoration: none;
 }
 
+/* ---------- FOOTER ---------- */
 footer {
   background: #020617;
   color: #94a3b8;
-  padding: 40px;
+  padding: 50px 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+footer a {
+  display: block;
+  color: #94a3b8;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
   text-align: center;
+  font-size: 14px;
+  color: #64748b;
 }
 </style>
 </head>
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
   <div class="logo">SmartMoneyTrek</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="save-money.html">Save Money</a>
+    <a href="budgeting.html">Budgeting</a>
+    <a href="make-money.html">Make Money</a>
+    <a href="loans-debt.html">Loans & Debt</a>
+  </nav>
 </header>
 
+<!-- ===== HERO ===== -->
 <section class="hero">
   <h1>💰 Save Money Without Stress</h1>
   <p>Simple, practical ways to reduce expenses, stop wasting money, and start saving — even on a low income.</p>
 </section>
 
+<!-- ===== CONTENT GRID ===== -->
 <section class="grid">
 
-<div class="card"><h3>How to Save Money on a Low Income</h3><p>Learn realistic ways to save even when you earn little.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Reduce Monthly Expenses</h3><p>Identify waste and cut unnecessary spending.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Stop Wasting Money</h3><p>Break bad habits that drain your income.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>Cheap Meal Planning Tips</h3><p>Eat well without overspending on food.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Save Money Fast</h3><p>Quick methods to build savings quickly.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Save Money Every Month</h3><p>Create consistent saving habits.</p><a href="#">Read Guide →</a></div>
-
+<div class="card"><h3>How to Save Money on a Low Income</h3><p>Realistic strategies for saving with limited income.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>How to Reduce Monthly Expenses</h3><p>Cut unnecessary spending and keep more money.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>How to Stop Wasting Money</h3><p>Eliminate habits that drain your finances.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>Cheap Meal Planning Tips</h3><p>Eat well without overspending.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>How to Save Money Fast</h3><p>Quick methods to boost savings.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>How to Save Money Every Month</h3><p>Build consistent saving habits.</p><a href="#">Read Guide →</a></div>
 <div class="card"><h3>How to Cut Unnecessary Expenses</h3><p>Remove waste from your budget.</p><a href="#">Read Guide →</a></div>
-
 <div class="card"><h3>How to Save Money on Groceries</h3><p>Shop smarter and spend less.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Save on Electricity Bills</h3><p>Lower your utility costs easily.</p><a href="#">Read Guide →</a></div>
-
+<div class="card"><h3>How to Save on Electricity Bills</h3><p>Lower your utility costs.</p><a href="#">Read Guide →</a></div>
 <div class="card"><h3>How to Live on a Tight Budget</h3><p>Survive and save on limited income.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Start a Savings Habit</h3><p>Build a lasting saving mindset.</p><a href="#">Read Guide →</a></div>
-
+<div class="card"><h3>How to Start a Savings Habit</h3><p>Build a strong saving mindset.</p><a href="#">Read Guide →</a></div>
 <div class="card"><h3>How to Build an Emergency Fund</h3><p>Prepare for unexpected expenses.</p><a href="#">Read Guide →</a></div>
-
 <div class="card"><h3>How to Stop Impulse Buying</h3><p>Control emotional spending.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Save Without High Income</h3><p>Save even when salary is low.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Track Spending</h3><p>Know exactly where your money goes.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>Best Saving Apps</h3><p>Tools that help you save automatically.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>30-Day Savings Challenge</h3><p>A fun way to boost your savings.</p><a href="#">Read Guide →</a></div>
-
+<div class="card"><h3>How to Save Without High Income</h3><p>Save even with a low salary.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>How to Track Spending</h3><p>Know where your money goes.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>Best Saving Apps</h3><p>Tools that automate saving.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>30-Day Savings Challenge</h3><p>A fun way to grow savings.</p><a href="#">Read Guide →</a></div>
 <div class="card"><h3>How to Save for Emergencies</h3><p>Protect yourself financially.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Shop Smart</h3><p>Spend wisely and get more for less.</p><a href="#">Read Guide →</a></div>
-
-<div class="card"><h3>How to Negotiate Bills</h3><p>Lower your recurring expenses.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>How to Shop Smart</h3><p>Spend wisely and get more value.</p><a href="#">Read Guide →</a></div>
+<div class="card"><h3>How to Negotiate Bills</h3><p>Lower recurring expenses.</p><a href="#">Read Guide →</a></div>
 
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer>
-© 2026 SmartMoneyTrek.com — All rights reserved
+  <div class="footer-grid">
+    <div>
+      <h4>SmartMoneyTrek</h4>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Disclaimer</a>
+    </div>
+    <div>
+      <h4>Categories</h4>
+      <a href="save-money.html">Save Money</a>
+      <a href="budgeting.html">Budgeting</a>
+      <a href="make-money.html">Make Money</a>
+      <a href="loans-debt.html">Loans & Debt</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 SmartMoneyTrek.com — All rights reserved
+    <br>
+    Powered by: CodeMaster.
+  </div>
 </footer>
 
 </body>
+                                                                                         
 </html>
+  
