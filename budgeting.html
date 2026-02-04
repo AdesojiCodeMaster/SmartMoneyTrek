@@ -26,6 +26,41 @@ header {
   align-items: center;
 }
 
+  .menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  }
+  
+
 .logo img {
   height: 100px;
 }
@@ -147,7 +182,12 @@ color: #ffffff;
   <a href="index.html" class="logo">
     <img src="images/logo.png" alt="SmartMoneyTrek">
   </a>
-  <nav>
+
+  <button class="menu-toggle" aria-label="Toggle menu">
+    ☰
+  </button>
+
+  <nav class="nav-links">
     <a href="index.html">Home</a>
     <a href="save-money.html">Save Money</a>
     <a href="budgeting.html">Budgeting</a>
@@ -155,6 +195,7 @@ color: #ffffff;
     <a href="loans-debt.html">Loans & Debt</a>
   </nav>
 </header>
+  
 
 <section class="hero">
   <h1> 📊 Smart Budgeting for Real Life</h1>
@@ -219,5 +260,14 @@ color: #ffffff;
   </div>
 </footer>
 
+  <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+  </script>
+  
 </body>
 </html>
