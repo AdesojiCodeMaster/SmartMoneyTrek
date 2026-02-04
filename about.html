@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us – SmartMoneyTrek</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn about SmartMoneyTrek, our mission, and how we help people make smarter financial decisions.">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* Header */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 25px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #ecfeff, #ffffff);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+  color: #334155;
+}
+
+/* Content */
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 40px;
+}
+
+.content h2 {
+  color: #0f766e;
+  margin-top: 40px;
+}
+
+.content p {
+  line-height: 1.7;
+  margin-top: 15px;
+  color: #475569;
+}
+
+/* Footer */
+footer {
+  background: #020617;
+  color: #94a3b8;
+  padding: 50px 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+footer a {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="SmartMoneyTrek">
+  </a>
+
+  <button class="menu-toggle">☰</button>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="save-money.html">Save Money</a>
+    <a href="budgeting.html">Budgeting</a>
+    <a href="make-money.html">Make Money</a>
+    <a href="loans-debt.html">Loans & Debt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>About SmartMoneyTrek</h1>
+  <p>Your trusted guide to smarter money decisions, financial confidence, and long-term stability.</p>
+</section>
+
+<section class="content">
+  <h2>Who We Are</h2>
+  <p>
+    SmartMoneyTrek is an independent financial education platform created to help everyday people take control of their money. 
+    We believe financial success is not about luck — it is about having the right information, making smart decisions, and staying consistent.
+  </p>
+
+  <h2>Our Mission</h2>
+  <p>
+    Our mission is simple: to make personal finance easy to understand, practical to apply, and accessible to everyone. 
+    Whether you want to save more, earn extra income, pay off debt, or build long-term wealth, we are here to guide you every step of the way.
+  </p>
+
+  <h2>What We Do</h2>
+  <p>
+    We publish well-researched guides, tools, and strategies across topics such as budgeting, saving money, making money, loans, and debt management.
+    Our content is designed to be clear, honest, and focused on real-world results — not hype or unrealistic promises.
+  </p>
+
+  <h2>How We Make Money</h2>
+  <p>
+    SmartMoneyTrek is supported through advertising and affiliate partnerships. This means we may earn a commission when you use certain links or services we recommend.
+    These partnerships never influence our editorial decisions — we only recommend products and services that we believe are genuinely helpful to our readers.
+  </p>
+
+  <h2>Why You Can Trust Us</h2>
+  <p>
+    We prioritize accuracy, transparency, and reader value above everything else. Our goal is not just to provide information, but to help you build financial confidence
+    so you can make better decisions for your future.
+  </p>
+
+  <h2>Our Commitment to You</h2>
+  <p>
+    We are committed to continuously improving our content, keeping it up to date, and ensuring it remains useful, honest, and easy to understand.
+    Your financial journey matters to us, and we are proud to be part of it.
+  </p>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>SmartMoneyTrek</h4>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+
+    <div>
+      <h4>Categories</h4>
+      <a href="save-money.html">Save Money</a>
+      <a href="budgeting.html">Budgeting</a>
+      <a href="make-money.html">Make Money</a>
+      <a href="loans-debt.html">Loans & Debt</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 SmartMoneyTrek.com — All rights reserved
+  </div>
+</footer>
+
+<script>
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
