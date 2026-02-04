@@ -44,10 +44,17 @@ nav a:hover {
   color: #0f766e;
 }
 
-/* ---------- HERO ---------- */
+/* ---------- HERO WITH SAFE IMAGE ---------- */
 .hero {
-  background: linear-gradient(135deg, #ecfeff, #ffffff);
-  padding: 90px 40px;
+  background:
+    linear-gradient(
+      rgba(236,254,255,0.92),
+      rgba(255,255,255,0.92)
+    ),
+    url("images/money-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 40px;
   text-align: center;
 }
 
@@ -154,6 +161,9 @@ footer a:hover {
   font-size: 14px;
   color: #64748b;
 }
+.line {
+color: #ffffff;
+}
 </style>
 </head>
 
@@ -175,8 +185,8 @@ footer a:hover {
 <section class="hero">
   <h1>Simple Money Advice for Everyday People</h1>
   <p>
-    Learn how to save money, budget smarter, earn more income, and manage loans with clear,
-    practical guides designed for real life.
+    Learn how to save money, budget smarter, earn more income, and manage loans
+    with clear, practical guides designed for real life.
   </p>
 </section>
 
@@ -233,12 +243,11 @@ footer a:hover {
   </div>
 
   <div class="footer-bottom">
-    © 2026 SmartMoneyTrek.com — All rights reserved
-    <hr>
+    © 2026 SmartMoneyTrek.com — All rights reserved.
+    <hr class = "line">
     Powered by: CodeMaster.
   </div>
 </footer>
 
 </body>
 </html>
-  
