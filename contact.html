@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Contact Us – SmartMoneyTrek</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Contact SmartMoneyTrek — ask questions, suggest topics, or request partnerships." />
+<style>
+/* Basic shared styles (matches site standard) */
+:root { --brand: #0f766e; --bg:#f8fafc; --text:#1f2937; --muted:#475569; }
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+
+/* Header */
+header{background:#fff;border-bottom:1px solid #e5e7eb;padding:15px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.logo img{height:60px}
+.menu-toggle{display:none;font-size:26px;background:none;border:none;cursor:pointer}
+nav{display:flex;gap:20px;align-items:center}
+nav a{font-weight:600;color:var(--text)}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#ecfeff,#ffffff);padding:60px 20px;text-align:center}
+.hero h1{font-size:34px;margin:0 0 10px}
+.hero p{max-width:820px;margin:auto;color:var(--muted)}
+
+/* Content */
+.container{max-width:980px;margin:30px auto;padding:20px}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:24px}
+.card{background:#fff;border-radius:12px;padding:22px;box-shadow:0 8px 24px rgba(0,0,0,0.04)}
+label{display:block;margin:12px 0 6px;font-weight:600}
+input[type="text"],input[type="email"],textarea{width:100%;padding:10px;border:1px solid #e6eef0;border-radius:8px;font-size:15px}
+textarea{min-height:140px;resize:vertical}
+button[type="submit"]{background:var(--brand);color:#fff;border:none;padding:12px 18px;border-radius:8px;font-weight:700;cursor:pointer}
+.note{font-size:13px;color:var(--muted);margin-top:10px}
+
+/* Footer (standard) */
+footer{background:#020617;color:#94a3b8;padding:50px 40px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin-bottom:30px}
+footer h4{color:#e2e8f0;margin-bottom:10px}
+footer a{display:block;color:#94a3b8;margin-bottom:8px;font-size:14px}
+.footer-bottom{text-align:center;font-size:14px;color:#64748b}
+
+/* Responsive */
+@media(max-width:900px){ .grid{grid-template-columns:1fr} }
+@media(max-width:768px){
+  .menu-toggle{display:block}
+  nav{display:none;width:100%;flex-direction:column;margin-top:12px}
+  nav.active{display:flex}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="SmartMoneyTrek"></a>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="save-money.html">Save Money</a>
+    <a href="budgeting.html">Budgeting</a>
+    <a href="make-money.html">Make Money</a>
+    <a href="loans-debt.html">Loans & Debt</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Contact SmartMoneyTrek</h1>
+  <p>Questions, partnership enquiries, article suggestions or technical issues — we read every message and reply as quickly as we can.</p>
+</section>
+
+<main class="container">
+  <div class="grid">
+    <div class="card">
+      <h3>Send us a message</h3>
+      <!-- Netlify-ready form (works on static Netlify sites). If not using Netlify, replace action with mailto or your endpoint -->
+      <form name="contact" method="POST" data-netlify="true" netlify>
+        <input type="hidden" name="form-name" value="contact">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="topic">Topic (short)</label>
+        <input id="topic" name="topic" type="text">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+        <p class="note">We aim to reply within 48 hours. If your message is urgent, include "URGENT" in the subject.</p>
+      </form>
+    </div>
+
+    <aside class="card">
+      <h3>Other ways to reach us</h3>
+      <p style="margin:8px 0;color:var(--muted)">Email: <a href="mailto:hello@smartmoneytrek.com">hello@smartmoneytrek.com</a></p>
+      <p style="margin:8px 0;color:var(--muted)">Partnerships & Affiliates: <a href="mailto:partners@smartmoneytrek.com">partners@smartmoneytrek.com</a></p>
+      <p style="margin:8px 0;color:var(--muted)">General: <a href="mailto:info@smartmoneytrek.com">info@smartmoneytrek.com</a></p>
+
+      <h4 style="margin-top:18px">Follow SmartMoneyTrek</h4>
+      <p style="margin:8px 0"><a href="#" aria-label="SmartMoneyTrek on X">X / Twitter</a></p>
+      <p style="margin:8px 0"><a href="#" aria-label="SmartMoneyTrek on Instagram">Instagram</a></p>
+
+      <h4 style="margin-top:18px">Press</h4>
+      <p style="margin:8px 0;color:var(--muted)">For press inquiries, include "Press" in your subject line or email hello@smartmoneytrek.com</p>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>SmartMoneyTrek</h4>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <div>
+      <h4>Categories</h4>
+      <a href="save-money.html">Save Money</a>
+      <a href="budgeting.html">Budgeting</a>
+      <a href="make-money.html">Make Money</a>
+      <a href="loans-debt.html">Loans & Debt</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">© 2026 SmartMoneyTrek.com — All rights reserved</div>
+</footer>
+
+<script>
+// Mobile menu toggle (used on all pages)
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+if (toggle) {
+  toggle.addEventListener('click', () => nav.classList.toggle('active'));
+}
+</script>
+</body>
+  </html>
+  
