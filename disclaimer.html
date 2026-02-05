@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Disclaimer – SmartMoneyTrek</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Disclaimer for SmartMoneyTrek — informational content, not professional financial advice." />
+<style>
+:root{--brand:#0f766e;--bg:#f8fafc;--text:#1f2937;--muted:#475569}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+header{background:#fff;border-bottom:1px solid #e5e7eb;padding:15px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.logo img{height:60px}
+.menu-toggle{display:none;font-size:26px;background:none;border:none;cursor:pointer}
+nav{display:flex;gap:20px;align-items:center}
+nav a{font-weight:600;color:var(--text)}
+.hero{background:linear-gradient(135deg,#ecfeff,#ffffff);padding:50px 20px;text-align:center}
+.container{max-width:900px;margin:20px auto;padding:20px;background:#fff;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,0.04)}
+h2{color:var(--brand);margin-top:20px}
+p{line-height:1.7;color:var(--muted)}
+footer{background:#020617;color:#94a3b8;padding:50px 40px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin-bottom:30px}
+footer h4{color:#e2e8f0;margin-bottom:10px}
+.footer-bottom{text-align:center;font-size:14px;color:#64748b}
+@media(max-width:768px){.menu-toggle{display:block}nav{display:none;width:100%;flex-direction:column;margin-top:12px}nav.active{display:flex}}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="SmartMoneyTrek"></a>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="save-money.html">Save Money</a>
+    <a href="budgeting.html">Budgeting</a>
+    <a href="make-money.html">Make Money</a>
+    <a href="loans-debt.html">Loans & Debt</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Disclaimer</h1>
+  <p>Important information about the content on SmartMoneyTrek.</p>
+</section>
+
+<main class="container">
+  <p>Last updated: February 5, 2026</p>
+
+  <h2>Not financial advice</h2>
+  <p>The content on SmartMoneyTrek is for informational and educational purposes only and does not constitute professional financial advice. Always consult a qualified professional before making major financial decisions.</p>
+
+  <h2>Accuracy of information</h2>
+  <p>We strive to keep content accurate and up-to-date, but we make no guarantees. Market conditions and services change — verify details before acting.</p>
+
+  <h2>Affiliate links & advertising</h2>
+  <p>SmartMoneyTrek may earn commissions from affiliate links and displays ads to support the site. These relationships don’t influence our editorial decisions; we recommend services based on their usefulness to readers.</p>
+
+  <h2>No guarantees</h2>
+  <p>Using information on this site is at your own risk. We are not responsible for any decisions you make based on our content.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this disclaimer, email <a href="mailto:hello@smartmoneytrek.com">hello@smartmoneytrek.com</a></p>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>SmartMoneyTrek</h4>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <div>
+      <h4>Categories</h4>
+      <a href="save-money.html">Save Money</a>
+      <a href="budgeting.html">Budgeting</a>
+      <a href="make-money.html">Make Money</a>
+      <a href="loans-debt.html">Loans & Debt</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 SmartMoneyTrek.com — All rights reserved</div>
+</footer>
+
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+if (toggle) toggle.addEventListener('click', ()=>nav.classList.toggle('active'));
+</script>
+
+</body>
+ </html>
+  
