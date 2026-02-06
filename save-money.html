@@ -18,68 +18,124 @@ body {
   color: #0f172a;
 }
 
-/* ---------- HEADER ---------- */
+/* ---------- HEADER ---------*/
+  /* =========================
+   SMARTMONEYTREK HEADER
+========================= */
+
 header {
   background: #ffffff;
-  padding: 18px 40px;
+  border-bottom: 1px solid #e5e7eb;
+  height: 80px;               /* LOCKED HEADER HEIGHT */
+  padding: 0 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
 }
 
+/* LOGO CONTAINER */
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
 
-  .menu-toggle {
+/* LOGO IMAGE */
+.logo img {
+  height: 110px;              /* BIG LOGO */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
+}
+
+/* NAVIGATION */
+nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f172a;
+  position: relative;
+  padding: 10px 0;
+}
+
+/* Hover underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0f766e;
+  transition: 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Mobile button */
+.menu-toggle {
   display: none;
-  font-size: 26px;
+  font-size: 28px;
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 200;
 }
 
-/* Mobile styles */
+/* MOBILE */
 @media (max-width: 768px) {
   header {
-    flex-wrap: wrap;
+    padding: 0 25px;
+    height: 80px;
+  }
+
+  .logo {
+    left: 25px;
+  }
+
+  .logo img {
+    height: 90px;
   }
 
   .menu-toggle {
     display: block;
   }
 
-  .nav-links {
+  nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
     width: 100%;
-    display: none;
+    background: #ffffff;
     flex-direction: column;
-    margin-top: 15px;
+    display: none;
+    border-top: 1px solid #e5e7eb;
+    padding: 15px 0;
   }
 
-  .nav-links a {
-    margin: 10px 0;
+  nav a {
+    padding: 12px 0;
+    font-size: 16px;
   }
 
-  .nav-links.active {
+  nav.active {
     display: flex;
   }
-}
+  }
   
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: #0f766e;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  color: #334155;
-}
-
-nav a:hover {
-  color: #0f766e;
-}
-
 /* ---------- HERO ---------- */
 .hero {
   background: linear-gradient(135deg, #ecfeff, #ffffff);
