@@ -18,61 +18,87 @@ body {
 a { text-decoration: none; color: inherit; }
 
 /* Header */
+
+/* =========================
+   PROFESSIONAL HEADER
+========================= */
+
 header {
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
-  height: 80px;                /* lock header height */
-  padding: 0 40px;             /* horizontal only */
+  padding: 12px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-  
 
-.logo img {
-  height: 55px;        /* strong but not oversized */
-  width: auto;
-  max-height: 100%;
-}
-  
-
-nav {
+/* LOGO CONTAINER */
+.logo {
   display: flex;
   align-items: center;
 }
 
-nav a {
-  margin-left: 25px;
-  font-weight: 600;
-  color: #0f172a;
-}
-/* Make logo stronger without expanding header */
-header .logo img {
-  height: 70px;      /* bigger logo */
+/* LOGO IMAGE */
+.logo img {
+  height: 75px;          /* Bigger and bolder */
   width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.25)); /* makes it pop */
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* NAV LINKS */
+nav a {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f172a;
+  position: relative;
+  padding: 8px 0;
+}
+
+/* Hover underline effect */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0f766e;
   transition: 0.3s ease;
 }
 
-/* Add spacing so nav doesn’t crowd the logo */
-header nav {
-  margin-left: 30px; /* gives breathing room */
+nav a:hover::after {
+  width: 100%;
 }
 
-/* Optional: add light drop shadow to help logo pop */
-header .logo img {
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
-}
-
-/* Mobile Menu */
+/* MOBILE TOGGLE */
 .menu-toggle {
   display: none;
-  font-size: 26px;
+  font-size: 28px;
   background: none;
   border: none;
   cursor: pointer;
 }
 
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+  header {
+    padding: 15px 25px;
+    flex-wrap: wrap;
+  }
+
+  .logo img {
+    height: 60px; /* slightly smaller on phones */
+  }
+
   .menu-toggle {
     display: block;
   }
@@ -82,16 +108,22 @@ header .logo img {
     display: none;
     flex-direction: column;
     margin-top: 15px;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 10px;
   }
 
   nav a {
-    margin: 10px 0;
+    padding: 12px 0;
+    font-size: 16px;
   }
 
   nav.active {
     display: flex;
   }
 }
+
+  
 
 /* Hero */
 .hero {
