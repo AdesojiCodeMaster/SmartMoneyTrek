@@ -2,384 +2,192 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>SmartMoneyTrek – Save Money, Budget Better & Make More Income</title>
-<meta name="description" content="SmartMoneyTrek provides expert guides on saving money, budgeting, making money, and managing loans and debt to help you build financial freedom.">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>SmartMoneyTrek – Simple Money Advice for Everyday People</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="SmartMoneyTrek helps you save more, earn more, and get out of debt with practical money guides.">
+
+<link rel="icon" href="/favicon.ico">
 
 <style>
-/* ---------- GLOBAL ---------- */
+:root {
+  --primary: #0b3c5d;
+  --secondary: #1e8e3e;
+  --light: #f7f9fb;
+  --dark: #222;
+}
+
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f9fafb;
-  color: #0f172a;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.7;
 }
 
-/* =========================
-   SMARTMONEYTREK HEADER
-========================= */
-
-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-  height: 80px;               /* LOCKED HEADER HEIGHT */
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  z-index: 100;
-}
-
-/* LOGO CONTAINER */
-.logo {
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-}
-
-/* LOGO IMAGE */
-.logo img {
-  height: 110px;              /* BIG LOGO */
-  width: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
-}
-
-/* NAVIGATION */
-nav {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-nav a {
-  font-weight: 700;
-  font-size: 15px;
-  color: #0f172a;
-  position: relative;
-  padding: 10px 0;
-  text-decoration: none;
-}
-
-/* Hover underline */
-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: #0f766e;
-  transition: 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-/* Mobile button */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 200;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  header {
-    padding: 0 25px;
-    height: 80px;
-  }
-
-  .logo {
-    left: 25px;
-  }
-
-  .logo img {
-    height: 90px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    flex-direction: column;
-    display: none;
-    border-top: 1px solid #e5e7eb;
-    padding: 15px 0;
-  }
-
-  nav a {
-    padding: 12px 0;
-    font-size: 16px;
-  }
-
-  nav.active {
-    display: flex;
-  }
-  }
-  
-
-/* ---------- HERO WITH SAFE IMAGE ---------- */
+/* ---------- HERO ---------- */
 .hero {
-  background:
-    linear-gradient(
-      rgba(2, 6, 23, 0.8),
-      rgba(2, 6, 23, 0.65)
-    ),
-    url("images/money-hero.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 140px 40px;
+  background: linear-gradient(135deg, #0b3c5d, #1e8e3e);
+  color: white;
+  padding: 5rem 1.5rem;
   text-align: center;
-  }
-  
-
-.hero h1,
-.hero h2,
-.hero p {
-  color: #ffffff;
-  text-shadow: 0 4px 18px rgba(0,0,0,0.5);
 }
 
-.hero h2 {
-  margin-top: 10px;
-  font-size: 22px;
-  font-weight: 500;
-  color: #e5e7eb;
-}
-
-.hero p {
-  color: #e5e7eb;
-  }
-  
-
-/* ---------- SECTIONS ---------- */
-.section {
-  padding: 70px 40px;
-  max-width: 1200px;
+.hero h1 {
+  font-size: 2.8rem;
+  max-width: 800px;
   margin: auto;
 }
 
+.hero p {
+  max-width: 650px;
+  margin: 1rem auto 2rem;
+  font-size: 1.1rem;
+}
+
+.hero .btn {
+  background: white;
+  color: var(--primary);
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 1.5rem;
+}
+
 .section h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
   text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
 }
 
-.section p {
-  text-align: center;
-  color: #475569;
-  margin-bottom: 40px;
-}
-
-/* ---------- GRID ---------- */
+/* ---------- CARDS ---------- */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  gap: 1.5rem;
 }
 
 .card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
 .card h3 {
-  color: #0f766e;
-  margin-bottom: 12px;
-}
-
-.card p {
-  font-size: 15px;
-  color: #475569;
-  margin-bottom: 15px;
+  color: var(--primary);
 }
 
 .card a {
-  color: #0f766e;
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--secondary);
   font-weight: 600;
   text-decoration: none;
 }
 
-/* ---------- FOOTER ---------- */
-footer {
-  background: #020617;
-  color: #94a3b8;
-  padding: 50px 40px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-footer h4 {
-  color: #e2e8f0;
-  margin-bottom: 10px;
-}
-
-footer a {
-  display: block;
-  color: #94a3b8;
-  text-decoration: none;
-  margin-bottom: 8px;
-  font-size: 14px;
-}
-
-footer a:hover {
-  color: #ffffff;
-}
-
-.footer-bottom {
+/* ---------- CTA ---------- */
+.cta {
+  background: #0b3c5d;
+  color: white;
+  padding: 4rem 1.5rem;
   text-align: center;
-  font-size: 14px;
-  color: #64748b;
 }
-.line {
-color: #ffffff;
+
+.cta a {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 2.2rem;
+  }
 }
 </style>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "SmartMoneyTrek",
-  "url": "https://smartmoneytrek.netlify.app",
-  "logo": "https://smartmoneytrek.netlify.app/images/logo.png",
-  "sameAs": []
-}
-  </script>
 </head>
 
 <body>
 
-<!-- ===== HEADER ===== -->
-<header>
-  <a href="index.html" class="logo">
-    <img src="images/logo.png" alt="SmartMoneyTrek Logo">
-  </a>
-
-  <button class="menu-toggle" aria-label="Toggle menu">
-    ☰
-  </button>
-
-  <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="save-money.html">Save Money</a>
-    <a href="budgeting.html">Budgeting</a>
-    <a href="make-money.html">Make Money</a>
-    <a href="loans-debt.html">Loans & Debt</a>
-    <a href="about.html">About</a>
-  </nav>
-</header>
-  
-
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero">
-  <h1>Take Control of Your Money With SmartMoneyTrek</h1>
- <h2>Save more, budget smarter, and build real wealth</h2>
-  <p>
-    Learn how to save money, budget smarter, earn more income, and manage loans
-    with clear, practical guides designed for real life.
-  </p>
+  <h1>Smarter Money Starts Here</h1>
+  <p>Learn how to save more, earn more, and get out of debt with practical, real-world money advice.</p>
+  <a href="/save-money.html" class="btn">Start Saving Today</a>
 </section>
-  <img src="images/money-hero.jpg" 
-     alt="SmartMoneyTrek helping people save money, budget, and grow wealth"
-     style="display:none;">
-<!-- ===== MAIN CATEGORIES ===== -->
+
+<!-- CORE TOPICS -->
 <section class="section">
-  <h2>Explore Smart Money Topics</h2>
-  <p>Everything you need to take control of your finances — explained simply.</p>
+  <h2>What Would You Like to Improve?</h2>
 
   <div class="grid">
     <div class="card">
-      <h3>💰 Save Money</h3>
-      <p>Cut expenses, stop wasting money, and build strong saving habits.</p>
-      <a href="save-money.html">Explore →</a>
+      <h3>Save Money</h3>
+      <p>Simple strategies to reduce expenses and keep more of what you earn.</p>
+      <a href="/save-money.html">Explore →</a>
     </div>
 
     <div class="card">
-      <h3>📊 Budgeting</h3>
-      <p>Plan your money, track spending, and stay in control.</p>
-      <a href="budgeting.html">Explore →</a>
+      <h3>Budget Better</h3>
+      <p>Build a budget that actually works and puts you in control.</p>
+      <a href="/budgeting.html">Learn How →</a>
     </div>
 
     <div class="card">
-      <h3>💼 Make Money</h3>
-      <p>Discover legit ways to earn more income online and offline.</p>
-      <a href="make-money.html">Explore →</a>
+      <h3>Make More Money</h3>
+      <p>Side hustles, online income, and smart ways to increase your earnings.</p>
+      <a href="/make-money.html">Start Earning →</a>
     </div>
 
     <div class="card">
-      <h3>🏦 Loans & Debt</h3>
-      <p>Understand borrowing, avoid debt traps, and improve credit.</p>
-      <a href="loans-debt.html">Explore →</a>
+      <h3>Get Out of Debt</h3>
+      <p>Step-by-step guides to eliminate loans and credit card debt faster.</p>
+      <a href="/loans-debt.html">Reduce Debt →</a>
     </div>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="footer-grid">
-    <div>
-      <h4>SmartMoneyTrek</h4>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="disclaimer.html">Disclaimer</a>
-    </div>
+<!-- WHY TRUST -->
+<section class="section">
+  <h2>Why SmartMoneyTrek?</h2>
 
-    <div>
-      <h4>Categories</h4>
-      <a href="save-money.html">Save Money</a>
-      <a href="budgeting.html">Budgeting</a>
-      <a href="make-money.html">Make Money</a>
-      <a href="loans-debt.html">Loans & Debt</a>
+  <div class="grid">
+    <div class="card">
+      <h3>Practical Advice</h3>
+      <p>No complicated financial jargon — just real strategies you can use.</p>
+    </div>
+    <div class="card">
+      <h3>Focused on Results</h3>
+      <p>Every guide is designed to help you keep more money in your pocket.</p>
+    </div>
+    <div class="card">
+      <h3>Built for Everyday People</h3>
+      <p>You don’t need to be rich to start improving your finances.</p>
     </div>
   </div>
+</section>
 
-  <div class="footer-bottom">
-    © 2026 SmartMoneyTrek.com — All rights reserved.
-    <hr class = "line">
-    Powered by: CodeMaster.
-  </div>
-</footer>
+<!-- FINAL CTA -->
+<section class="cta">
+  <h2>Take Control of Your Money Today</h2>
+  <p>Start with our most popular money guides and see results.</p>
+  <a href="/make-money.html">Get Started</a>
+</section>
 
-  <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav-links');
-
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-  </script>
-  
 </body>
 </html>
+      
