@@ -11,12 +11,125 @@
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
 a{color:inherit;text-decoration:none}
-/* header/footer reuse styles */
-header{background:#fff;border-bottom:1px solid #e5e7eb;padding:15px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.logo img{height:60px}
-.menu-toggle{display:none;font-size:26px;background:none;border:none;cursor:pointer}
-nav{display:flex;gap:20px;align-items:center}
-nav a{font-weight:600;color:var(--text)}
+
+ /* header/footer reuse styles */
+/* =========================
+   SMARTMONEYTREK HEADER
+========================= */
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  height: 80px;               /* LOCKED HEADER HEIGHT */
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+
+/* LOGO CONTAINER */
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO IMAGE */
+.logo img {
+  height: 110px;              /* BIG LOGO */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
+}
+
+/* NAVIGATION */
+nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f172a;
+  position: relative;
+  padding: 10px 0;
+}
+
+/* Hover underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0f766e;
+  transition: 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Mobile button */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    padding: 0 25px;
+    height: 80px;
+  }
+
+  .logo {
+    left: 25px;
+  }
+
+  .logo img {
+    height: 90px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    display: none;
+    border-top: 1px solid #e5e7eb;
+    padding: 15px 0;
+  }
+
+  nav a {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
 .hero{background:linear-gradient(135deg,#ecfeff,#ffffff);padding:50px 20px;text-align:center}
 .hero h1{font-size:32px;margin:0 0 6px}
 .hero p{color:var(--muted)}
