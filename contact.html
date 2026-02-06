@@ -5,164 +5,120 @@
 <title>Contact Us – SmartMoneyTrek</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="Contact SmartMoneyTrek — ask questions, suggest topics, or request partnerships." />
+<meta name="description" content="Contact SmartMoneyTrek for questions, partnerships, feedback, or support." />
+
 <style>
-/* Basic shared styles (matches site standard) */
-:root { --brand: #0f766e; --bg:#f8fafc; --text:#1f2937; --muted:#475569; }
+:root { --brand:#0f766e; --bg:#f8fafc; --text:#1f2937; --muted:#475569; }
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
-a{color:inherit;text-decoration:none}
+a{text-decoration:none;color:inherit}
 
-/* Header */
-/* =========================
-   SMARTMONEYTREK HEADER
-========================= */
-
-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-  height: 80px;               /* LOCKED HEADER HEIGHT */
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  z-index: 100;
+/* ================= HEADER ================= */
+header{
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+  height:80px;
+  padding:0 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:relative;
 }
-
-/* LOGO CONTAINER */
-.logo {
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
+.logo{
+  position:absolute;
+  left:40px;
+  top:50%;
+  transform:translateY(-50%);
 }
-
-/* LOGO IMAGE */
-.logo img {
-  height: 110px;              /* BIG LOGO */
-  width: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
+.logo img{
+  height:110px;
+  filter:drop-shadow(0 5px 8px rgba(0,0,0,.35));
 }
-
-/* NAVIGATION */
-nav {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 28px;
+nav{margin-left:auto;display:flex;gap:28px}
+nav a{font-weight:700;font-size:15px;color:#0f172a;position:relative}
+nav a::after{
+  content:"";
+  position:absolute;
+  bottom:-6px;
+  left:0;
+  width:0;
+  height:2px;
+  background:var(--brand);
+  transition:.3s;
 }
+nav a:hover::after{width:100%}
+.menu-toggle{display:none;font-size:28px;background:none;border:none;cursor:pointer}
 
-nav a {
-  font-weight: 700;
-  font-size: 15px;
-  color: #0f172a;
-  position: relative;
-  padding: 10px 0;
-}
-
-/* Hover underline */
-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: #0f766e;
-  transition: 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-/* Mobile button */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 200;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  header {
-    padding: 0 25px;
-    height: 80px;
-  }
-
-  .logo {
-    left: 25px;
-  }
-
-  .logo img {
-    height: 90px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    flex-direction: column;
-    display: none;
-    border-top: 1px solid #e5e7eb;
-    padding: 15px 0;
-  }
-
-  nav a {
-    padding: 12px 0;
-    font-size: 16px;
-  }
-
-  nav.active {
-    display: flex;
-  }
-}
-
-
-/* Hero */
-.hero{background:linear-gradient(135deg,#ecfeff,#ffffff);padding:60px 20px;text-align:center}
-.hero h1{font-size:34px;margin:0 0 10px}
-.hero p{max-width:820px;margin:auto;color:var(--muted)}
-
-/* Content */
-.container{max-width:980px;margin:30px auto;padding:20px}
-.grid{display:grid;grid-template-columns:1fr 360px;gap:24px}
-.card{background:#fff;border-radius:12px;padding:22px;box-shadow:0 8px 24px rgba(0,0,0,0.04)}
-label{display:block;margin:12px 0 6px;font-weight:600}
-input[type="text"],input[type="email"],textarea{width:100%;padding:10px;border:1px solid #e6eef0;border-radius:8px;font-size:15px}
-textarea{min-height:140px;resize:vertical}
-button[type="submit"]{background:var(--brand);color:#fff;border:none;padding:12px 18px;border-radius:8px;font-weight:700;cursor:pointer}
-.note{font-size:13px;color:var(--muted);margin-top:10px}
-
-/* Footer (standard) */
-footer{background:#020617;color:#94a3b8;padding:50px 40px}
-.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin-bottom:30px}
-footer h4{color:#e2e8f0;margin-bottom:10px}
-footer a{display:block;color:#94a3b8;margin-bottom:8px;font-size:14px}
-.footer-bottom{text-align:center;font-size:14px;color:#64748b}
-
-/* Responsive */
-@media(max-width:900px){ .grid{grid-template-columns:1fr} }
 @media(max-width:768px){
   .menu-toggle{display:block}
-  nav{display:none;width:100%;flex-direction:column;margin-top:12px}
+  nav{
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#fff;
+    display:none;
+    flex-direction:column;
+    padding:15px 0;
+    border-top:1px solid #e5e7eb;
+  }
   nav.active{display:flex}
 }
+
+/* ================= HERO ================= */
+.hero{
+  background:linear-gradient(135deg,#ecfeff,#ffffff);
+  padding:60px 20px;
+  text-align:center;
+}
+.hero h1{font-size:34px;margin-bottom:10px}
+.hero p{max-width:820px;margin:auto;color:var(--muted)}
+
+/* ================= CONTENT ================= */
+.container{max-width:980px;margin:30px auto;padding:20px}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:24px}
+.card{
+  background:#fff;
+  border-radius:12px;
+  padding:22px;
+  box-shadow:0 8px 24px rgba(0,0,0,.04);
+}
+label{display:block;margin:12px 0 6px;font-weight:600}
+input,textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid #e6eef0;
+  border-radius:8px;
+  font-size:15px;
+}
+textarea{min-height:140px}
+button{
+  background:var(--brand);
+  color:#fff;
+  border:none;
+  padding:12px 18px;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+}
+.note{font-size:13px;color:var(--muted);margin-top:10px}
+
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+
+/* ================= FOOTER ================= */
+footer{background:#020617;color:#94a3b8;padding:50px 40px}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  margin-bottom:30px;
+}
+footer h4{color:#e2e8f0}
+footer a{display:block;margin-bottom:8px;font-size:14px}
+.footer-bottom{text-align:center;font-size:14px;color:#64748b}
 </style>
 </head>
+
 <body>
 
 <header>
@@ -180,46 +136,53 @@ footer a{display:block;color:#94a3b8;margin-bottom:8px;font-size:14px}
 
 <section class="hero">
   <h1>Contact SmartMoneyTrek</h1>
-  <p>Questions, partnership enquiries, article suggestions or technical issues — we read every message and reply as quickly as we can.</p>
+  <p>Reach out for questions, feedback, partnership opportunities, or technical support.</p>
 </section>
 
 <main class="container">
   <div class="grid">
+
+    <!-- Netlify detection form (required) -->
+    <form name="contact" netlify hidden></form>
+
     <div class="card">
       <h3>Send us a message</h3>
-      <!-- Netlify-ready form (works on static Netlify sites). If not using Netlify, replace action with mailto or your endpoint -->
-      <form name="contact" method="POST" data-netlify="true" netlify>
-        <input type="hidden" name="form-name" value="contact">
-        <label for="name">Your name</label>
-        <input id="name" name="name" type="text" required>
 
-        <label for="email">Email address</label>
-        <input id="email" name="email" type="email" required>
+      <form method="POST" data-netlify="true" name="contact">
+        <label>Your Name</label>
+        <input type="text" name="name" required>
 
-        <label for="topic">Topic (short)</label>
-        <input id="topic" name="topic" type="text">
+        <label>Email Address</label>
+        <input type="email" name="email" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+        <label>Message</label>
+        <textarea name="message" required></textarea>
 
         <button type="submit">Send Message</button>
-        <p class="note">We aim to reply within 48 hours. If your message is urgent, include "URGENT" in the subject.</p>
+
+        <p class="note">
+          We typically respond within 24–48 hours. Please do not send spam or promotional emails.
+        </p>
       </form>
     </div>
 
     <aside class="card">
-      <h3>Other ways to reach us</h3>
-      <p style="margin:8px 0;color:var(--muted)">Email: <a href="mailto:hello@smartmoneytrek.com">hello@smartmoneytrek.com</a></p>
-      <p style="margin:8px 0;color:var(--muted)">Partnerships & Affiliates: <a href="mailto:partners@smartmoneytrek.com">partners@smartmoneytrek.com</a></p>
-      <p style="margin:8px 0;color:var(--muted)">General: <a href="mailto:info@smartmoneytrek.com">info@smartmoneytrek.com</a></p>
+      <h3>Contact Information</h3>
 
-      <h4 style="margin-top:18px">Follow SmartMoneyTrek</h4>
-      <p style="margin:8px 0"><a href="#" aria-label="SmartMoneyTrek on X">X / Twitter</a></p>
-      <p style="margin:8px 0"><a href="#" aria-label="SmartMoneyTrek on Instagram">Instagram</a></p>
+      <p style="color:var(--muted)">
+        📧 Email:  
+        <a href="mailto:hello@smartmoneytrek.com">hello@smartmoneytrek.com</a>
+      </p>
 
-      <h4 style="margin-top:18px">Press</h4>
-      <p style="margin:8px 0;color:var(--muted)">For press inquiries, include "Press" in your subject line or email hello@smartmoneytrek.com</p>
+      <h4 style="margin-top:20px">What you can contact us for</h4>
+      <ul style="color:var(--muted);padding-left:18px">
+        <li>Content feedback or corrections</li>
+        <li>Partnership and advertising inquiries</li>
+        <li>Affiliate-related questions</li>
+        <li>Technical issues on the website</li>
+      </ul>
     </aside>
+
   </div>
 </main>
 
@@ -232,7 +195,6 @@ footer a{display:block;color:#94a3b8;margin-bottom:8px;font-size:14px}
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="disclaimer.html">Disclaimer</a>
     </div>
-
     <div>
       <h4>Categories</h4>
       <a href="save-money.html">Save Money</a>
@@ -241,22 +203,16 @@ footer a{display:block;color:#94a3b8;margin-bottom:8px;font-size:14px}
       <a href="loans-debt.html">Loans & Debt</a>
     </div>
   </div>
-
-<div class="footer-bottom">
+  <div class="footer-bottom">
     © 2026 SmartMoneyTrek.com — All rights reserved.
-    <hr class = "line">
-    Powered by: CodeMaster.
-</div>
+  </div>
 </footer>
 
 <script>
-// Mobile menu toggle (used on all pages)
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav');
-if (toggle) {
-  toggle.addEventListener('click', () => nav.classList.toggle('active'));
-}
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+toggle.addEventListener('click',()=>nav.classList.toggle('active'));
 </script>
 </body>
-  </html>
-  
+</html>
+                              
