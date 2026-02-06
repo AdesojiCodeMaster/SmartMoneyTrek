@@ -39,13 +39,16 @@ header {
 }
 
 /* LOGO IMAGE */
+  
 .logo img {
-  height: 75px;          /* Bigger and bolder */
+  height: 95px;                 /* much bigger */
   width: auto;
-  max-width: 220px;
+  max-width: 260px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.25)); /* makes it pop */
+  transform: scale(1.05);       /* makes it visually stronger */
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.35));
 }
+
 
 /* NAVIGATION */
 nav {
@@ -96,7 +99,7 @@ nav a:hover::after {
   }
 
   .logo img {
-    height: 60px; /* slightly smaller on phones */
+    height: 80px; /* slightly smaller on phones */
   }
 
   .menu-toggle {
