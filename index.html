@@ -244,21 +244,40 @@ nav a:hover::after {
 }
 
 .card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  padding: 36px 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #0f766e, #16a34a);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.card:hover::before {
+  opacity: 0.08;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-10px);
 }
 
+
 .card h3 {
-  color: #0f766e;
+  color: #0f172a;
   margin-bottom: 12px;
-}
+  font-size: 22px;
+  font-weight: 800;
+  }
+  
 
 .card p {
   font-size: 15px;
@@ -267,10 +286,22 @@ nav a:hover::after {
 }
 
 .card a {
-  color: #0f766e;
-  font-weight: 600;
+  display: inline-block;
+  margin-top: 18px;
+  background: #16a34a;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
   text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
 }
+
+.card a:hover {
+  transform: scale(1.05);
+  }
+    
 
 /* TRUST BAR */
 .trust-bar {
@@ -384,6 +415,17 @@ color: #ffffff;
     font-size: 17px;
   }
     }
+
+  .badge {
+  background: #16a34a;
+  color: white;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 18px;
+  margin-right: 8px;
+  display: inline-block;
+  }
+  
   
 </style>
 
@@ -451,26 +493,28 @@ color: #ffffff;
 
   <div class="grid">
     <div class="card">
-      <h3>💰 Save Money</h3>
+      <h3><span class="badge">💰</span> Save Money</h3>
       <p>Cut expenses, stop wasting money, and build strong saving habits.</p>
       <a href="save-money.html">Explore →</a>
     </div>
 
     <div class="card">
-      <h3>📊 Budgeting</h3>
+      <h3> </h3>
+      <h3><span class="badge"> 📊 </span> Budgeting </h3>
+
       <p>Plan your money, track spending, and stay in control.</p>
       <a href="budgeting.html">Explore →</a>
     </div>
 
     <div class="card">
-      <h3>💼 Make Money</h3>
+      <h3><span class="badge"> 💼 </span> Make Money </h3>
       <p>Discover legit ways to earn more income online and offline.</p>
       <a href="make-money.html">Explore →</a>
     </div>
 
     <div class="card">
-      <h3>🏦 Loans & Debt</h3>
-      <p>Understand borrowing, avoid debt traps, and improve credit.</p>
+    <h3><span class="badge"> 🏦 </span> Loans & Debt </h3>
+    <p>Understand borrowing, avoid debt traps, and improve credit.</p>
       <a href="loans-debt.html">Explore →</a>
     </div>
   </div>
