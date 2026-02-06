@@ -426,6 +426,70 @@ color: #ffffff;
   display: inline-block;
   }
   
+  /* CLICKABLE CARD SYSTEM */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .card {
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  padding: 36px 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card-link .card:hover {
+  transform: translateY(-10px);
+}
+
+.card-link .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #0f766e, #16a34a);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.card-link .card:hover::before {
+  opacity: 0.08;
+}
+
+.card-link h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.card-link p {
+  color: #475569;
+  font-size: 15px;
+}
+
+.card-cta {
+  display: inline-block;
+  margin-top: 18px;
+  background: #16a34a;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* ICON BADGE */
+.badge {
+  background: #16a34a;
+  color: white;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 18px;
+  margin-right: 8px;
+  }
   
 </style>
 
@@ -492,32 +556,37 @@ color: #ffffff;
   <p>Everything you need to take control of your finances — explained simply.</p>
 
   <div class="grid">
-    <div class="card">
-      <h3><span class="badge">💰</span> Save Money</h3>
-      <p>Cut expenses, stop wasting money, and build strong saving habits.</p>
-      <a href="save-money.html">Explore →</a>
-    </div>
-
-    <div class="card">
-      <h3> </h3>
-      <h3><span class="badge"> 📊 </span> Budgeting </h3>
-
-      <p>Plan your money, track spending, and stay in control.</p>
-      <a href="budgeting.html">Explore →</a>
-    </div>
-
-    <div class="card">
-      <h3><span class="badge"> 💼 </span> Make Money </h3>
-      <p>Discover legit ways to earn more income online and offline.</p>
-      <a href="make-money.html">Explore →</a>
-    </div>
-
-    <div class="card">
-    <h3><span class="badge"> 🏦 </span> Loans & Debt </h3>
-    <p>Understand borrowing, avoid debt traps, and improve credit.</p>
-      <a href="loans-debt.html">Explore →</a>
-    </div>
+    
+<a href="save-money.html" class="card-link">
+  <div class="card">
+    <h3><span class="badge">💰</span> Save Money</h3>
+    <p>Cut expenses, stop wasting money, and build strong saving habits.</p>
+    <span class="card-cta">Explore →</span>
   </div>
+    </a>
+    
+    <a href="budgeting.html" class="card-link">
+  <div class="card">
+    <h3><span class="badge">📊</span> Budgeting</h3>
+    <p>Plan your money, track spending, and stay in control.</p>
+    <span class="card-cta">Explore →</span>
+  </div>
+    </a>
+    
+<a href="make-money.html" class="card-link">
+  <div class="card">
+    <h3><span class="badge">💼</span> Make Money</h3>
+    <p>Discover legit ways to earn more income online and offline.</p>
+    <span class="card-cta">Explore →</span>
+  </div>
+</a>
+  <a href="loans-debt.html" class="card-link">
+  <div class="card">
+    <h3><span class="badge">🏦</span> Loans & Debt</h3>
+    <p>Understand borrowing, avoid debt traps, and improve credit.</p>
+    <span class="card-cta">Explore →</span>
+  </div>
+  </a>  
 </section>
 
 <!-- ===== TRUST BAR ===== -->
@@ -533,23 +602,29 @@ color: #ffffff;
   <p>Start with our most helpful financial resources.</p>
 
   <div class="grid">
-    <div class="card">
-      <h3>How to Save $500 Fast</h3>
-      <p>Practical steps you can use this week to free up cash.</p>
-      <a href="save-money.html">Read guide →</a>
-    </div>
-
-    <div class="card">
-      <h3>Best Budgeting Method for Beginners</h3>
-      <p>A simple system that actually works for real people.</p>
-      <a href="budgeting.html">Read guide →</a>
-    </div>
-
-    <div class="card">
-      <h3>Top Side Hustles That Pay</h3>
-      <p>Discover legit ways to earn extra income online.</p>
-      <a href="make-money.html">Read guide →</a>
-    </div>
+  <a href="save-money.html" class="card-link">
+  <div class="card">
+    <h3>How to Save $500 Fast</h3>
+    <p>Practical steps you can use this week to free up cash.</p>
+  <span class="card-cta">Read Guide →</span>
+  </div>
+    </a>
+    
+<a href="budgeting.html" class="card-link">
+  <div class="card">
+    <h3>Best Budgeting Method for Beginners</h3>
+    <p>A simple system that actually works for real people.</p>
+    <span class="card-cta">Read Guide →</span>
+  </div>
+</a>
+    
+<a href="make-money.html" class="card-link">
+  <div class="card">
+    <h3>Top Side Hustles That Pay</h3>
+    <p>Discover legit ways to earn extra income online.</p>
+    <span class="card-cta">Read Guide →</span>
+  </div>
+</a>
   </div>
 </section>
 
