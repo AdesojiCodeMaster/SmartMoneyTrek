@@ -46,6 +46,22 @@ nav a {
   font-weight: 600;
   color: #0f172a;
 }
+/* Make logo stronger without expanding header */
+header .logo img {
+  height: 70px;      /* bigger logo */
+  width: auto;
+  transition: 0.3s ease;
+}
+
+/* Add spacing so nav doesn’t crowd the logo */
+header nav {
+  margin-left: 30px; /* gives breathing room */
+}
+
+/* Optional: add light drop shadow to help logo pop */
+header .logo img {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
 
 /* Mobile Menu */
 .menu-toggle {
