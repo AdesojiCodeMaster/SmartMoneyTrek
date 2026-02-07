@@ -17,6 +17,29 @@ body {
   color: #0f172a;
 }
 
+  /* ===== GLOBAL POLISH ===== */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+.section,
+.featured-guides,
+.email-capture {
+  position: relative;
+  z-index: 2;
+}
+
+.section h2,
+.featured-guides h2 {
+  line-height: 1.2;
+}
+
+.section p,
+.featured-guides p {
+  line-height: 1.7;
+}
+  
+
 /* =========================
    SMARTMONEYTREK HEADER
 ========================= */
@@ -134,40 +157,49 @@ nav a:hover::after {
     display: flex;
   }
   }
+
+  .featured-guides,
+.email-capture,
+.section {
+  margin-top: 20px;
+}
   
 
 /* ---------- HERO WITH SAFE IMAGE ---------- */
 .hero {
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
+      rgba(2,6,23,0.75),
+      rgba(2,6,23,0.75)
     ),
-    url("images/money-hero.jpg") center / cover no-repeat;
+    url("images/money-hero.jpg");
+  background-size: cover;
+  background-position: center;
   padding: 140px 40px;
   text-align: center;
   color: #ffffff;
 }
-  
+
 .hero h1 {
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: #ffffff;
-  font-weight: 800;
 }
 
 .hero h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 500;
   color: #e2e8f0;
-  font-weight: 600;
-  margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 20px;
-  color: #f8fafc;
+  font-size: 18px;
   max-width: 820px;
   margin: auto;
+  color: #f8fafc;
   }
+    
 
   .hero-cta {
   margin-top: 35px;
@@ -243,15 +275,20 @@ nav a:hover::after {
   gap: 25px;
 }
 
-.card {
-  background: linear-gradient(180deg, #ffffff, #f8fafc);
-  padding: 36px 30px;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
+  .card {
+  background: #ffffff;
+  padding: 34px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(2,6,23,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #e5e7eb;
 }
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(2,6,23,0.15);
+  }
+  
 
 .card::before {
   content: "";
@@ -265,11 +302,6 @@ nav a:hover::after {
 .card:hover::before {
   opacity: 0.08;
 }
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
 
 .card h3 {
   color: #0f172a;
@@ -341,10 +373,11 @@ nav a:hover::after {
   
 /* ---------- FOOTER ---------- */
 footer {
-  background: #020617;
+  background: linear-gradient(180deg, #020617, #020617);
   color: #94a3b8;
-  padding: 50px 40px;
-}
+  padding: 80px 40px;
+  }
+  
 
 .footer-grid {
   display: grid;
