@@ -673,7 +673,69 @@ color: #ffffff;
   .hero a {
   cursor: pointer;
   }
-  
+
+
+  /* ===== CONTENT REVIEWER ===== */
+.reviewer-section {
+  background: #ffffff;
+}
+
+.reviewer-card {
+  max-width: 900px;
+  margin: auto;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.05);
+}
+
+.reviewer-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ecfeff;
+}
+
+.reviewer-info h3 {
+  color: #0f766e;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.reviewer-info h4 {
+  font-size: 22px;
+  margin: 4px 0;
+}
+
+.reviewer-info .title {
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.reviewer-info .bio {
+  color: #475569;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .reviewer-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reviewer-info .bio {
+    max-width: 100%;
+  }
+  }
+    
 </style>
 
   <script type="application/ld+json">
@@ -819,6 +881,31 @@ color: #ffffff;
   </div>
 </section>
 
+  
+<!-- ===== CONTENT REVIEWER ===== -->
+<section class="section reviewer-section">
+  <div class="reviewer-card">
+    <img 
+      src="images/reviewer.jpg" 
+      alt="Content reviewed by banking professional at SmartMoneyTrek"
+      class="reviewer-img"
+    >
+
+    <div class="reviewer-info">
+      <h3>Content Reviewed By</h3>
+      <h4> T.A Omotosho </h4>
+      <p class="title">Banking Professional</p>
+
+      <p class="bio">
+        All SmartMoneyTrek content is reviewed to ensure accuracy, clarity, and
+        real-world financial relevance based on practical banking experience.
+      </p>
+    </div>
+  </div>
+</section>
+  
+  
+
   <!-- ===== FEATURED GUIDES ===== -->
  <section class="section">
   <h2>Popular Money Guides</h2>
@@ -924,7 +1011,7 @@ color: #ffffff;
   </div>
 
   <div class="footer-bottom">
-    © 2026 SmartMoneyTrek.com — All rights reserved.
+    © 2026 SmartMoneyTrek <!--.com -->— All rights reserved.
     <hr class = "line">
     Powered by: CodeMaster.
   </div>
