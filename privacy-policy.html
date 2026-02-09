@@ -29,6 +29,28 @@ header {
   z-index: 100;
 }
 
+ /* =========================
+   STICKY HEADER
+========================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+}
+ /* Prevent anchor from hiding under sticky header */
+section[id] {
+  scroll-margin-top: 90px;
+}
+ 
+
+ @media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 75px;
+  }
+ }
+ 
 /* LOGO CONTAINER */
 .logo {
   position: absolute;
@@ -141,7 +163,44 @@ footer{background:#020617;color:#94a3b8;padding:50px 40px}
 footer h4{color:#e2e8f0;margin-bottom:10px}
 footer a{display:block;color:#94a3b8;margin-bottom:8px;font-size:14px}
 .footer-bottom{text-align:center;font-size:14px;color:#64748b}
-@media(max-width:768px){.menu-toggle{display:block}nav{display:none;width:100%;flex-direction:column;margin-top:12px}nav.active{display:flex}}
+
+ /* =========================
+   MOBILE HEADER FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px; /* slightly smaller on mobile */
+  }
+
+  .logo {
+    position: static;     /* remove absolute */
+    transform: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 48px;         /* proper mobile logo size */
+    max-width: 160px;
+    filter: none;        /* remove heavy shadow on mobile */
+  }
+
+  .menu-toggle {
+    font-size: 28px;
+    display: block;
+  }
+
+  nav {
+    top: 70px;           /* matches header height */
+  }
+ }
+     
 </style>
 </head>
 <body>
