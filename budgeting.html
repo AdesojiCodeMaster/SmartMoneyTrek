@@ -35,6 +35,28 @@ header {
   z-index: 100;
 }
 
+  /* =========================
+   STICKY HEADER
+========================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  }
+/* Prevent anchor from hiding under sticky header */
+section[id] {
+  scroll-margin-top: 90px;
+}
+  
+  @media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 75px;
+  }
+  }
+  
+  
 /* LOGO CONTAINER */
 .logo {
   position: absolute;
@@ -239,7 +261,46 @@ footer a:hover {
 color: #ffffff;
   }
 
+  /* =========================
+   MOBILE HEADER FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px; /* slightly smaller on mobile */
+  }
+
+  .logo {
+    position: static;     /* remove absolute */
+    transform: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 48px;         /* proper mobile logo size */
+    max-width: 160px;
+    filter: none;        /* remove heavy shadow on mobile */
+  }
+
+  .menu-toggle {
+    font-size: 28px;
+    display: block;
+  }
+
+  nav {
+    top: 70px;           /* matches header height */
+  }
+  }
+  
+
 </style>
+  
 </head>
 
 <body>
