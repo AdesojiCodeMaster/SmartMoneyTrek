@@ -52,7 +52,8 @@ header {
 
 /* LOGO IMAGE */
 .logo img {
-  height: 110px;              /* BIG LOGO */
+  height: 90px;
+  max-width: 220px;           /* BIG LOGO */
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
@@ -102,6 +103,9 @@ nav a:hover::after {
 }
 
 /* MOBILE */
+
+@media (max-width: 768px) {
+
   .logo {
     left: 25px;
   }
