@@ -102,43 +102,7 @@ nav a:hover::after {
   z-index: 200;
 }
 
-/* MOBILE */
 
-@media (max-width: 768px) {
-
-  .logo {
-    left: 25px;
-  }
-
-  .logo img {
-    height: 90px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    flex-direction: column;
-    display: none;
-    border-top: 1px solid #e5e7eb;
-    padding: 15px 0;
-  }
-
-  nav a {
-    padding: 12px 0;
-    font-size: 16px;
-  }
-
-  nav.active {
-    display: flex;
-  }
-}
 
   /* Prevent anchor from hiding under sticky header */
 section[id] {
@@ -289,9 +253,21 @@ color: #ffffff;
   }
 
   nav {
-    top: 70px;           /* matches header height */
-  }
-  }
+  position: absolute;
+  top: 70px;           /* matches header height */
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  flex-direction: column;
+  display: none;
+  border-top: 1px solid #e5e7eb;
+  padding: 15px 0;
+}
+
+nav.active {
+  display: flex;
+}
+  
   
   
   @media (max-width: 768px) {
