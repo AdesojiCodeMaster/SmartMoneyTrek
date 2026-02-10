@@ -220,6 +220,15 @@ color: #ffffff;
   text-decoration-thickness: 3px;
   }
 
+
+/* Mobile anchor fix */
+@media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 75px;
+  }
+}
+
+  
   /* =========================
    MOBILE HEADER FIX
 ========================= */
@@ -268,15 +277,7 @@ nav.active {
   display: flex;
 }
   
-  
-  
-  @media (max-width: 768px) {
-  section[id] {
-    scroll-margin-top: 75px;
-  }
-  }
-
-  .toc-box {
+ .toc-box {
   background: #f7f9fc;
   border-left: 4px solid #0a5cff;
   padding: 20px;
