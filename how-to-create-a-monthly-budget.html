@@ -315,14 +315,29 @@ color: #ffffff;
   margin-bottom: 10px;
 }
 
+/* Modern bullet-styled TOC */
 .toc-box ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .toc-box li {
+  position: relative;
+  padding-left: 22px;
   margin-bottom: 8px;
 }
+
+.toc-box li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0a5cff;     /* SmartMoneyTrek brand */
+  font-size: 20px;
+  line-height: 1;
+}
+
 
 .toc-box a {
   text-decoration: none;
@@ -361,7 +376,8 @@ color: #ffffff;
 
 
 
-  <nav class="toc-box">
+  <nav class="toc-box" aria-label="Table of Contents">
+    
   <h2>In This Guide</h2>
   <ul>
     <li><a href="#what-is-budgeting">What a Monthly Budget Really Is</a></li>
