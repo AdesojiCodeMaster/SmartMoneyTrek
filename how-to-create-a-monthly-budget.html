@@ -340,78 +340,75 @@ nav.active {
   overflow-wrap: break-word;
 }
 
-  .lead-magnet {
-  background: linear-gradient(135deg, #e8f5ee, #f6fff9);
-  border: 2px solid #0a7f3f;
-  padding: 30px;
-  margin: 40px 0;
+  /* SmartMoneyTrek Lead Magnet Box */
+.lead-magnet {
+  background: linear-gradient(135deg, #0c6f4f, #1fa97d);
+  padding: 50px 20px;
+  margin: 60px 0;
   border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .lead-content {
-  max-width: 720px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
+  color: #ffffff;
 }
 
-.lead-magnet h2 {
-  color: #0a7f3f;
+.lead-content h2 {
+  font-size: 32px;
   margin-bottom: 15px;
+  font-weight: 800;
 }
 
-.lead-magnet p {
-  font-size: 1rem;
-  margin-bottom: 15px;
+.lead-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
 }
 
-.lead-magnet ul {
+.lead-content ul {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin-bottom: 35px;
 }
 
-.lead-magnet ul li {
-  margin-bottom: 8px;
-  font-weight: 500;
+.lead-content ul li {
+  font-size: 17px;
+  margin-bottom: 12px;
 }
 
-.lead-magnet form {
-  margin-top: 20px;
-}
-
-.lead-magnet input[type="email"] {
-  width: 100%;
-  max-width: 420px;
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
+.lead-content ul li::before {
+  content: "✓ ";
+  color: #ffd369;
+  font-weight: bold;
 }
 
 .download-btn {
   display: inline-block;
-  background: #0a7f3f;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 1.05rem;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  background: #ffd369;
+  color: #0c3c2d;
+  font-size: 20px;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
 }
 
 .download-btn:hover {
-  background: #086634;
+  background: #fff1b8;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
 .small-text {
-  font-size: 0.85rem;
-  color: #666;
-  margin-top: 12px;
-  }
-  
-    
+  font-size: 14px;
+  opacity: 0.85;
+  margin-top: 18px;
+}
+   
 </style>
 </head>
 <body>
@@ -704,45 +701,30 @@ You move forward. When your debt is high, you can shift more into the 20% catego
     To help you implement everything in this guide, we created a free printable
     monthly budget kit.
   </p>
-
 <section class="lead-magnet">
   <div class="lead-content">
-    <h3><em>Get the Free SmartMoneyTrek Budget Kit 👇</em></h3>
-
+    <h3>Get the Free SmartMoneyTrek Budget Kit 👇</h3>
     <p>
-      Take control of your money with our professionally designed
-      <strong>SmartMoneyTrek Ultimate Monthly Budget Kit</strong>.
-      This free download includes a printable budget worksheet, step-by-step guidance,
-      and visual examples to help you save more and stop living paycheck to paycheck.
+      Download our professionally designed
+      <strong>Ultimate Monthly Budget Kit</strong> to track your income, control spending,
+      and start building real savings — even on a low income.
     </p>
 
     <ul>
       <li>✔ Monthly income & expense worksheet</li>
       <li>✔ Step-by-step budgeting instructions</li>
       <li>✔ Visual budget examples</li>
-      <li>✔ Designed for beginners & real life</li>
+      <li>✔ Designed for everyone</li>
     </ul>
 
-    <!-- Netlify Form -->
+    <a href="/SmartMoneyTrek_Ultimate_Budget_Kit_Branded.pdf"
+       class="download-btn"
+       download>
+      🎁 Download Your Free Budget Kit
+    </a>
 
-    <form method="POST" 
-      data-netlify="true" 
-      action="/thank-you.html" 
-      class="email-form">
-
-  <input type="hidden" name="form-name" value="budget-kit" />
-
-  <h3>Get the Free SmartMoneyTrek Budget Kit</h3>
-  <p>Enter your email and we’ll send you the printable budgeting kit instantly.</p>
-
-  <input type="email" name="email" placeholder="Enter your email" required />
-
-  <button type="submit">Get the Free Budget Kit</button>
-
-    </form>
-    
     <p class="small-text">
-      No spam. Just practical money guidance you can trust.
+      100% free. No signup. No spam.
     </p>
   </div>
 </section>
