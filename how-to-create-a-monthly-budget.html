@@ -724,20 +724,30 @@ You move forward. When your debt is high, you can shift more into the 20% catego
     </ul>
 
     <!-- Netlify Form -->
-    <form name="budget-kit" method="POST" data-netlify="true" action="/thank-you.html">
-      <input type="hidden" name="form-name" value="budget-kit">
+    <form
+  name="budget-kit"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/thank-you.html"
+>
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter your email to get the free Budget Kit"
-        required
-      >
+  <input type="hidden" name="form-name" value="budget-kit">
+  <input type="hidden" name="bot-field">
 
-      <button type="submit" class="download-btn">
-        🎁 Download Your Free Budget Kit
-      </button>
+  <input
+    type="email"
+    name="email"
+    placeholder="Enter your email to get the free Budget Kit"
+    required
+  >
+
+  <button type="submit" class="download-btn">
+    🎁 Download Your Free Budget Kit
+  </button>
+
     </form>
+    
 
     <p class="small-text">
       No spam. Just practical money guidance you can trust.
