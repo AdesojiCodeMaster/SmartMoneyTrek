@@ -724,12 +724,23 @@ You move forward. When your debt is high, you can shift more into the 20% catego
     </ul>
 
     <!-- Netlify Form -->
-    <form name="budget-kit" method="POST" data-netlify="true" action="/thank-you.html">
-  <input type="hidden" name="form-name" value="budget-kit">
 
-  <input type="email" name="email" placeholder="Enter your email" required>
+    <form method="POST" 
+      data-netlify="true" 
+      action="/thank-you.html" 
+      class="email-form">
+
+  <input type="hidden" name="form-name" value="budget-kit" />
+
+  <h3>Get the Free SmartMoneyTrek Budget Kit</h3>
+  <p>Enter your email and we’ll send you the printable budgeting kit instantly.</p>
+
+  <input type="email" name="email" placeholder="Enter your email" required />
+
   <button type="submit">Get the Free Budget Kit</button>
+
     </form>
+    
     <p class="small-text">
       No spam. Just practical money guidance you can trust.
     </p>
