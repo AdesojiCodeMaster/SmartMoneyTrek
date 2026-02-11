@@ -11,6 +11,13 @@
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
 a{color:inherit;text-decoration:none}
+
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  }
+  
   
 /* =========================
    SMARTMONEYTREK HEADER
@@ -282,41 +289,6 @@ nav.active {
   display: flex;
 }
   
- .toc-box {
-  background: #f7f9fc;
-  border-left: 4px solid #0a5cff;
-  padding: 20px;
-  margin: 25px 0;
-  border-radius: 6px;
-}
-
-.toc-box h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-/* Modern bullet-styled TOC */
-.toc-box ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.toc-box li {
-  position: relative;
-  padding-left: 22px;
-  margin-bottom: 8px;
-}
-
-.toc-box li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #0a5cff;     /* SmartMoneyTrek brand */
-  font-size: 20px;
-  line-height: 1;
-}
 
 
 
@@ -408,18 +380,7 @@ nav.active {
   opacity: 0.85;
   margin-top: 18px;
 }
-.budget-image-box {
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
-}
 
-.budget-image-box img {
-  width: 100%;
-  max-width: 650px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
 
 .image-caption {
   margin-top: 15px;
@@ -428,33 +389,73 @@ nav.active {
   font-style: italic;
   }
   
-
-
-  .budget-image-box {
-  margin: 30px 0;
+.budget-image-box,
+.budget-rule-box {
+  max-width: 780px;
+  margin: 40px auto;
   padding: 20px;
   background: #f8fafc;
   border-left: 5px solid #0f766e;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
 }
 
-.budget-image-box h4 {
-  margin-bottom: 10px;
+.budget-image-box h4,
+.budget-rule-box h3 {
   color: #0f766e;
+  margin-bottom: 10px;
 }
 
-.budget-image-box p {
+.budget-image-box p,
+.budget-rule-box p {
   font-size: 0.95rem;
   color: #475569;
   margin-bottom: 15px;
 }
 
-.budget-image-box img {
+.budget-image-box img,
+.budget-rule-box img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  }
+
+
+   .toc-box {
+  background: #f7f9fc;
+  border-left: 4px solid #0a5cff;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 6px;
+}
+
+.toc-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Modern bullet-styled TOC */
+.toc-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc-box li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+}
+
+.toc-box li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0a5cff;     /* SmartMoneyTrek brand */
+  font-size: 20px;
+  line-height: 1;
   }
   
 </style>
