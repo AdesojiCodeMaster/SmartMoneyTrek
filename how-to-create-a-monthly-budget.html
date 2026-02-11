@@ -339,6 +339,78 @@ nav.active {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+  .lead-magnet {
+  background: linear-gradient(135deg, #e8f5ee, #f6fff9);
+  border: 2px solid #0a7f3f;
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 14px;
+}
+
+.lead-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lead-magnet h2 {
+  color: #0a7f3f;
+  margin-bottom: 15px;
+}
+
+.lead-magnet p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.lead-magnet ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.lead-magnet ul li {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.lead-magnet form {
+  margin-top: 20px;
+}
+
+.lead-magnet input[type="email"] {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #0a7f3f;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #086634;
+}
+
+.small-text {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 12px;
+  }
+  
     
 </style>
 </head>
@@ -633,14 +705,46 @@ You move forward. When your debt is high, you can shift more into the 20% catego
     monthly budgeting worksheet.
   </p>
 
-  <div class="cta-box">
-    <p><strong>Download your free budgeting worksheet:</strong></p>
-    <a href="/downloads/SmartMoneyTrek_Budget_Worksheet.pdf"
-       class="btn-primary"
-       target="_blank">
-       Download Budget Worksheet (PDF)
-    </a>
+<section class="lead-magnet">
+  <div class="lead-content">
+    <h2>Get the Free SmartMoneyTrek Budget Kit</h2>
+
+    <p>
+      Take control of your money with our professionally designed
+      <strong>SmartMoneyTrek Ultimate Monthly Budget Kit</strong>.
+      This free download includes a printable budget worksheet, step-by-step guidance,
+      and visual examples to help you save more and stop living paycheck to paycheck.
+    </p>
+
+    <ul>
+      <li>✔ Monthly income & expense worksheet</li>
+      <li>✔ Step-by-step budgeting instructions</li>
+      <li>✔ Visual budget examples</li>
+      <li>✔ Designed for beginners & real life</li>
+    </ul>
+
+    <!-- Netlify Form -->
+    <form name="budget-kit" method="POST" data-netlify="true" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="budget-kit">
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email to get the free Budget Kit"
+        required
+      >
+
+      <button type="submit" class="download-btn">
+        🎁 Download Your Free Budget Kit
+      </button>
+    </form>
+
+    <p class="small-text">
+      No spam. Just practical money guidance you can trust.
+    </p>
   </div>
+</section>
+
 </section>
 
 <section>
