@@ -6,18 +6,13 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="description" content="Learn how to create a realistic monthly budget that helps you save money, pay off debt, and gain full control of your finances — without stress or guilt." />
-<style>
+<link rel="preload" as="image" href="/images/An_infographic_titled_Monthly_Expense_Tracking_Ex.png" fetchpriority="high">
+  
+  <style>
 :root{--brand:#0f766e;--bg:#f8fafc;--text:#1f2937;--muted:#475569}
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
 a{color:inherit;text-decoration:none}
-
-  img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  }
-  
   
 /* =========================
    SMARTMONEYTREK HEADER
@@ -173,13 +168,7 @@ footer a:hover {
 }
 
 
-
-
-
-
-
-
-  /* =========================
+/* =========================
    ARTICLE LINK FIX
 ========================= */
 
@@ -640,9 +629,13 @@ Be honest. The numbers don’t judge — they simply reveal.
   <p>This simple example shows how to write down and organize your daily spending so nothing slips through the cracks.</p>
 
   <img 
-    src="/images/An_infographic_titled_Monthly_Expense_Tracking_Ex.png" 
-    alt="Monthly expense tracking example showing income and daily spending categories" 
-    loading="lazy">
+  src="/images/An_infographic_titled_Monthly_Expense_Tracking_Ex.png"
+  width="900"
+  height="600"
+  alt="Monthly expense tracking example"
+  loading="lazy"
+>
+  
 </div>
   
   <h3> Step Four: Plan for the Future With Sinking Funds </h3>
@@ -707,9 +700,13 @@ Divide those yearly costs by 12 and save a little every month. This turns emerge
   <p>This visual shows how your income is split between needs, wants, and savings so you can stay balanced and financially safe.</p>
 
   <img 
-    src="/images/An_infographic_illustration_of_the_50-30-20_Budget.png" 
-    alt="50 30 20 budget rule chart showing how to divide income into needs wants and savings" 
-    loading="lazy">
+  src="/images/An_infographic_illustration_of_the_50-30-20_Budget.png"
+  width="900"
+  height="600"
+  alt="50 30 20 budget rule chart"
+  loading="lazy"
+>
+  
 </div>
   
   <ul>
@@ -942,23 +939,21 @@ const nav = document.querySelector('header nav');
 if (toggle) toggle.addEventListener('click', ()=>nav.classList.toggle('active'));
 
 // Smooth TOC scrolling
-document.querySelectorAll('.toc-box a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
+document.addEventListener("click", function(e){
+  const link = e.target.closest(".toc-box a");
+  if(!link) return;
 
-    const target = document.querySelector(this.getAttribute('href'));
-    if (!target) return;
+  const target = document.querySelector(link.getAttribute("href"));
+  if(!target) return;
 
-    const yOffset = window.innerWidth < 768 ? -75 : -90;
-  
-    const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  e.preventDefault();
 
-    window.scrollTo({
-      top: y,
-      behavior: 'smooth'
-    });
+  target.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
   });
 });
+  
   </script>  
 </body>
  </html>
