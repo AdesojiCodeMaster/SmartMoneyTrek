@@ -31,8 +31,32 @@ header {
   z-index: 1000;
 }
 
+@media (max-width: 1024px) {
+  .logo {
+    position: static;
+    transform: none;
+  }
+}
+    @media (max-width: 768px) {
+  nav {
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+    }
+    
+  @media (max-width: 400px) {
+  .budget-image-box,
+  .budget-rule-box {
+    padding: 14px;
+    border-left-width: 3px;
+  }
+  }
 
-  
+    .article-header h1 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+    }
+    
 /* LOGO CONTAINER */
 .logo {
   position: absolute;
