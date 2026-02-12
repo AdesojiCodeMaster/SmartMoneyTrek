@@ -270,10 +270,6 @@ color: #ffffff;
 nav.active {
   display: flex;
 }
-  
-.toc-box a:hover {
-  border-bottom-color: #16a34a;
-  }
 
 .toc-box a:focus,
 .toc-box a:active {
@@ -283,80 +279,6 @@ nav.active {
   border-bottom-color: #22c55e;
     }
   
-  ul, li {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-  /* SmartMoneyTrek Lead Magnet Box */
-.lead-magnet {
-  background: linear-gradient(135deg, #0c6f4f, #1fa97d);
-  padding: 50px 20px;
-  margin: 60px 0;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.lead-content {
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-  color: #ffffff;
-}
-
-.lead-content h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-  font-weight: 800;
-}
-
-.lead-content p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.lead-content ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 35px;
-}
-
-.lead-content ul li {
-  font-size: 17px;
-  margin-bottom: 12px;
-}
-
-.lead-content ul li::before {
-  content: "✓ ";
-  color: #ffd369;
-  font-weight: bold;
-}
-
-.download-btn {
-  display: inline-block;
-  background: #ffd369;
-  color: #0c3c2d;
-  font-size: 20px;
-  padding: 16px 40px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 700;
-  transition: all 0.3s ease;
-}
-
-.download-btn:hover {
-  background: #fff1b8;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-}
-
-.small-text {
-  font-size: 14px;
-  opacity: 0.85;
-  margin-top: 18px;
-}
-
 .budget-image-box,
 .budget-rule-box {
   width: 100%;
@@ -384,8 +306,6 @@ nav.active {
 
 .budget-image-box img,
 .budget-rule-box img {
-  max-width: 100%;
-  height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 18px rgba(0,0,0,0.1);
   }
@@ -460,22 +380,23 @@ nav.active {
 </div>
 
 
-  <nav class="toc-box" aria-label="Table of Contents">
+  <div class="toc-box" role="navigation" aria-label="Table of Contents">
+    
       <h2>In This Guide 👉 </h2>
   <ul>
     <li><a href="#intro">Introduction to Personal Finance Fundamentals </a></li>
-    <li><a href="#what-is-budgeting">Why Saving on a Low Income Feels So Hard</a></li>
-    <li><a href="#why-budget">The Money Mindset That Makes Saving Possible</a></li>
-    <li><a href="#why-budget-failed">How to Cut Your Food Budget Without Starving</a></li>
-    <li><a href="#step-by-step1">Cutting Your Monthly Bills</a></li>
-    <li><a href="#budget-rules">Transportation and Maintenance</a></li>
-    <li><a href="#worksheet">Lifestyle Adjustments That Protect Your Money</a></li>
-    <li><a href="#zero-based-budget">Smart Systems That Force You to Save </a></li>
-    <li><a href="#tools">Increase Income to Make Saving Easier</a></li>
-    <li><a href="#real-life">Long-Term Financial Stability</a></li>
+    <li><a href="#why-saving">Why Saving on a Low Income Feels So Hard</a></li>
+    <li><a href="#money-mindset">The Money Mindset That Makes Saving Possible</a></li>
+    <li><a href="#food-budget">How to Cut Your Food Budget Without Starving</a></li>
+    <li><a href="#monthly-bill">Cutting Your Monthly Bills</a></li>
+    <li><a href="#transportation">Transportation and Maintenance</a></li>
+    <li><a href="#lifestyle">Lifestyle Adjustments That Protect Your Money</a></li>
+    <li><a href="#smart-system">Smart Systems That Force You to Save </a></li>
+    <li><a href="#saving-easier">Increase Income to Make Saving Easier</a></li>
+    <li><a href="#long-term">Long-Term Financial Stability</a></li>
     <li><a href="#final-thoughts">Final Thoughts: When money is limited, building extra income is essential</a></li>
   </ul>
-  </nav>
+  </div>
   
   
   <h2 id="intro">Introduction to Personal Finance Fundamentals</h2>
@@ -512,7 +433,7 @@ This guide is based on proven budgeting systems used by financial counselors, no
   
   
 <section>
-  <h2 id="what-is-budgeting">Why Saving on a Low Income Feels So Hard</h2>
+  <h2 id="why-saving">Why Saving on a Low Income Feels So Hard</h2>
   
 Low-income households face three constant pressures:
 <ul>
@@ -527,7 +448,7 @@ The key to breaking this cycle is not willpower — it is <strong>structure.</st
 </section>
 
 <section>
-  <h2 id="why-budget">SECTION 1: The Money Mindset That Makes Saving Possible</h2>
+  <h2 id="money-mindset">SECTION 1: The Money Mindset That Makes Saving Possible</h2>
   Real financial progress begins not with apps or bank accounts, but with changing how money flows through your life—starting with the principles below.
 <h3>1. Pay Yourself First (Reverse Budgeting)</h3>
 <p>
@@ -570,7 +491,7 @@ You will discover where money is quietly disappearing. These hidden leaks are wh
 </section>
   
   <section>
-    <h2 id="why-budget-failed"> SECTION 2: How to Cut Your Food Budget Without Starving</h2>
+    <h2 id="food-budget"> SECTION 2: How to Cut Your Food Budget Without Starving</h2>
     Food is the largest flexible expense for most people, which also makes it the greatest opportunity for meaningful savings. To achieve long-term financial efficiency, the following strategies should be taken seriously.
 
  <h3> 4.Compare Unit Prices, Not Package Prices</h3>
@@ -615,7 +536,7 @@ Out-of-season fresh produce is typically more expensive due to higher transporta
   </section>
 
 <section id="step-by-step">
-<h2 id="step-by-step1">SECTION 3: Cutting Your Monthly Bills</h2>
+<h2 id="monthly-bill">SECTION 3: Cutting Your Monthly Bills</h2>
   <p>
   Fixed expenses can quietly consume a large portion of your income if they are not carefully controlled.
   To protect your finances and free up more money, it is essential to identify and eliminate the following common leakages;
@@ -659,7 +580,7 @@ simple conversation can often lead to savings of<strong> 10–30% </strong>on yo
 </section>
 
 <section>
-   <h2 id="budget-rules">SECTION 4: Transportation and Maintenance</h2>
+   <h2 id="transportation">SECTION 4: Transportation and Maintenance</h2>
   <p>
   Transportation and maintenance decisions have a major impact on your long-term expenses.
   Choosing cost-efficient travel habits and keeping your assets well-maintained can significantly 
@@ -684,7 +605,7 @@ Fuel, maintenance, and vehicle wear add up faster than most people realize, and 
 
   
 <section>
-  <h2 id="worksheet"> SECTION 5: Lifestyle Adjustments That Protect Your Money </h2>
+  <h2 id="lifestyle"> SECTION 5: Lifestyle Adjustments That Protect Your Money </h2>
   <p>
     The way you live on a daily basis directly affects how much money you are able to save and grow.
     The following lifestyle adjustments help reduce unnecessary spending, prevent financial leaks,
@@ -733,7 +654,7 @@ that would otherwise be spent on impulse purchases, takeout, and unnecessary exp
 
 <section>
   
-  <h2 id="zero-based-budget"> SECTION 6: Smart Systems That Force You to Save </h2>
+  <h2 id="smart-system"> SECTION 6: Smart Systems That Force You to Save </h2>
  
   <div class="budget-rule-box">
   <h3>How smart saving systems work</h3>
@@ -783,13 +704,13 @@ last-minute borrowing when unexpected expenses hit.</strong>
 Going into debt for emergencies wipes out your ability to save and keeps you stuck in a financial stress cycle.
 <br>
 <br>
-To understand how to escape that cycle, explore our <a href="loans-debt.html">Loans & Debt section</a>.
+To understand how to escape that cycle, explore our <a href="/loans-debt.html">Loans & Debt section</a>.
  </p>
 </section>
  
   <section>
   
-  <h2 id="tools"> SECTION 7: Increase Income to Make Saving Easier</h2>
+  <h2 id="saving-easier"> SECTION 7: Increase Income to Make Saving Easier</h2>
   <p> 
     Saving money becomes much easier when you earn more. While cutting expenses helps, 
     increasing your income gives you greater flexibility, faster progress, and more room 
@@ -824,12 +745,12 @@ To understand how to escape that cycle, explore our <a href="loans-debt.html">Lo
     <br>
     <br>
     Improving your skills increases your earning potential, opening the door to better-paying opportunities.
-    To learn practical ways to grow your income, explore our <a href="make-money.html">Make Money Guides</a>.
+    To learn practical ways to grow your income, explore our <a href="/make-money.html">Make Money Guides</a>.
   </p>
   </section>
 
   <section>
-<h2 id="real-life"> SECTION 8: Long-Term Financial Stability </h2>
+<h2 id="long-term"> SECTION 8: Long-Term Financial Stability </h2>
   <p>
     Long-term financial stability is not about quick wins or temporary sacrifices—it is about building habits
     and systems that keep your money working for you year after year. 
@@ -845,7 +766,7 @@ To understand how to escape that cycle, explore our <a href="loans-debt.html">Lo
 Your expenses change over time, so your budget should adjust with them.
     <br>
     <br>
-Use our <a href="how-to-create-a-monthly-budget.html">How to Create a Monthly Budget That Actually Works For Everyone</a> 
+Use our <a href="/how-to-create-a-monthly-budget.html">How to Create a Monthly Budget That Actually Works For Everyone</a> 
 to stay organized and in control.
   </p>
     
@@ -896,10 +817,10 @@ Start today — and let SmartMoneyTrek guide you every step of the way 🚀
   <div class="footer-grid">
     <div>
       <h4>SmartMoneyTrek</h4>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="disclaimer.html">Disclaimer</a>
+      <a href="/about.html">About Us</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/disclaimer.html">Disclaimer</a>
     </div>
 
     <div>
@@ -912,7 +833,7 @@ Start today — and let SmartMoneyTrek guide you every step of the way 🚀
   </div>
 
 <div class="footer-bottom">
-    © 2026 SmartMoneyTrek<!--.com --> — All rights reserved.
+    © 2026 SmartMoneyTrek — All rights reserved.
     <hr class = "line">
     Powered by: CodeMaster.
 </div>
