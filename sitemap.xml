@@ -6,40 +6,45 @@
   </url>
 
   <url>
-    <loc>https://smartmoneytrek.netlify.app/save-money.html</loc>
+    <loc>https://smartmoneytrek.netlify.app/save-money</loc>
   </url>
 
   <url>
-    <loc>https://smartmoneytrek.netlify.app/budgeting.html</loc>
+    <loc>https://smartmoneytrek.netlify.app/budgeting</loc>
   </url>
 
   <url>
-    <loc>https://smartmoneytrek.netlify.app/make-money.html</loc>
+    <loc>https://smartmoneytrek.netlify.app/make-money</loc>
   </url>
 
   <url>
-    <loc>https://smartmoneytrek.netlify.app/loans-debt.html</loc>
+    <loc>https://smartmoneytrek.netlify.app/loans-debt</loc>
   </url>
 
   <url>
-    <loc>https://smartmoneytrek.netlify.app/about.html</loc>
+    <loc>https://smartmoneytrek.netlify.app/about</loc>
   </url>
 
   <url>
-    <loc>https://smartmoneytrek.netlify.app/contact.html</loc>
+    <loc>https://smartmoneytrek.netlify.app/contact</loc>
   </url>
 
   <url>
-    <loc>https://smartmoneytrek.netlify.app/privacy-policy.html</loc>
+    <loc>https://smartmoneytrek.netlify.app/privacy-policy</loc>
   </url>
 
   <url>
-    <loc>https://smartmoneytrek.netlify.app/disclaimer.html</loc>
+    <loc>https://smartmoneytrek.netlify.app/disclaimer</loc>
   </url>
 
-  <!-- NEW ARTICLE -->
+  <!-- ARTICLE 1 -->
   <url>
     <loc>https://smartmoneytrek.netlify.app/how-to-create-a-monthly-budget</loc>
+  </url>
+
+  <!-- ARTICLE 2 -->
+  <url>
+    <loc>https://smartmoneytrek.netlify.app/25-practical-ways-to-save-money</loc>
   </url>
 
 </urlset>
