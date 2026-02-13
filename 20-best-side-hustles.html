@@ -360,26 +360,33 @@ nav.active {
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
+/* FORCE borders + backgrounds (fixes SmartMoneyTrek reset bug) */
+.income-table,
+.income-table th,
+.income-table td {
+  border: 1px solid #e5e7eb !important;
+  background-color: #ffffff !important;
+}
+
 .income-table thead {
-  background: #0f766e;
-  color: #ffffff;
+  background: #0f766e !important;
+  color: #ffffff !important;
 }
 
 .income-table th,
 .income-table td {
   padding: 16px 18px;
   text-align: left;
-  border-bottom: 1px solid #e5e7eb;
 }
 
 .income-table th {
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 .income-table tbody tr:hover {
-  background: #f9fafb;
+  background: #f9fafb !important;
 }
 
 /* ===== Mobile Card Layout ===== */
@@ -397,7 +404,7 @@ nav.active {
   }
 
   .income-table tr {
-    background: #f8fafc;
+    background: #f8fafc !important;
     margin-bottom: 16px;
     border-radius: 12px;
     padding: 14px;
@@ -407,7 +414,7 @@ nav.active {
   .income-table td {
     position: relative;
     padding-left: 45%;
-    border: none;
+    border: none !important;
     margin-bottom: 10px;
   }
 
@@ -422,8 +429,7 @@ nav.active {
   }
 }
 
-
-  
+ 
   
 </style>
 </head>
