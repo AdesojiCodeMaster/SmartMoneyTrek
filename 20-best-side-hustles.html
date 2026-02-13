@@ -439,6 +439,31 @@ nav.active {
   }
 }
 
+  /* FORCE TABLE LAYOUT ON DESKTOP */
+@media (min-width: 769px) {
+  .income-table {
+    display: table !important;
+    width: 100%;
+  }
+
+  .income-table thead {
+    display: table-header-group !important;
+  }
+
+  .income-table tbody {
+    display: table-row-group !important;
+  }
+
+  .income-table tr {
+    display: table-row !important;
+  }
+
+  .income-table th,
+  .income-table td {
+    display: table-cell !important;
+  }
+}
+
   
 
 </style>
