@@ -347,7 +347,7 @@ nav.active {
   }
 
   /* =========================
-   SMARTMONEYTREK TABLE
+   SMARTMONEYTREK RESPONSIVE TABLE
 ========================= */
 
 .income-table {
@@ -355,9 +355,9 @@ nav.active {
   border-collapse: collapse;
   margin: 30px 0;
   background: #ffffff;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
 .income-table thead {
@@ -367,22 +367,22 @@ nav.active {
 
 .income-table th,
 .income-table td {
-  padding: 16px;
+  padding: 16px 18px;
   text-align: left;
   border-bottom: 1px solid #e5e7eb;
 }
 
 .income-table th {
-  font-size: 15px;
-  letter-spacing: 0.05em;
+  font-size: 14px;
   text-transform: uppercase;
+  letter-spacing: .05em;
 }
 
 .income-table tbody tr:hover {
   background: #f9fafb;
 }
 
-/* ===== Mobile Responsive Table ===== */
+/* ===== Mobile Card Layout ===== */
 @media (max-width: 768px) {
   .income-table thead {
     display: none;
@@ -398,27 +398,30 @@ nav.active {
 
   .income-table tr {
     background: #f8fafc;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    padding: 14px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.05);
   }
 
   .income-table td {
-    padding-left: 45%;
     position: relative;
+    padding-left: 45%;
     border: none;
+    margin-bottom: 10px;
   }
 
   .income-table td::before {
     content: attr(data-label);
     position: absolute;
-    left: 15px;
+    left: 14px;
+    top: 14px;
     font-weight: 700;
     color: #0f766e;
+    white-space: nowrap;
   }
-  }
-    
+}
+
 
   
   
