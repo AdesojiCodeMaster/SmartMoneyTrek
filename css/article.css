@@ -1,4 +1,105 @@
 /* =========================
+   ARTICLE PAGE HEADER FIX
+   (local override – does NOT affect categories)
+========================= */
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  height: 80px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f172a;
+  position: relative;
+  padding: 10px 0;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0f766e;
+  transition: 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile header (article pages only) */
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+    height: 70px;
+  }
+
+  .logo img {
+    height: 48px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    display: none;
+    border-top: 1px solid #e5e7eb;
+    padding: 15px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+/* =========================
    ARTICLE LAYOUT
 ========================= */
 
@@ -104,3 +205,46 @@
   border-radius: 12px;
   box-shadow: 0 8px 18px rgba(0,0,0,0.1);
 }
+
+
+
+/* =========================
+   ARTICLE PAGE FOOTER FIX
+========================= */
+
+footer {
+  background: #020617;
+  color: #94a3b8;
+  padding: 50px 40px;
+  margin-top: 80px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+footer a {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+   }
+   
