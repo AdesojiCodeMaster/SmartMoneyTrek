@@ -1,0 +1,149 @@
+/* =========================
+   SMARTMONEYTREK GLOBAL CORE
+========================= */
+:root {
+  --brand: #0f766e;
+  --accent: #16a34a;
+  --dark: #020617;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e5e7eb;
+  --bg: #f8fafc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* =========================
+   HEADER (ALL PAGES)
+========================= */
+header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  height: 80px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+  position: relative;
+  padding: 10px 0;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--brand);
+  transition: .3s;
+}
+
+nav a:hover::after { width: 100%; }
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+}
+
+/* =========================
+   CONTENT CONTAINERS
+========================= */
+.section {
+  padding: 70px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.section p {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: var(--dark);
+  color: #94a3b8;
+  padding: 80px 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 30px;
+}
+
+footer h4 { color: #e2e8f0; }
+
+footer a {
+  display:block;
+  color:#94a3b8;
+  font-size:14px;
+}
+
+footer a:hover { color:#fff; }
+
+.footer-bottom {
+  text-align:center;
+  margin-top:40px;
+  font-size:14px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media(max-width:768px){
+  header{ padding:0 20px; height:70px; }
+  .menu-toggle{ display:block; }
+
+  nav{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    display:none;
+    border-top:1px solid var(--border);
+    padding:15px 0;
+  }
+  nav.active{ display:flex; }
+}
