@@ -247,4 +247,95 @@ footer a:hover {
   font-size: 14px;
   color: #64748b;
    }
-   
+
+
+
+/* =========================
+   ARTICLE TABLE STYLES
+========================= */
+
+.income-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.income-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.income-table th,
+.income-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.income-table thead {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.income-table th {
+  font-weight: 600;
+}
+
+.income-table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.income-table tbody tr:hover {
+  background: #eef2ff;
+}
+
+.table-note {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #475569;
+  font-style: italic;
+}
+
+/* Mobile responsive table */
+@media (max-width: 768px) {
+  .income-table {
+    min-width: 100%;
+    border: none;
+  }
+
+  .income-table thead {
+    display: none;
+  }
+
+  .income-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 10px;
+    background: #ffffff;
+  }
+
+  .income-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .income-table td:last-child {
+    border-bottom: none;
+  }
+
+  .income-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #0f172a;
+  }
+}
+
