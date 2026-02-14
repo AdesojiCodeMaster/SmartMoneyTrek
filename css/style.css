@@ -1,33 +1,20 @@
-/* =========================
-   SMARTMONEYTREK GLOBAL CORE
-========================= */
-:root {
-  --brand: #0f766e;
-  --accent: #16a34a;
-  --dark: #020617;
-  --text: #0f172a;
-  --muted: #475569;
-  --border: #e5e7eb;
-  --bg: #f8fafc;
-}
-
-* { box-sizing: border-box; }
+/* ===== SMARTMONEYTREK GLOBAL SYSTEM ===== */
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  background: #f9fafb;
+  color: #0f172a;
 }
 
-a { text-decoration: none; color: inherit; }
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
 
-/* =========================
-   HEADER (ALL PAGES)
-========================= */
+/* ========== HEADER ========= */
 header {
-  background: #fff;
-  border-bottom: 1px solid var(--border);
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
   height: 80px;
   padding: 0 40px;
   display: flex;
@@ -38,19 +25,34 @@ header {
   z-index: 1000;
 }
 
-.logo img {
-  height: 60px;
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
 }
 
+.logo img {
+  height: 110px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ========== NAV ========= */
 nav {
+  margin-left: auto;
   display: flex;
+  align-items: center;
   gap: 28px;
 }
 
 nav a {
   font-weight: 700;
   font-size: 15px;
-  color: var(--text);
+  color: #0f172a;
+  text-decoration: none;
   position: relative;
   padding: 10px 0;
 }
@@ -62,11 +64,13 @@ nav a::after {
   left: 0;
   width: 0%;
   height: 2px;
-  background: var(--brand);
-  transition: .3s;
+  background: #0f766e;
+  transition: 0.3s ease;
 }
 
-nav a:hover::after { width: 100%; }
+nav a:hover::after {
+  width: 100%;
+}
 
 .menu-toggle {
   display: none;
@@ -75,9 +79,49 @@ nav a:hover::after { width: 100%; }
   border: none;
 }
 
-/* =========================
-   CONTENT CONTAINERS
-========================= */
+/* ========== MOBILE NAV ========= */
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+    height: 70px;
+  }
+
+  .logo {
+    position: static;
+    transform: none;
+  }
+
+  .logo img {
+    height: 48px;
+    max-width: 160px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    display: none;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
+
+/* ========== LAYOUT ========= */
 .section {
   padding: 70px 40px;
   max-width: 1200px;
@@ -86,64 +130,57 @@ nav a:hover::after { width: 100%; }
 
 .section h2 {
   font-size: 32px;
-  margin-bottom: 15px;
   text-align: center;
 }
 
 .section p {
   text-align: center;
-  color: var(--muted);
-  margin-bottom: 40px;
+  color: #475569;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ========== GRID ========= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ========== CARDS ========= */
+.card {
+  background: #ffffff;
+  padding: 34px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+/* ========== FOOTER ========= */
 footer {
-  background: var(--dark);
+  background: #020617;
   color: #94a3b8;
   padding: 80px 40px;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
 }
 
-footer h4 { color: #e2e8f0; }
+footer h4 {
+  color: #e2e8f0;
+}
 
 footer a {
-  display:block;
-  color:#94a3b8;
-  font-size:14px;
+  color: #94a3b8;
+  text-decoration: none;
 }
 
-footer a:hover { color:#fff; }
+footer a:hover {
+  color: white;
+}
 
 .footer-bottom {
-  text-align:center;
-  margin-top:40px;
-  font-size:14px;
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media(max-width:768px){
-  header{ padding:0 20px; height:70px; }
-  .menu-toggle{ display:block; }
-
-  nav{
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:#fff;
-    flex-direction:column;
-    display:none;
-    border-top:1px solid var(--border);
-    padding:15px 0;
-  }
-  nav.active{ display:flex; }
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
 }
