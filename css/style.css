@@ -1,17 +1,43 @@
-/* ===== SMARTMONEYTREK GLOBAL SYSTEM ===== */
+/* =========================
+   BASE
+========================= */
+
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f9fafb;
-  color: #0f172a;
+  font-family: Arial, 'Inter', sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
 }
 
-h1, h2, h3 {
-  letter-spacing: -0.02em;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* ========== HEADER ========= */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   STICKY HEADER FIX
+========================= */
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+@media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 75px;
+  }
+}
+
+/* =========================
+   HEADER
+========================= */
+
 header {
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
@@ -38,9 +64,10 @@ header {
   height: 110px;
   width: auto;
   object-fit: contain;
+  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
 }
 
-/* ========== NAV ========= */
+/* NAV */
 nav {
   margin-left: auto;
   display: flex;
@@ -52,7 +79,6 @@ nav a {
   font-weight: 700;
   font-size: 15px;
   color: #0f172a;
-  text-decoration: none;
   position: relative;
   padding: 10px 0;
 }
@@ -77,9 +103,14 @@ nav a:hover::after {
   font-size: 28px;
   background: none;
   border: none;
+  cursor: pointer;
+  z-index: 200;
 }
 
-/* ========== MOBILE NAV ========= */
+/* =========================
+   MOBILE HEADER
+========================= */
+
 @media (max-width: 768px) {
   header {
     padding: 0 20px;
@@ -94,6 +125,7 @@ nav a:hover::after {
   .logo img {
     height: 48px;
     max-width: 160px;
+    filter: none;
   }
 
   .menu-toggle {
@@ -109,78 +141,130 @@ nav a:hover::after {
     flex-direction: column;
     display: none;
     border-top: 1px solid #e5e7eb;
-  }
-
-  nav.active {
-    display: flex;
+    padding: 15px 0;
   }
 
   nav a {
     padding: 12px 0;
     font-size: 16px;
   }
+
+  nav.active {
+    display: flex;
+  }
 }
 
-/* ========== LAYOUT ========= */
+/* =========================
+   CATEGORY HERO
+========================= */
+
+.hero {
+  background: linear-gradient(135deg, #ecfeff, #ffffff);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 850px;
+  margin: auto;
+  color: #334155;
+}
+
+/* =========================
+   SECTIONS & CARDS
+========================= */
+
 .section {
-  padding: 70px 40px;
+  padding: 60px 40px;
   max-width: 1200px;
   margin: auto;
 }
 
 .section h2 {
+  text-align: center;
   font-size: 32px;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
-.section p {
-  text-align: center;
-  color: #475569;
-}
-
-/* ========== GRID ========= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
-/* ========== CARDS ========= */
 .card {
   background: #ffffff;
-  padding: 34px;
-  border-radius: 18px;
-  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* ========== FOOTER ========= */
+.card h3 {
+  color: #0f766e;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.read-guide {
+  font-weight: 600;
+  color: #0f766e;
+  font-size: 14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
   background: #020617;
   color: #94a3b8;
-  padding: 80px 40px;
+  padding: 50px 40px;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 footer h4 {
   color: #e2e8f0;
+  margin-bottom: 10px;
 }
 
 footer a {
+  display: block;
   color: #94a3b8;
-  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 footer a:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
   font-size: 14px;
+  color: #64748b;
+}
+
+.line {
+  color: #ffffff;
 }
