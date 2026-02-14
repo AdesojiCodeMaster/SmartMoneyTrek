@@ -309,4 +309,25 @@ footer a:hover {
   color: #0f766e;
   font-size: 14px;
    }
+
+
+/* Strong CTA for Read Guide links */
+.read-guide {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #0f766e; /* SmartMoneyTrek brand */
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.read-guide:hover {
+  background: #0a5cff; /* brand blue */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+   }
    
