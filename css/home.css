@@ -183,7 +183,7 @@ nav a:hover::after {
       rgba(2,6,23,0.75),
       rgba(2,6,23,0.75)
     ),
-    url("..images/money-hero.jpg");
+    url("../images/money-hero.jpg");
   background-size: cover;
   background-position: center;
   padding: 140px 40px;
