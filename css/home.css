@@ -27,10 +27,7 @@ h1, h2, h3 {
   line-height: 1.7;
 }
 
-/* =========================
-   HEADER
-========================= */
-
+/* ========================= HEADER ========================= */
 header {
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
@@ -44,12 +41,11 @@ header {
   z-index: 1000;
 }
 
-/* Prevent anchor jump */
+/* Prevent anchor offset */
 section[id] {
   scroll-margin-top: 90px;
 }
 
-/* LOGO */
 .logo {
   position: absolute;
   left: 40px;
@@ -62,7 +58,6 @@ section[id] {
   filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
 }
 
-/* NAV */
 nav {
   margin-left: auto;
   display: flex;
@@ -88,28 +83,26 @@ nav a::after {
   transition: .3s;
 }
 
-nav a:hover::after {
-  width: 100%;
-}
+nav a:hover::after { width: 100%; }
 
 .menu-toggle {
   display: none;
+  font-size: 28px;
   background: none;
   border: none;
-  font-size: 28px;
 }
 
-/* ---------- HERO ---------- */
+/* ========================= HERO ========================= */
 .hero {
+  position: relative;
   background:
-    linear-gradient(rgba(2,6,23,.75), rgba(2,6,23,.75)),
+    linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.75)),
     url("images/money-hero.jpg");
   background-size: cover;
   background-position: center;
   padding: 140px 40px;
   text-align: center;
   color: white;
-  position: relative;
 }
 
 .hero * {
@@ -129,11 +122,11 @@ nav a:hover::after {
   flex-wrap: wrap;
 }
 
-.btn-primary,
-.card-cta {
+/* Buttons */
+.btn-primary {
   background: #16a34a;
   color: white;
-  padding: 14px 28px;
+  padding: 16px 34px;
   border-radius: 999px;
   font-weight: 700;
   text-decoration: none;
@@ -142,11 +135,17 @@ nav a:hover::after {
 .btn-secondary {
   border: 2px solid white;
   color: white;
-  padding: 14px 28px;
+  padding: 16px 34px;
   border-radius: 999px;
 }
 
-/* ---------- SECTIONS ---------- */
+.hero-trust {
+  margin-top: 28px;
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+/* ========================= SECTIONS ========================= */
 .section {
   padding: 70px 40px;
   max-width: 1200px;
@@ -165,10 +164,9 @@ nav a:hover::after {
   padding: 34px;
   border-radius: 18px;
   box-shadow: 0 15px 40px rgba(0,0,0,.08);
-  transition: .3s;
 }
 
-/* ---------- FEATURED GUIDES ---------- */
+/* ========================= FEATURED ========================= */
 .featured-guides {
   background: white;
   padding: 80px 40px;
@@ -186,14 +184,13 @@ nav a:hover::after {
   background: #f8fafc;
   padding: 32px;
   border-radius: 18px;
-  text-decoration: none;
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
 }
 
-/* ---------- EMAIL ---------- */
+/* ========================= EMAIL ========================= */
 .email-capture {
   background: linear-gradient(135deg,#0f766e,#115e59);
   padding: 80px 40px;
+  color: white;
 }
 
 .email-box {
@@ -203,7 +200,7 @@ nav a:hover::after {
   text-align: center;
 }
 
-/* ---------- REVIEWER ---------- */
+/* ========================= REVIEWER ========================= */
 .reviewer-card {
   max-width: 900px;
   margin: auto;
@@ -212,20 +209,31 @@ nav a:hover::after {
   gap: 30px;
 }
 
-/* ---------- FOOTER ---------- */
+/* ========================= FOOTER ========================= */
 footer {
   background: #020617;
   color: #94a3b8;
   padding: 80px 40px;
 }
 
-/* ---------- MOBILE ---------- */
+/* ========================= BADGE ========================= */
+.badge {
+  background: #16a34a;
+  color: white;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* ========================= MOBILE ========================= */
 @media (max-width:768px) {
+  header { height: 70px; padding: 0 20px; }
   .logo { position: static; transform:none; }
   .logo img { height: 48px; filter:none; }
   nav { display:none; }
   nav.active { display:flex; flex-direction:column; }
   .menu-toggle { display:block; }
   .hero { padding: 110px 25px; }
-                                     }
-   
+  }
+  
