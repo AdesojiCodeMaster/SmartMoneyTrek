@@ -1,66 +1,188 @@
-/* ===== HERO ===== */
-.hero {
-  background:
-    linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.75)),
-    url("/images/money-hero.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 140px 40px;
-  text-align: center;
-  color: white;
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #0f172a;
 }
 
-.hero h1 { font-size: 48px; }
-.hero h2 { color: #e2e8f0; }
-.hero p { max-width: 820px; margin: auto; }
+h1, h2, h3 { letter-spacing: -0.02em; }
 
-.hero-cta {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  margin-top: 30px;
-}
+.section,
+.featured-guides,
+.email-capture { position: relative; z-index: 2; }
 
-.btn-primary {
-  background: #16a34a;
-  color: white;
-  padding: 16px 34px;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
-}
+.section h2,
+.featured-guides h2 { line-height: 1.2; }
 
-.btn-secondary {
-  border: 2px solid white;
-  color: white;
-  padding: 16px 34px;
-  border-radius: 999px;
-}
+.section p,
+.featured-guides p { line-height: 1.7; }
 
-/* ===== FEATURED GUIDES ===== */
-.featured-guides {
-  padding: 80px 40px;
+/* ================= HEADER ================= */
+
+header {
   background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  height: 80px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+/* LOGO */
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+.logo img {
+  height: 110px;
+  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
+}
+
+/* NAV */
+nav {
+  margin-left: auto;
+  display: flex;
   gap: 28px;
 }
 
-/* ===== EMAIL ===== */
-.email-capture {
-  background: linear-gradient(135deg, #0f766e, #115e59);
-  padding: 80px 40px;
-  color: white;
+nav a {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f172a;
+  text-decoration: none;
+  position: relative;
 }
 
-/* ===== TRUST BAR ===== */
-.trust-bar {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  background: #f1f5f9;
-  padding: 20px;
+/* Hover underline */
+nav a::after {
+  content:"";
+  position:absolute;
+  bottom:0; left:0;
+  width:0; height:2px;
+  background:#0f766e;
+  transition:.3s;
+}
+nav a:hover::after { width:100%; }
+
+/* Toggle */
+.menu-toggle { display:none; background:none; font-size:28px; }
+
+/* ================= HERO ================= */
+
+.hero {
+  position: relative;
+  background:
+    linear-gradient(rgba(2,6,23,.75), rgba(2,6,23,.75)),
+    url("images/money-hero.jpg") center/cover;
+  padding: 140px 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero * { position: relative; z-index: 5; }
+
+.hero h1 { font-size: 48px; }
+.hero h2 { font-size: 22px; color: #e2e8f0; }
+.hero p { font-size: 18px; max-width: 820px; margin: auto; }
+
+/* CTA */
+.hero-cta { margin-top: 35px; display:flex; gap:18px; justify-content:center; }
+
+.btn-primary {
+  background:#16a34a;
+  color:#fff;
+  padding:16px 34px;
+  border-radius:999px;
+  font-weight:700;
+  box-shadow:0 12px 35px rgba(0,0,0,.45);
+}
+
+.btn-secondary {
+  border:2px solid #fff;
+  color:#fff;
+  padding:16px 34px;
+  border-radius:999px;
+}
+
+/* ================= CARDS ================= */
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.card {
+  background:#fff;
+  padding:34px;
+  border-radius:18px;
+  border:1px solid #e5e7eb;
+  box-shadow:0 15px 40px rgba(2,6,23,.08);
+  transition:.25s;
+}
+
+.card:hover { transform:translateY(-8px); }
+
+/* BADGE */
+.badge {
+  background:#16a34a;
+  color:white;
+  border-radius:50%;
+  padding:10px 14px;
+  font-size:18px;
+  margin-right:8px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background:#020617;
+  color:#94a3b8;
+  padding:80px 40px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px) {
+
+  header {
+    padding:0 20px;
+    height:70px;
+  }
+
+  .logo {
+    position:static;
+    transform:none;
+  }
+
+  .logo img {
+    height:48px;
+    filter:none;
+  }
+
+  .menu-toggle { display:block; }
+
+  nav {
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    flex-direction:column;
+    display:none;
+    background:#fff;
+  }
+
+  nav.active { display:flex; }
+
+  .hero { padding:110px 25px; }
+  .hero h1 { font-size:36px; }
 }
