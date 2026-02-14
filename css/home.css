@@ -36,18 +36,28 @@ header {
   z-index: 1000;
 }
 
+/* LOGO */
 .logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
 }
 
 .logo img {
-  height: 60px;
+  height: 110px;
   width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
 }
 
+/* NAV */
 nav {
+  margin-left: auto;
   display: flex;
+  align-items: center;
   gap: 28px;
 }
 
@@ -72,11 +82,14 @@ nav a::after {
 
 nav a:hover::after { width: 100%; }
 
+/* MOBILE TOGGLE */
 .menu-toggle {
   display: none;
   font-size: 28px;
   background: none;
   border: none;
+  cursor: pointer;
+  z-index: 200;
 }
 
 /* ======================
@@ -84,17 +97,20 @@ nav a:hover::after { width: 100%; }
 ====================== */
 .hero {
   background:
-    linear-gradient(rgba(2,6,23,.75), rgba(2,6,23,.75)),
+    linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.75)),
     url("../images/money-hero.jpg");
   background-size: cover;
   background-position: center;
   padding: 140px 40px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   position: relative;
 }
 
-.hero * { position: relative; z-index: 5; }
+.hero * {
+  position: relative;
+  z-index: 5;
+}
 
 .hero h1 { font-size: 48px; margin-bottom: 18px; }
 .hero h2 { font-size: 22px; color: #e2e8f0; }
@@ -110,16 +126,16 @@ nav a:hover::after { width: 100%; }
 
 .btn-primary {
   background: #16a34a;
-  color: #fff;
+  color: #ffffff;
   padding: 16px 34px;
   border-radius: 999px;
   font-weight: 700;
-  box-shadow: 0 12px 35px rgba(0,0,0,.45);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.45);
 }
 
 .btn-secondary {
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #ffffff;
+  color: #ffffff;
   padding: 16px 34px;
   border-radius: 999px;
 }
@@ -146,9 +162,9 @@ nav a:hover::after { width: 100%; }
 
 .featured-guides p {
   text-align: center;
+  color: #475569;
   max-width: 720px;
   margin: 0 auto 50px;
-  color: #475569;
 }
 
 .featured-grid {
@@ -161,11 +177,11 @@ nav a:hover::after { width: 100%; }
 
 .featured-card {
   background: #f8fafc;
-  padding: 32px;
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(2,6,23,.06);
-  transition: .25s ease;
+  padding: 32px;
   border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+  transition: 0.25s ease;
 }
 
 .featured-card:hover {
@@ -181,109 +197,132 @@ nav a:hover::after { width: 100%; }
   gap: 25px;
 }
 
-.card-link { display:block; color:inherit; }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
 .card {
-  background: linear-gradient(180deg,#fff,#f8fafc);
+  background: linear-gradient(180deg,#ffffff,#f8fafc);
   padding: 36px 30px;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   position: relative;
   overflow: hidden;
-  transition: .3s ease;
+  transition: all 0.3s ease;
 }
 
-.card:hover { transform: translateY(-10px); }
+.card:hover {
+  transform: translateY(-10px);
+}
 
 .card::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(120deg,#0f766e,#16a34a);
-  opacity:0;
-  transition:.4s ease;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg,#0f766e,#16a34a);
+  opacity: 0;
+  transition: 0.4s ease;
 }
 
-.card:hover::before { opacity:.08; }
+.card:hover::before { opacity: 0.08; }
 
 .card-cta {
-  display:inline-block;
-  margin-top:18px;
-  background:#16a34a;
-  color:#fff;
-  padding:12px 22px;
-  border-radius:999px;
-  font-weight:700;
+  display: inline-block;
+  margin-top: 18px;
+  background: #16a34a;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
 }
 
+/* BADGE */
 .badge {
-  background:#16a34a;
-  color:white;
-  border-radius:50%;
-  padding:10px 14px;
-  margin-right:8px;
-  display:inline-block;
+  background: #16a34a;
+  color: white;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 18px;
+  margin-right: 8px;
+  display: inline-block;
 }
 
 /* ======================
    REVIEWER
 ====================== */
 .reviewer-card {
-  max-width:900px;
-  margin:auto;
-  padding:35px;
-  display:flex;
-  gap:30px;
-  align-items:center;
-  background:#fff;
-  border-radius:16px;
-  box-shadow:0 6px 28px rgba(0,0,0,.05);
+  max-width: 900px;
+  margin: auto;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.05);
 }
 
 .reviewer-img {
-  width:160px;
-  height:160px;
-  border-radius:50%;
-  object-fit:cover;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* ======================
    FOOTER
 ====================== */
 footer {
-  background:#020617;
-  color:#94a3b8;
-  padding:80px 40px;
+  background: #020617;
+  color: #94a3b8;
+  padding: 80px 40px;
 }
 
 .footer-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 30px;
 }
 
-footer a { color:#94a3b8; }
+footer a { color: #94a3b8; }
 
 /* ======================
    MOBILE
 ====================== */
-@media(max-width:768px){
-  header { padding:0 20px; height:70px; }
-  .menu-toggle{ display:block; }
+@media (max-width: 768px) {
 
-  nav {
-    display:none;
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:white;
-    flex-direction:column;
-    padding:20px 0;
+  header {
+    padding: 0 20px;
+    height: 70px;
   }
 
-  nav.active{ display:flex; }
+  .logo {
+    position: static;
+    transform: none;
+  }
 
-  .hero h1{ font-size:36px; }
-     }
-   
+  .logo img {
+    height: 48px;
+    max-width: 160px;
+    filter: none;
+  }
+
+  .menu-toggle { display: block; }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  nav.active { display: flex; }
+
+  .hero h1 { font-size: 36px; }
+}
