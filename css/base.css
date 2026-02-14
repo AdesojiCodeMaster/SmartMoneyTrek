@@ -18,3 +18,84 @@ img {
   max-width: 100%;
   display: block;
 }
+
+
+
+/* =====================================================
+   SMARTMONEYTREK – GLOBAL RESPONSIVE SAFETY LAYER
+   This file only improves stability. It does NOT change
+   layouts or visuals that already work.
+===================================================== */
+
+
+/* =========================
+   GLOBAL IMAGE RULES
+========================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent any image from breaking its container */
+article img,
+section img,
+.card img,
+.hero img,
+.footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* =========================
+   ARTICLE FEATURE IMAGES
+========================= */
+
+.budget-image-box img,
+.budget-rule-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+/* =========================
+   HEADER LOGO SAFETY
+========================= */
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mobile logo scaling */
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 160px;
+    height: auto;
+  }
+}
+
+
+/* =========================
+   FOOTER IMAGE SAFETY
+========================= */
+
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* =========================
+   PREVENT HORIZONTAL SCROLL
+========================= */
+
+body {
+  overflow-x: hidden;
+    }
