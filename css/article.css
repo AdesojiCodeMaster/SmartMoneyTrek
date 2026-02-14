@@ -1,0 +1,106 @@
+/* =========================
+   ARTICLE LAYOUT
+========================= */
+
+.content-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.article-container {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.article-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.article-intro {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* =========================
+   ARTICLE TEXT
+========================= */
+
+.article-container p {
+  line-height: 1.7;
+  color: #475569;
+}
+
+.article-container h2 {
+  color: #0f766e;
+  margin-top: 24px;
+}
+
+.article-container a {
+  color: #0f766e;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+.article-container a:hover {
+  color: #0a5cff;
+}
+
+/* =========================
+   TOC
+========================= */
+
+.toc-box {
+  background: #f7f9fc;
+  border-left: 4px solid #0a5cff;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 6px;
+}
+
+.toc-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-box li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+}
+
+.toc-box li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0a5cff;
+  font-size: 20px;
+}
+
+/* =========================
+   ARTICLE BOXES
+========================= */
+
+.budget-image-box,
+.budget-rule-box {
+  margin: 40px 0;
+  padding: 20px;
+  background: #f8fafc;
+  border-left: 5px solid #0f766e;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.budget-image-box img,
+.budget-rule-box img {
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
