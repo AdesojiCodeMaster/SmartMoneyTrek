@@ -1,0 +1,75 @@
+/* =========================
+   CATEGORY HERO
+========================= */
+
+.hero {
+  background: linear-gradient(135deg, #ecfeff, #ffffff);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 850px;
+  margin: auto;
+  color: #334155;
+}
+
+/* =========================
+   CATEGORY SECTIONS
+========================= */
+
+.section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   CATEGORY GRID & CARDS
+========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  color: #0f766e;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.read-guide {
+  font-weight: 600;
+  color: #0f766e;
+  font-size: 14px;
+  }
