@@ -270,3 +270,43 @@ footer a:hover {
 .line {
   color: #ffffff;
 }
+
+
+/* =========================
+   SMARTMONEYTREK CARDS (FINAL)
+========================= */
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: none; /* no float */
+}
+
+.card:hover {
+  transform: none;
+}
+
+.card h3 {
+  color: #0f766e;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.card a,
+.read-guide {
+  font-weight: 600;
+  color: #0f766e;
+  font-size: 14px;
+   }
+   
