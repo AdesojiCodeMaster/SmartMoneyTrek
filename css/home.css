@@ -1,4 +1,4 @@
-.hero {
+.home-hero { 
   background:
     linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.75)),
     url("../images/money-hero.jpg");
@@ -10,11 +10,11 @@
 }
 
 /* all hero animations, hero text styles, CTA buttons */
-.hero h1 { }
-.hero h2 { }
-.hero p { }
-.hero-cta { }
-.hero-trust { }
+.home-hero h1 { }
+.home-hero h2 { }
+.home-hero p { }
+.home-hero-cta { }
+.home-hero-trust { }
 
 /* Homepage sections */
 .featured-guides { }
