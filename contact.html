@@ -154,25 +154,50 @@ footer a{display:block;margin-bottom:8px;font-size:14px}
 .footer-bottom{text-align:center;font-size:14px;color:#64748b}
 
     
-  /* ===== FORCE HEADER ABOVE CONTENT (MOBILE FIX) ===== */
+  /* ================= MOBILE HEADER VISIBILITY FIX ================= */
+
+/* Force header to always have height and stay visible */
 header{
   position: sticky;
   top: 0;
-  z-index: 9999; /* higher than hero */
+  min-height: 70px;
+  z-index: 9999;
+  background: #ffffff;
 }
 
-/* Hero must sit BELOW the header */
+/* Prevent hero from overlapping header */
 .hero{
+  margin-top: 0;
   position: relative;
   z-index: 1;
 }
 
-/* Mobile nav must sit on top of hero */
+/* Ensure nav & logo stay inside header on mobile */
 @media (max-width: 768px){
-  nav{
+  header{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo{
+    position: relative !important;
+    top: auto;
+    left: auto;
+    transform: none;
     z-index: 10000;
   }
+
+  nav{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 10001;
   }
+}
+
   
 </style>
 </head>
