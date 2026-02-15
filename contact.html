@@ -9,60 +9,6 @@
 
 <style>
 
-/* ================= SMARTMONEYTREK CONTACT PAGE ================= */
-
-/* ----- HEADER ----- */
-header{
-  background:#ffffff;
-  border-bottom:1px solid #e5e7eb;
-  height:80px;
-  padding:0 40px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  position:sticky;
-  top:0;
-  z-index:1000;
-}
-
-.logo img{height:60px}
-
-.nav-links{
-  display:flex;
-  gap:28px;
-  align-items:center;
-}
-
-.menu-toggle{
-  display:none;
-  font-size:28px;
-  background:none;
-  border:none;
-  cursor:pointer;
-}
-
-/* ----- MOBILE HEADER ----- */
-@media(max-width:768px){
-  header{padding:0 20px;height:70px}
-  .logo img{height:48px}
-  .menu-toggle{display:block}
-
-  .nav-links{
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:#ffffff;
-    flex-direction:column;
-    display:none;
-    border-top:1px solid #e5e7eb;
-    padding:15px 0;
-  }
-
-  .nav-links.active{display:flex}
-  .nav-links a{padding:12px 0;font-size:16px}
-}
-
 /* ================= CONTENT ================= */
 .container{max-width:980px;margin:30px auto;padding:20px}
 .grid{display:grid;grid-template-columns:1fr 360px;gap:24px}
@@ -92,10 +38,7 @@ button{
 }
 .note{font-size:13px;color:var(--muted);margin-top:10px}
 
-/* ----- MOBILE FORM LAYOUT ----- */
-@media(max-width:900px){
-  .grid{grid-template-columns:1fr}
-}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
 
 /* ================= FOOTER ================= */
 footer{background:#020617;color:#94a3b8;padding:50px 40px}
@@ -108,8 +51,6 @@ footer{background:#020617;color:#94a3b8;padding:50px 40px}
 footer h4{color:#e2e8f0}
 footer a{display:block;margin-bottom:8px;font-size:14px}
 .footer-bottom{text-align:center;font-size:14px;color:#64748b}
-    
-  
 </style>
 </head>
 
