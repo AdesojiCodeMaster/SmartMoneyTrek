@@ -1,233 +1,264 @@
-/* ================================
-   GLOBAL RESET
-================================ */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background: #f6f7fb;
-  color: #222;
-  line-height: 1.6;
+  background: #f8fafc;
+  color: #1f2937;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
+a { text-decoration: none; color: inherit; }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+/* Header */
+/* =========================
+   SMARTMONEYTREK HEADER
+========================= */
 
-/* ================================
-   HEADER
-================================ */
 header {
-  background: white;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  height: 80px;               /* LOCKED HEADER HEIGHT */
+  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 5%;
+  position: relative;
+  z-index: 100;
 }
 
-.logo img {
-  height: 60px;
+  /* =========================
+   STICKY HEADER
+========================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
 }
 
-.nav-links {
+  /* Prevent anchor from hiding under sticky header */
+section[id] {
+  scroll-margin-top: 90px;
+  }
+  
+
+/* LOGO CONTAINER */
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  gap: 25px;
-}
-
-.nav-links a {
-  font-weight: 600;
-  color: #111;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-/* ================================
-   HERO (Home only)
-================================ */
-.hero {
-  background: url("../images/money-hero.jpg") center/cover no-repeat;
-  padding: 120px 5%;
-  text-align: center;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.hero .btn {
-  background: #ffb703;
-  padding: 15px 30px;
-  border-radius: 6px;
-  font-weight: bold;
-  color: black;
-}
-
-/* ================================
-   SECTIONS
-================================ */
-.section {
-  padding: 60px 5%;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
-}
-
-/* ================================
-   CARDS
-================================ */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.card h3 {
-  margin-bottom: 10px;
-}
-
-/* ================================
-   BUTTONS
-================================ */
-.btn {
-  display: inline-block;
-  padding: 12px 20px;
-  background: #023047;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-/* ================================
-   EMAIL CAPTURE
-================================ */
-.email-box {
-  background: #023047;
-  color: white;
-  padding: 50px 5%;
-  text-align: center;
-}
-
-.email-box input {
-  padding: 12px;
-  width: 250px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.email-box button {
-  padding: 12px 20px;
-  background: #ffb703;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-/* ================================
-   REVIEWER
-================================ */
-.reviewer {
-  background: white;
-  padding: 40px 5%;
-  display: flex;
-  gap: 20px;
   align-items: center;
 }
 
-.reviewer img {
-  width: 80px;
-  border-radius: 50%;
+/* LOGO IMAGE */
+.logo img {
+  height: 110px;              /* BIG LOGO */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
 }
 
-/* ================================
-   ARTICLES
-================================ */
-.article {
-  max-width: 900px;
-  margin: auto;
-  background: white;
-  padding: 40px;
-  border-radius: 10px;
+/* NAVIGATION */
+nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
-/* ================================
-   FOOTER
-================================ */
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 40px 5%;
-  margin-top: 60px;
+nav a {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f172a;
+  position: relative;
+  padding: 10px 0;
 }
 
-/* ================================
-   MOBILE
-================================ */
+/* Hover underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0f766e;
+  transition: 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Mobile button */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    padding: 20px;
+  header {
+    padding: 0 25px;
+    height: 80px;
+  }
+  @media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 75px;
+  }
+  }
+  
+
+  .logo {
+    left: 25px;
   }
 
-  .nav-links.active {
-    display: flex;
+  .logo img {
+    height: 90px;
   }
 
   .menu-toggle {
     display: block;
   }
 
-  .hero h1 {
-    font-size: 28px;
+  nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    display: none;
+    border-top: 1px solid #e5e7eb;
+    padding: 15px 0;
   }
 
-  .reviewer {
-    flex-direction: column;
-    text-align: center;
+  nav a {
+    padding: 12px 0;
+    font-size: 16px;
   }
+
+  nav.active {
+    display: flex;
+  }
+  }
+  
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #ecfeff, #ffffff);
+  padding: 80px 40px;
+  text-align: center;
 }
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+  color: #334155;
+}
+
+/* Content */
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 40px;
+}
+
+.content h2 {
+  color: #0f766e;
+  margin-top: 40px;
+}
+
+.content p {
+  line-height: 1.7;
+  margin-top: 15px;
+  color: #475569;
+}
+
+/* Footer */
+footer {
+  background: #020617;
+  color: #94a3b8;
+  padding: 50px 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+footer a {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+  .line {
+color: #ffffff;
+  }
+  
+/* =========================
+   MOBILE HEADER FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px; /* slightly smaller on mobile */
+  }
+
+  .logo {
+    position: static;     /* remove absolute */
+    transform: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 48px;         /* proper mobile logo size */
+    max-width: 160px;
+    filter: none;        /* remove heavy shadow on mobile */
+  }
+
+  .menu-toggle {
+    font-size: 28px;
+    display: block;
+  }
+
+  nav {
+    top: 70px;           /* matches header height */
+  }
+  }
+  
