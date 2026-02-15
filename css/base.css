@@ -101,24 +101,34 @@ body {
     }
 
 
-
-/* ===== MOBILE FIX (DO NOT DELETE) ===== */
 @media (max-width: 600px) {
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  header, nav, section, main, footer, div {
+  body, header, nav, section, footer, div {
     max-width: 100%;
   }
+}
 
-  img, video, iframe {
+
+
+/* MOBILE RESET — DO NOT DELETE */
+@media (max-width: 768px) {
+  * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  body {
+    width: 100% !important;
+    overflow-x: visible !important;
+  }
+
+  img, iframe, video {
     max-width: 100%;
     height: auto;
   }
 
-  .grid {
-    grid-template-columns: 1fr !important;
+  .container, .wrapper, .content, main, section, article {
+    width: auto !important;
+    max-width: 100% !important;
   }
-}
+  }
+    
