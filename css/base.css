@@ -109,3 +109,23 @@ footer img {
 
 
 
+/* SAFE MOBILE FIX — DO NOT TOUCH */
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content-wrapper,
+  .article-container,
+  .section,
+  .grid {
+    max-width: 100%;
+    width: 100%;
+  }
+}
