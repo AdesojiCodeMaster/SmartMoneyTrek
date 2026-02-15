@@ -25,16 +25,7 @@ header{
   position:relative;
 }
 
-  /* =========================
-   STICKY HEADER
-========================= */
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #ffffff;
-}
+  
   /* Prevent anchor from hiding under sticky header */
 section[id] {
   scroll-margin-top: 90px;
@@ -108,21 +99,7 @@ nav a::after{
 nav a:hover::after{width:100%}
 .menu-toggle{display:none;font-size:28px;background:none;border:none;cursor:pointer}
 
-@media(max-width:768px){
-  .menu-toggle{display:block}
-  nav{
-    position:absolute;
-    top:80px;
-    left:0;
-    width:100%;
-    background:#fff;
-    display:none;
-    flex-direction:column;
-    padding:15px 0;
-    border-top:1px solid #e5e7eb;
-  }
-  nav.active{display:flex}
-}
+
 
 /* ================= HERO ================= */
 .hero{
@@ -175,6 +152,28 @@ footer{background:#020617;color:#94a3b8;padding:50px 40px}
 footer h4{color:#e2e8f0}
 footer a{display:block;margin-bottom:8px;font-size:14px}
 .footer-bottom{text-align:center;font-size:14px;color:#64748b}
+
+    
+  /* ===== FORCE HEADER ABOVE CONTENT (MOBILE FIX) ===== */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 9999; /* higher than hero */
+}
+
+/* Hero must sit BELOW the header */
+.hero{
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile nav must sit on top of hero */
+@media (max-width: 768px){
+  nav{
+    z-index: 10000;
+  }
+  }
+  
 </style>
 </head>
 
