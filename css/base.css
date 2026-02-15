@@ -96,39 +96,16 @@ footer img {
    PREVENT HORIZONTAL SCROLL
 ========================= */
 
-body {
+/*body {
   overflow-x: hidden;
-    }
+    } */
 
-
+/*
 @media (max-width: 600px) {
   body, header, nav, section, footer, div {
     max-width: 100%;
   }
-}
+} */
 
 
 
-/* MOBILE RESET — DO NOT DELETE */
-@media (max-width: 768px) {
-  * {
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-  }
-
-  body {
-    width: 100% !important;
-    overflow-x: visible !important;
-  }
-
-  img, iframe, video {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .container, .wrapper, .content, main, section, article {
-    width: auto !important;
-    max-width: 100% !important;
-  }
-  }
-    
