@@ -7,6 +7,185 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="description" content="Contact SmartMoneyTrek for questions, partnerships, feedback, or support." />
 
+  <style>
+:root{
+  --brand:#0f766e;
+  --bg:#f8fafc;
+  --text:#1f2937;
+  --muted:#475569;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+a{text-decoration:none;color:inherit}
+
+/* ================= HEADER ================= */
+
+header{
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+  height:80px;
+  padding:0 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+}
+.logo img{
+  height:110px;
+  object-fit:contain;
+  filter:drop-shadow(0 5px 8px rgba(0,0,0,.35));
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+
+nav a{
+  font-weight:700;
+  font-size:15px;
+  color:#0f172a;
+  position:relative;
+  padding:10px 0;
+}
+nav a::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:0;
+  height:2px;
+  background:var(--brand);
+  transition:.3s;
+}
+nav a:hover::after{width:100%}
+
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:#0f172a;
+}
+
+/* ================= MOBILE HEADER ================= */
+
+@media(max-width:768px){
+  header{
+    padding:0 20px;
+    height:70px;
+  }
+
+  .logo img{
+    height:48px;
+    max-width:160px;
+    filter:none;
+  }
+
+  .menu-toggle{display:block}
+
+  nav{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    display:none;
+    border-top:1px solid #e5e7eb;
+    padding:15px 0;
+  }
+
+  nav.active{display:flex}
+
+  nav a{
+    padding:12px 0;
+    font-size:16px;
+    text-align:center;
+  }
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  background:linear-gradient(135deg,#ecfeff,#ffffff);
+  padding:60px 20px;
+  text-align:center;
+}
+.hero h1{font-size:34px;margin-bottom:10px}
+.hero p{max-width:820px;margin:auto;color:var(--muted)}
+
+/* ================= CONTENT ================= */
+
+.container{max-width:980px;margin:30px auto;padding:20px}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:24px}
+.card{
+  background:#fff;
+  border-radius:12px;
+  padding:22px;
+  box-shadow:0 8px 24px rgba(0,0,0,.04);
+}
+label{display:block;margin:12px 0 6px;font-weight:600}
+input,textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid #e6eef0;
+  border-radius:8px;
+  font-size:15px;
+}
+textarea{min-height:140px}
+button{
+  background:var(--brand);
+  color:#fff;
+  border:none;
+  padding:12px 18px;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+}
+.note{font-size:13px;color:var(--muted);margin-top:10px}
+
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr}
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  background:#020617;
+  color:#94a3b8;
+  padding:50px 40px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  margin-bottom:30px;
+}
+footer h4{color:#e2e8f0}
+footer a{display:block;margin-bottom:8px;font-size:14px}
+.footer-bottom{text-align:center;font-size:14px;color:#64748b}
+
+</style>
+  
+
+
+  <!--
 <style>
 :root { --brand:#0f766e; --bg:#f8fafc; --text:#1f2937; --muted:#475569; }
 *{box-sizing:border-box}
@@ -306,6 +485,7 @@ header{
   
   
 </style>
+  -->
 </head>
 
 <body>
