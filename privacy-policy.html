@@ -7,6 +7,166 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="description" content="SmartMoneyTrek privacy policy — how we collect and use data, cookies, ads, and your rights." />
 
+<style>
+ :root{
+  --brand:#0f766e;
+  --bg:#f8fafc;
+  --text:#1f2937;
+  --muted:#475569;
+  --header:80px;
+  --header-mobile:70px;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
+a{text-decoration:none;color:inherit}
+
+/* Anchor offset for sticky header */
+section[id]{scroll-margin-top:calc(var(--header) + 10px)}
+
+/* ================= HEADER ================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  height:var(--header);
+  padding:0 40px;
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Logo */
+.logo{display:flex;align-items:center}
+.logo img{
+  height:110px;
+  width:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 5px 8px rgba(0,0,0,.35));
+}
+
+/* Nav */
+nav{display:flex;align-items:center;gap:28px}
+nav a{
+  font-weight:700;
+  font-size:15px;
+  color:#0f172a;
+  position:relative;
+  padding:10px 0;
+}
+nav a::after{
+  content:"";
+  position:absolute;
+  bottom:0;left:0;
+  width:0;height:2px;
+  background:var(--brand);
+  transition:.3s;
+}
+nav a:hover::after{width:100%}
+
+/* Mobile button */
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  background:linear-gradient(135deg,#ecfeff,#fff);
+  padding:50px 20px;
+  text-align:center;
+}
+.hero h1{font-size:32px;margin:0 0 6px}
+.hero p{color:var(--muted)}
+
+/* ================= CONTENT ================= */
+
+.container{
+  max-width:900px;
+  margin:20px auto;
+  padding:20px;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,.04);
+}
+h2{color:var(--brand);margin-top:20px}
+p{line-height:1.7;color:var(--muted)}
+
+/* ================= FOOTER ================= */
+
+footer{
+  background:#020617;
+  color:#94a3b8;
+  padding:50px 40px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  margin-bottom:30px;
+}
+footer h4{color:#e2e8f0;margin-bottom:10px}
+footer a{
+  display:block;
+  color:#94a3b8;
+  margin-bottom:8px;
+  font-size:14px;
+}
+.footer-bottom{text-align:center;font-size:14px;color:#64748b}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  header{
+    height:var(--header-mobile);
+    padding:0 20px;
+  }
+
+  section[id]{
+    scroll-margin-top:calc(var(--header-mobile) + 10px);
+  }
+
+  .logo img{
+    height:48px;
+    max-width:160px;
+    filter:none;
+  }
+
+  .menu-toggle{display:block}
+
+  nav{
+    position:absolute;
+    top:var(--header-mobile);
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    display:none;
+    border-top:1px solid #e5e7eb;
+    padding:15px 0;
+  }
+
+  nav.active{display:flex}
+
+  nav a{
+    padding:12px 0;
+    font-size:16px;
+  }
+}
+ 
+</style>
+
+
+
+
  
  
  <!--
