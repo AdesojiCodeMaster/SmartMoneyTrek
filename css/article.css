@@ -261,20 +261,37 @@ footer a:hover {
   width: 100%;
   border-collapse: collapse;
   font-size: 16px;
-}
-
-/* Cells */
-.income-table th,
-.income-table td {
-  padding: 12px 14px;
-  border: 1px solid #e5e7eb;
-  text-align: left;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 /* Header row */
+.income-table thead {
+  background: #0f766e;
+  color: #ffffff;
+}
+
 .income-table th {
-  background: #f8fafc;
+  padding: 14px;
+  text-align: left;
   font-weight: 600;
+}
+
+/* Body cells */
+.income-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Zebra striping */
+.income-table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* Hover highlight */
+.income-table tbody tr:hover {
+  background: #ecfeff;
 }
 
 /* Optional note under tables */
