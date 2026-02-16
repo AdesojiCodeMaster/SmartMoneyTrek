@@ -339,3 +339,18 @@ footer a:hover {
   }
 }
 
+
+
+/* ===============================
+   ARTICLE HEADER – LOGO SCALE FIX
+================================ */
+
+@media (min-width: 769px) {
+  .logo img {
+    height: 100px;
+    max-height: 100px;
+    object-fit: contain;
+  }
+}
+
+
