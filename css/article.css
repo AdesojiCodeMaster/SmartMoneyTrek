@@ -249,53 +249,41 @@ footer a:hover {
    }
 
 
-
-/* =========================
-   ARTICLE TABLE STYLES
-========================= */
-
-/* =========================
-   UNIVERSAL ARTICLE TABLES
-========================= */
-
-.article-container table {
+/* Universal article tables */
+.income-table-wrapper {
   width: 100%;
-  border-collapse: collapse;
+  overflow-x: auto;
   margin: 30px 0;
 }
 
-.article-container th,
-.article-container td {
+/* Main table */
+.income-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+/* Cells */
+.income-table th,
+.income-table td {
   padding: 12px 14px;
   border: 1px solid #e5e7eb;
   text-align: left;
 }
 
-.article-container th {
+/* Header row */
+.income-table th {
+  background: #f8fafc;
   font-weight: 600;
 }
 
-
+/* Optional note under tables */
 .table-note {
   margin-top: 10px;
   font-size: 0.95rem;
   color: #475569;
   font-style: italic;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
 
 
 /* ===============================
