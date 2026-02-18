@@ -698,19 +698,42 @@ Once you start earning, follow our <a href="/25-practical-ways-to-save-money">mo
   Small side incomes grow when handled wisely.
 </section>
 
-<section>
-<h2 id="faq">Frequently Asked Questions</h2>
+  
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
 
-<h3>What is the easiest side hustle to start?</h3>
-<p>Service-based hustles like cleaning, delivery, or virtual assistance are the fastest to start because they require little upfront investment.</p>
+  <div class="faq-item">
+    <button class="faq-question">
+      What is the easiest side hustle to start?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Service-based hustles like cleaning, delivery, or virtual assistance are the fastest to start because they require little upfront investment.</p>
+    </div>
+  </div>
 
-<h3>How much can side hustles pay?</h3>
-<p>Income varies widely. Some generate a few hundred dollars per month, while scalable digital hustles can grow into full-time income.</p>
+  <div class="faq-item">
+    <button class="faq-question">
+      How much can side hustles pay?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Income varies widely. Some generate a few hundred dollars per month, while scalable digital hustles can grow into full-time income.</p>
+    </div>
+  </div>
 
-<h3>Do I need money to start a side hustle?</h3>
-<p>Many skill-based and service-based side hustles require little or no startup capital.</p>
+  <div class="faq-item">
+    <button class="faq-question">
+      Do I need money to start a side hustle?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Many skill-based and service-based side hustles require little or no startup capital.</p>
+    </div>
+  </div>
 </section>
   
+
   
 <section>
   <h2 id="final-thoughts"> Final Thoughts: Start small, stay consistent, and reinvest </h2>
@@ -789,6 +812,29 @@ document.querySelectorAll('.toc-box a').forEach(link => {
       top: y,
       behavior: 'smooth'
     });
+  });
+});
+
+
+  document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    const icon = button.querySelector(".faq-icon");
+
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
+      icon.textContent = "+";
+    } else {
+      document.querySelectorAll(".faq-answer").forEach(item => {
+        item.style.maxHeight = null;
+      });
+      document.querySelectorAll(".faq-icon").forEach(i => {
+        i.textContent = "+";
+      });
+
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      icon.textContent = "−";
+    }
   });
 });
   </script>  
