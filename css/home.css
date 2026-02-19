@@ -777,3 +777,18 @@ color: #ffffff;
     top: 70px;           /* matches header height */
   }
   }
+
+/* ===== HERO LINK STYLING ===== */
+.hero a {
+  color: #0d6efd;              /* Your brand blue (change if needed) */
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(13,110,253,0.3);
+  transition: all 0.3s ease;
+}
+
+.hero a:hover {
+  color: #084298;
+  border-bottom: 2px solid #084298;
+}
+
