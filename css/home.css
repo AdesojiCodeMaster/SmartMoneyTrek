@@ -790,3 +790,12 @@ color: #ffffff;
   opacity: 0.75;
 }
 
+/* ===== HERO BUTTONS (Remove underline only here) ===== */
+.hero-cta a {
+  text-decoration: none;
+}
+
+.hero-cta a:hover {
+  text-decoration: none;
+    }
+
