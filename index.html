@@ -69,17 +69,22 @@
 </header>
 
 <section class="hero">
-  <img 
-  <img src="/images/money-hero.webp"
-       alt="Smart money management concept"
-       class="hero-image"
-       width="1600"
-       height="900"
-       loading="eager"
-       fetchpriority="high"
-       decoding="async"
-    sizes="(max-width: 768px) 100vw, 1600px"
-    >
+
+  <picture>
+  <source 
+    srcset="/images/money-hero-mobile.webp" 
+    media="(max-width: 768px)"
+  >
+  <img
+    src="/images/money-hero.webp"
+    alt="Smart budgeting and saving money"
+    width="1600"
+    height="900"
+    fetchpriority="high"
+    decoding="async"
+  >
+  </picture>
+
   
     <div class="hero-content">
   <h1>SmartMoneyTrek – Practical Personal Finance Tips to Save, Budget & Make Money</h1>
