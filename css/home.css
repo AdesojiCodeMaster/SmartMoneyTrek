@@ -821,3 +821,10 @@ color: #ffffff;
 .hero-cta a {
   text-decoration: none !important;
 }
+
+/* Prevent hero layout shift */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
