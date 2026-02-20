@@ -74,7 +74,7 @@ section[id] {
   height: 110px;              /* BIG LOGO */
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
+  filter: none;
 }
 
 /* NAVIGATION */
@@ -164,7 +164,7 @@ nav a:hover::after {
   
  .hero {
   position: relative;
-  min-height: 80vh;   
+  min-height: 600px;
   padding: 0 40px;    
   display: flex;      
   align-items: center;
@@ -627,12 +627,11 @@ color: #ffffff;
 .email-box {
   max-width: 900px;
   margin: auto;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.12);
   border-radius: 20px;
   padding: 50px 40px;
   text-align: center;
-  backdrop-filter: blur(6px);
-}
+  }
 
 .email-box h2 {
   font-size: 34px;
