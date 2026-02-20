@@ -20,7 +20,12 @@
 <link rel="stylesheet" href="/css/home.css">
   
   
-<link rel="preload" as="image" href="/images/money-hero.webp" fetchpriority="high">
+<link 
+  rel="preload" 
+  as="image" 
+  href="/images/money-hero.webp"
+  type="image/webp"
+>
 
 <script type="application/ld+json">
 {
@@ -59,7 +64,9 @@
        width="1600"
        height="900"
        loading="eager"
-       fetchpriority="high">
+       fetchpriority="high"
+       decoding="async"
+    >
   
     <div class="hero-content">
   <h1>SmartMoneyTrek – Practical Personal Finance Tips to Save, Budget & Make Money</h1>
