@@ -226,6 +226,7 @@ nav a:hover::after {
   text-decoration: none;
   box-shadow: 0 12px 35px rgba(0,0,0,0.45);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -241,20 +242,13 @@ nav a:hover::after {
   font-weight: 700;
   text-decoration: none;
   transition: background 0.25s ease, color 0.25s ease;
+  text-decoration: none;
 }
 
 .btn-secondary:hover {
   background: #ffffff;
   color: #020617;
   }
-
-
-.btn {
-  text-decoration: none;
-  display: inline-block;
-}
-
-
 
   .hero-trust {
   margin-top: 28px;
