@@ -248,6 +248,14 @@ nav a:hover::after {
   color: #020617;
   }
 
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
   .hero-trust {
   margin-top: 28px;
   font-size: 14px;
