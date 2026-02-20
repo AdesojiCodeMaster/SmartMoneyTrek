@@ -164,7 +164,11 @@ nav a:hover::after {
   
 .hero {
   position: relative;
-  padding: 140px 40px;
+  min-height: 80vh;   /* gives hero a real height */
+  padding: 0 40px;    /* remove large vertical padding */
+  display: flex;      /* allows vertical centering */
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #ffffff;
   overflow: hidden;
