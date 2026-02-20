@@ -674,10 +674,6 @@ color: #ffffff;
   color: #ccfbf1;
 }
 
-  .hero {
-  position: relative;
-}
-
 
 .hero-content {
   position: relative;
@@ -812,10 +808,17 @@ color: #ffffff;
 .hero p a,
 .hero h2 a,
 .hero span a {
+  color: #22c55e; /* bright green accent */
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 4px;
-  text-decoration-thickness: 1.5px;
-  font-weight: 600;
+  text-decoration-thickness: 2px;
+}
+
+.hero p a:hover,
+.hero h2 a:hover,
+.hero span a:hover {
+  color: #4ade80;
 }
 
 /* ===== HERO BUTTONS (NO UNDERLINE) ===== */
