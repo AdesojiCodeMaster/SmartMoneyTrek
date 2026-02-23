@@ -383,3 +383,25 @@ footer a:hover {
   margin: 30px auto;
   border-radius: 6px;
 }
+
+
+.author-box {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 30px;
+  margin: 50px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.author-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.author-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
