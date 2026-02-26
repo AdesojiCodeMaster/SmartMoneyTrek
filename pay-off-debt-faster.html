@@ -740,7 +740,33 @@ document.querySelectorAll('.toc-box a').forEach(link => {
     });
   });
 });
-  </script>  
+
+//for FAQ 
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const faqItem = button.parentElement;
+    const answer = faqItem.querySelector('.faq-answer');
+    const icon = button.querySelector('.faq-icon');
+
+    const isOpen = faqItem.classList.contains('active');
+
+    // Close all FAQs first (optional – accordion behavior)
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.classList.remove('active');
+      item.querySelector('.faq-answer').style.maxHeight = null;
+      item.querySelector('.faq-icon').textContent = '+';
+    });
+
+    // Open clicked one if it was closed
+    if (!isOpen) {
+      faqItem.classList.add('active');
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      icon.textContent = '–';
+    }
+  });
+});
+</script>
+     
 </body>
  </html>
   
