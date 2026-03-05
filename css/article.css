@@ -2,6 +2,10 @@
    ARTICLE PAGE HEADER FIX
    (local override – does NOT affect categories)
 ========================= */
+html {
+  scroll-behavior: smooth;
+}
+
 
 header {
   background: #ffffff;
@@ -418,54 +422,6 @@ footer a:hover {
   color: #444;
 }
 
-
-/* =========================
-   TOC (Mobile Friendly)
-========================= */
-/*
-.toc {
-  background: #f7f9fc;
-  border-left: 4px solid #0a5cff;
-  padding: 20px;
-  margin: 25px 0;
-  border-radius: 6px;
-}
-
-.toc summary {
-  font-weight: 700;
-  cursor: pointer;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.toc ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.toc li {
-  margin-bottom: 8px;
-} 
-
-
- @media (min-width: 769px) {
-  .toc summary {
-    cursor: default;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
-
-   .toc summary::marker {
-  display: none;
-}
-
-
-   }*/
-
-/* =========================
-   TOC
-========================= */
 
 .toc {
   background: #f7f9fc;
