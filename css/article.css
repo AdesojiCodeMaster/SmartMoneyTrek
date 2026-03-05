@@ -146,10 +146,16 @@ nav a:hover::after {
 /* =========================
    ARTICLE TEXT
 ========================= */
-
+/*
 .article-container p {
   line-height: 1.7;
   color: #475569;
+}
+*/
+.article-container p {
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 18px;
 }
 
 .article-container h2 {
