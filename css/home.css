@@ -441,7 +441,7 @@ color: #ffffff;
 
   @media (max-width: 768px) {
   .hero {
-    min-height: 520px;
+    min-height: 700px;
     padding: 110px 25px;
   }
 
@@ -823,4 +823,5 @@ color: #ffffff;
   height: 100%;
   object-fit: cover;
   display: block;
+  z-index: 1;
 }
