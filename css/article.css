@@ -99,10 +99,6 @@ nav a:hover::after {
 }
 
 
-
-
-
-
 /* =========================
    ARTICLE LAYOUT
 ========================= */
@@ -113,10 +109,17 @@ nav a:hover::after {
   padding: 20px;
 }
 
-.article-container {
+/*.article-container {
   max-width: 800px;
   margin: auto;
   line-height: 1.7;
+}*/
+
+.article-container {
+  max-width: 760px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 18px;
 }
 
 .article-header h1 {
