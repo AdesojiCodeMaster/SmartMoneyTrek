@@ -443,7 +443,6 @@ color: #ffffff;
   .hero {
     min-height: 520px;
     padding: 110px 25px;
-    position: relative;
   }
 
   .hero h1 {
