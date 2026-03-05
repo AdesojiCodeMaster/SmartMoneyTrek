@@ -449,9 +449,11 @@ footer a:hover {
 
 /* Desktop behavior */
 @media (min-width: 769px) {
-
   .toc summary {
-    display: none;
+    cursor: default;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
   }
 
    }
