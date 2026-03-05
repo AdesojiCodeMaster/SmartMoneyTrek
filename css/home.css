@@ -426,24 +426,7 @@ footer a:hover {
 color: #ffffff;
 }
 
-/*
-  .hero h1,
-.hero h2,
-.hero p,
-.hero-cta,
-.hero-trust {
-  animation: heroFade 0.9s ease forwards;
-}
 
-@media (max-width: 768px) {
-  .hero h1,
-  .hero h2,
-  .hero p,
-  .hero-cta,
-  .hero-trust {
-    animation: heroFade 0.6s ease forwards;
-  }
-}*/
 
 @keyframes heroFade {
   from {
@@ -458,7 +441,9 @@ color: #ffffff;
 
   @media (max-width: 768px) {
   .hero {
+    min-height: 520px;
     padding: 110px 25px;
+    position: relative;
   }
 
   .hero h1 {
