@@ -447,9 +447,6 @@ footer a:hover {
   margin-bottom: 8px;
 }
 
-.toc summary::marker {
-  display: none;
-}
 
 /* Desktop behavior */
 @media (min-width: 769px) {
@@ -459,5 +456,10 @@ footer a:hover {
     font-weight: 700;
     margin-bottom: 12px;
   }
+
+   .toc summary::marker {
+  display: none;
+}
+
 
    }
