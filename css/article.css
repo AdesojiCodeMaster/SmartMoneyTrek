@@ -447,6 +447,10 @@ footer a:hover {
   margin-bottom: 8px;
 }
 
+.toc summary::marker {
+  display: none;
+}
+
 /* Desktop behavior */
 @media (min-width: 769px) {
   .toc summary {
