@@ -422,7 +422,7 @@ footer a:hover {
 /* =========================
    TOC (Mobile Friendly)
 ========================= */
-
+/*
 .toc {
   background: #f7f9fc;
   border-left: 4px solid #0a5cff;
@@ -445,11 +445,10 @@ footer a:hover {
 
 .toc li {
   margin-bottom: 8px;
-}
+} 
 
 
-/* Desktop behavior */
-@media (min-width: 769px) {
+ @media (min-width: 769px) {
   .toc summary {
     cursor: default;
     font-size: 20px;
@@ -462,4 +461,54 @@ footer a:hover {
 }
 
 
-   }
+   }*/
+
+/* =========================
+   TOC
+========================= */
+
+.toc {
+  background: #f7f9fc;
+  border-left: 4px solid #0a5cff;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 6px;
+}
+
+.toc summary {
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.toc ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.toc li {
+  margin-bottom: 8px;
+}
+
+/* Remove default arrow */
+.toc summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom arrow */
+.toc summary::before {
+  content: "▶";
+  font-size: 14px;
+  margin-right: 8px;
+  transition: transform 0.25s ease;
+}
+
+/* Rotate arrow when open */
+.toc[open] summary::before {
+  transform: rotate(90deg);
+}
+
