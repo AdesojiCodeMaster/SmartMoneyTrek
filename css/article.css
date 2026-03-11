@@ -456,3 +456,12 @@ footer a:hover {
 .article-container h5 {
   scroll-margin-top: 100px;
 }
+
+.article-container a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.article-container a:hover {
+  color: #1d4ed8;
+}
