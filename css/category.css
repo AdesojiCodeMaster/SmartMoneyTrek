@@ -193,39 +193,6 @@ section[id] {
   gap: 25px;
 }
 
-.card {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 28px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3 {
-  color: #0f766e;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.card p {
-  font-size: 15px;
-  color: #475569;
-  margin-bottom: 20px;
-}
-
-.card a,
-.read-guide {
-  font-weight: 600;
-  color: #0f766e;
-  font-size: 14px;
-}
 
 
 /* =========================
@@ -331,3 +298,41 @@ footer a:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
    }
    
+/* =========================
+   MOBILE: 2 CARDS PER ROW
+========================= */
+
+@media (max-width: 768px) {
+
+.grid{
+grid-template-columns: repeat(2, 1fr);
+gap:16px;
+}
+
+.card{
+padding:18px;
+}
+
+.card h3{
+font-size:16px;
+}
+
+.card p{
+font-size:14px;
+}
+
+}
+
+.card-link{
+display:block;
+color:inherit;
+height:100%;
+}
+
+.card-link:hover .read-guide{
+background:#0a5cff;
+   }
+
+.card:hover{
+box-shadow:0 12px 28px rgba(0,0,0,0.08);
+}
