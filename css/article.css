@@ -465,3 +465,46 @@ footer a:hover {
 .article-container a:hover {
   color: #1d4ed8;
 }
+
+
+
+.related-posts{
+margin-top:40px;
+padding:20px;
+background:#f8fafc;
+border-radius:8px;
+}
+
+.related-posts h2{
+margin-bottom:15px;
+font-size:22px;
+}
+
+.related-list{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.related-list li{
+margin-bottom:10px;
+}
+
+.related-list a{
+display:block;
+padding:12px 14px;
+background:white;
+border-radius:6px;
+text-decoration:none;
+color:#1e293b;
+font-weight:500;
+border:1px solid #e2e8f0;
+transition:all 0.2s ease;
+}
+
+.related-list a:hover{
+background:#2563eb;
+color:white;
+border-color:#2563eb;
+transform:translateY(-2px);
+   }
