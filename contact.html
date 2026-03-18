@@ -2,10 +2,80 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Contact Us – SmartMoneyTrek</title>
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="Contact SmartMoneyTrek for questions, partnerships, feedback, or support." />
+<title>Contact SmartMoneyTrek | Support, Feedback & Partnerships</title>
+
+<meta name="description" content="Contact SmartMoneyTrek for support, feedback, partnerships, or inquiries. We typically respond within 24–48 hours." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/favicon.ico">
+
+<!-- ✅ Canonical -->
+<link rel="canonical" href="https://smartmoneytrek.com/contact">
+
+<!-- ✅ Robots -->
+<meta name="robots" content="index, follow">
+
+<!-- ✅ Open Graph -->
+<meta property="og:title" content="Contact SmartMoneyTrek">
+<meta property="og:description" content="Reach out to SmartMoneyTrek for support, feedback, or partnership opportunities.">
+<meta property="og:url" content="https://smartmoneytrek.com/contact">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://smartmoneytrek.com/images/money-hero.webp">
+
+  <!-- ✅ Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact SmartMoneyTrek">
+<meta name="twitter:description" content="Get in touch with SmartMoneyTrek for inquiries and support.">
+<meta name="twitter:image" content="https://smartmoneytrek.com/images/money-hero.webp">
+
+<!-- ✅ Author -->
+<meta name="author" content="SmartMoneyTrek">
+
+<!-- ✅ Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SmartMoneyTrek",
+  "url": "https://smartmoneytrek.com",
+  "logo": "https://smartmoneytrek.com/images/logo.png",
+  "sameAs": []
+}
+</script>
+
+  <!-- ✅ Structured Data: Contact Page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact SmartMoneyTrek",
+  "url": "https://smartmoneytrek.com/contact",
+  "description": "Contact SmartMoneyTrek for support, feedback, and partnership inquiries."
+}
+</script>
+  <!-- ✅ Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://smartmoneytrek.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact",
+      "item": "https://smartmoneytrek.com/contact"
+    }
+  ]
+}
+</script>
+  
 
   <style>
 :root{
@@ -202,7 +272,12 @@ footer a{display:block;margin-bottom:8px;font-size:14px}
 
 <section class="hero">
   <h1>Contact SmartMoneyTrek</h1>
-  <p>Reach out for questions, feedback, partnership opportunities, or technical support.</p>
+  <p>
+Reach out for questions about our guides on 
+<a href="/budgeting">budgeting</a>, 
+<a href="/save-money">saving money</a>, or 
+<a href="/make-money">increasing your income</a>.
+  </p>
 </section>
 
 <main class="container">
@@ -213,23 +288,30 @@ footer a{display:block;margin-bottom:8px;font-size:14px}
 
     <div class="card">
       <h3>Send us a message</h3>
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
 
-      <form method="POST" data-netlify="true" name="contact">
-        <label>Your Name</label>
-        <input type="text" name="name" required>
+  <input type="hidden" name="form-name" value="contact">
 
-        <label>Email Address</label>
-        <input type="email" name="email" required>
+  <p hidden>
+    <label>Don’t fill this out: <input name="bot-field"></label>
+  </p>
 
-        <label>Message</label>
-        <textarea name="message" required></textarea>
+  <label for="name">Your Name</label>
+  <input id="name" type="text" name="name" required>
 
-        <button type="submit">Send Message</button>
+  <label for="email">Email Address</label>
+  <input id="email" type="email" name="email" required>
 
-        <p class="note">
-          We typically respond within 24–48 hours. Please do not send spam or promotional emails.
-        </p>
-      </form>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Send Message</button>
+
+  <p class="note">
+    We typically respond within 24–48 hours.
+  </p>
+
+</form>
     </div>
 
     <aside class="card">
@@ -242,6 +324,10 @@ footer a{display:block;margin-bottom:8px;font-size:14px}
         <li>Affiliate-related questions</li>
         <li>Technical issues on the website</li>
       </ul>
+
+      <p style="margin-top:15px; font-size:14px; color:#475569;">
+      SmartMoneyTrek provides practical financial education. We do not offer financial, legal, or investment advice.
+      </p>
     </aside>
 
   </div>
