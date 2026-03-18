@@ -32,16 +32,10 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "About SmartMoneyTrek | Trusted Personal Finance Platform",
+  "@type": "AboutPage",
+  "name": "About SmartMoneyTrek",
+  "url": "https://smartmoneytrek.com/about",
   "description": "Learn how SmartMoneyTrek helps you make smarter financial decisions and build lasting wealth.",
-  "author": {
-    "@type": "Person",
-    "name": "Daniel A.A",
-    "url": "https://smartmoneytrek.com/about",
-    "areaServed": "Worldwide"
-  }
-  },
   "publisher": {
     "@type": "Organization",
     "name": "SmartMoneyTrek",
@@ -49,13 +43,28 @@
       "@type": "ImageObject",
       "url": "https://smartmoneytrek.com/images/logo.png"
     }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://smartmoneytrek.com/contact"
-  },
-  "datePublished": "2026-07-02",
-  "dateModified": "2026-10-02"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://smartmoneytrek.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://smartmoneytrek.com/about"
+    }
+  ]
 }
 </script>
   
@@ -254,6 +263,11 @@ footer a:hover{color:#fff}
     <a href="/about">About</a>
   </nav>
 </header>
+  <!-- ===== BREADCRUMB ===== -->
+<nav class="breadcrumb" style="margin-left:20px;">
+  <a href="/">Home</a> › 
+  <span>About</span>
+</nav>
 
 <section class="hero">
   <h1>About SmartMoneyTrek</h1>
