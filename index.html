@@ -114,7 +114,7 @@
     with clear, practical guides designed for real life.
   </p>
 
-  <div class="hero-cta">
+  <div>
     <a href="/save-money" class="btn-primary">Start Saving Money</a>
     <a href="/make-money" class="btn-secondary">Make More Income</a>
   </div>
@@ -190,9 +190,11 @@
       and <a href="/make-money">income ideas</a>.
     </p>
 
-    <form class="email-form" method="post" data-netlify="true" name="newsletter" action="/thank-you">
+    <form class="email-form" method="post" data-netlify="true" name="newsletter" action="/thank-you" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="newsletter">
-      <input type="email" name="email" placeholder="Enter your email address" required>
+      <p hidden> <label>Don’t fill this out: <input name="bot-field"></label></p>
+      <label for="email">Email address</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email address" required>
       <button type="submit">Get Free Tips</button>
     </form>
 
@@ -238,7 +240,7 @@
 
   <div class="grid">
     
-    <a href="/save-money.html" class="card-link">
+    <a href="/save-money" class="card-link">
       <div class="card">
         <h3><span class="badge">💰</span> Save Money</h3>
         <p>Cut expenses and build strong saving habits.</p>
