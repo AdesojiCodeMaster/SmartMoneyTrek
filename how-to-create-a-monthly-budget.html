@@ -7,31 +7,32 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="description" content="Learn how to create a realistic monthly budget that helps you save money, pay off debt, and gain full control of your finances — without stress or guilt." />
 <link rel="preload" as="image" href="/images/An_infographic_titled_Monthly_Expense_Tracking_Ex.png" fetchpriority="high">
-<link rel="canonical" href="https://smartmoneytrek.netlify.app/how-to-create-a-monthly-budget">
 <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://smartmoneytrek.com/how-to-create-a-monthly-budget">
+<meta property="og:url" content="https://smartmoneytrek.com/how-to-create-a-monthly-budget">
+<meta property="og:image" content="https://smartmoneytrek.com/images/monthly-budget.webp">
   
 <meta property="og:title" content="How to Create a Monthly Budget That Actually Works">
 <meta property="og:description" content="Step-by-step guide to creating a realistic monthly budget that helps you save, eliminate debt, and gain financial control.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://smartmoneytrek.netlify.app/how-to-create-a-monthly-budget">
-<meta property="og:image" content="https://smartmoneytrek.netlify.app/images/monthly-budget.webp">
-
 <meta name="twitter:card" content="summary_large_image">
-  
+<meta name="twitter:image" content="https://smartmoneytrek.com/images/monthly-budget.webp">
+<meta name="author" content="Daniel A.A">
   
   
  <link rel="stylesheet" href="/css/base.css">
  <link rel="stylesheet" href="/css/article.css">
   
-  
   <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "Article",
- "@id": "https://smartmoneytrek.netlify.app/how-to-create-a-monthly-budget",
+ "@id": "https://smartmoneytrek.com/how-to-create-a-monthly-budget",
  "headline": "How to Create a Monthly Budget That Actually Works",
+ "description": "Step-by-step guide to creating a realistic monthly budget that helps you save, eliminate debt, and gain financial control.",
+ "image": "https://smartmoneytrek.com/images/monthly-budget.webp",
  "author": {
-   "@type": "Organization",
+   "@type": "Person",
    "name": "Daniel A.A"
  },
  "publisher": {
@@ -39,21 +40,43 @@
    "name": "SmartMoneyTrek",
    "logo": {
      "@type": "ImageObject",
-     "url": "https://smartmoneytrek.netlify.app/images/logo.png"
+     "url": "https://smartmoneytrek.com/images/logo.png"
    }
  },
+ "datePublished": "2026-02-10",
+ "dateModified": "2026-03-18",
  "mainEntityOfPage": {
    "@type": "WebPage",
-   "@id": "https://smartmoneytrek.netlify.app/how-to-create-a-monthly-budget"
+   "@id": "https://smartmoneytrek.com/how-to-create-a-monthly-budget"
  },
- "datePublished": "2026-02-10",
- "dateModified": "2026-02-15",
- "image": "https://smartmoneytrek.netlify.app/images/monthly-budget.webp",
- "wordCount": 3200,
- "articleSection": "Budgeting"
+ "articleSection": "Budgeting",
+ "keywords": ["monthly budget", "budgeting for beginners", "personal finance", "save money", "budget plan"]
 }
-
 </script>
+
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "name": "SmartMoneyTrek",
+ "url": "https://smartmoneytrek.com",
+ "logo": "https://smartmoneytrek.com/images/logo.png"
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "SmartMoneyTrek",
+ "url": "https://smartmoneytrek.com",
+ "potentialAction": {
+   "@type": "SearchAction",
+   "target": "https://smartmoneytrek.com/?s={search_term_string}",
+   "query-input": "required name=search_term_string"
+ }
+}
+  </script>
     
 
   <script type="application/ld+json">
@@ -84,6 +107,33 @@
  }]
 }
   </script>
+
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Home",
+   "item": "https://smartmoneytrek.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Budgeting",
+   "item": "https://smartmoneytrek.com/budgeting"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "How to Create a Monthly Budget",
+   "item": "https://smartmoneytrek.com/how-to-create-a-monthly-budget"
+  }
+ ]
+}
+  </script>
   
   
 </head>
@@ -103,6 +153,11 @@
 </header>
 
 <main class="content-wrapper">
+  <nav class="breadcrumb">
+  <a href="/">Home</a> › 
+  <a href="/budgeting">Budgeting</a> › 
+  <span>Monthly Budget Guide</span>
+  </nav>
 
 <article class="article-container">
 
@@ -828,7 +883,7 @@ if (toggle) toggle.addEventListener('click', ()=>nav.classList.toggle('active'))
 
   // Smooth TOC scrolling with header offset
 document.addEventListener("click", function(e){
-  const link = e.target.closest(".toc-box a");
+  const link = e.target.closest(".toc a");
   if(!link) return;
 
   const target = document.querySelector(link.getAttribute("href"));
