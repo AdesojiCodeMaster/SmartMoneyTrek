@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://smartmoneytrek.netlify.app/sitemap.xml
+
+Sitemap: https://smartmoneytrek.com/sitemap.xml
