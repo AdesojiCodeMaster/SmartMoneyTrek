@@ -604,8 +604,8 @@ section[id] {
 
 .section {
   padding: 60px 40px;
-  max-width: 1400px;
   margin: auto;
+  max-width: 1300px;
 }
 
 .section h2 {
@@ -628,6 +628,7 @@ section[id] {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   line-height: 1.7;
+  margin-bottom: 40px;
 }
 
 .evergreen-note {
@@ -638,22 +639,22 @@ section[id] {
   border: 1px solid #bbf7d0;
   border-radius: 10px;
   color: #065f46;
+  margin-bottom: 50px;
 }
 
 
-/* =========================
-   GRID (5 / 4 / 2 SYSTEM)
-========================= */
 
+/* ===== GRID (4 / 3 / 2) ===== */
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 30px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -676,11 +677,15 @@ section[id] {
   display: flex;
   flex-direction: column;
   transition: all 0.25s ease;
+   border: 1px solid #eef2f7;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 26px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  transition: 0.2s ease;
+   
 }
 
 .card-link {
@@ -721,6 +726,8 @@ section[id] {
   padding: 10px 14px;
   background: #f9fafb;
   border-top: 1px solid #eee;
+  background: #f8fafc;
+  border-top: 1px solid #e5e7eb;
 }
 
 .read-guide {
