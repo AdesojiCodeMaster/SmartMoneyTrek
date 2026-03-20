@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
+<meta charset="utf-8"/>
 <title>20 Best Side Hustles to Make Extra Money (Beginner-Friendly & Low Cost)</title>
 
 <meta name="description" content="Discover the best beginner-friendly side hustles to make extra money online and offline. Learn how to build multiple income streams with SmartMoneyTrek.">
@@ -142,8 +142,8 @@
   ]
 }
 </script>
-
-  </head>
+</head>
+  <body>
   <header>
   <a href="/index.html" class="logo"><img src="/images/logo.png" alt="SmartMoneyTrek"></a>
   <button class="menu-toggle" aria-label="Toggle menu">☰</button>
@@ -350,7 +350,7 @@ All profitable side hustles fall into one of four systems:
 <a href="https://www.problogger.com/jobs"  target="_blank" rel="nofollow sponsored noopener">ProBlogger Job Board</a> – High-quality blogging and content writing jobs from real businesses.
 </li>
 <li> 
-<a href=" https://www.peopleperhour.com"  target="_blank" rel="nofollow sponsored noopener">PeoplePerHour</a> – Popular in the UK and Europe for freelance writing and digital services.
+<a href="https://www.peopleperhour.com"  target="_blank" rel="nofollow sponsored noopener">PeoplePerHour</a> – Popular in the UK and Europe for freelance writing and digital services.
 
 </li>
 </ul>
@@ -1171,9 +1171,13 @@ The best side hustles for beginners are the ones that match your skills, time, a
 
 <script defer>
 const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('header nav');
-if (toggle) toggle.addEventListener('click', ()=>nav.classList.toggle('active'));
+const nav = document.querySelector('nav');
 
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+}
 // Smooth TOC scrolling
 document.querySelectorAll('.toc a').forEach(link => {
   link.addEventListener('click', function(e) {
