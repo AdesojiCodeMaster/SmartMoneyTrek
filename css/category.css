@@ -282,11 +282,6 @@ footer a:hover {
 
  @media (max-width: 768px) {
 
-/*.grid{
-grid-template-columns: repeat(2, 1fr);
-gap:16px;
-}*/
-
 .card{
 padding:18px;
 }
@@ -328,7 +323,7 @@ box-shadow:0 12px 28px rgba(0,0,0,0.08);
   font-size: 17px;
   line-height: 1.7;
   margin-bottom: 40px;
- }
+ 
 }
 
 /* ===== EVERGREEN ===== */
