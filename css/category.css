@@ -1,7 +1,7 @@
 /* =========================
    GLOBAL PAGE BASE
 ========================= */
-/*
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@ a { text-decoration: none; color: inherit; }
    SMARTMONEYTREK HEADER
 ========================= */
 
-/*header {
+header {
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   height: 80px;
@@ -30,7 +30,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* Prevent anchor jump under sticky header */
-/* section[id] {
+ section[id] {
   scroll-margin-top: 90px;
 }
 @media (max-width: 768px) {
@@ -40,7 +40,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* Logo */
-/* .logo {
+ .logo {
   position: absolute;
   left: 40px;
   top: 50%;
@@ -57,7 +57,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* Navigation */
-/* .nav-links {
+ .nav-links {
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* Hover underline */
-/* .nav-links a::after {
+.nav-links a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -89,7 +89,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* Mobile menu button */
-/* .menu-toggle {
+ .menu-toggle {
   display: none;
   font-size: 28px;
   background: none;
@@ -99,7 +99,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* Mobile nav */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
   header {
     padding: 0 20px;
     height: 70px;
@@ -147,7 +147,7 @@ a { text-decoration: none; color: inherit; }
    HERO SECTION
 ========================= */
 
-/*.hero {
+.hero {
   background: linear-gradient(135deg, #ecfeff, #ffffff);
   padding: 80px 40px;
   text-align: center;
@@ -170,7 +170,7 @@ a { text-decoration: none; color: inherit; }
    CONTENT SECTION
 ========================= */
 
-/*.section {
+.section {
   padding: 60px 40px;
   max-width: 1200px;
   margin: auto;
@@ -186,7 +186,7 @@ a { text-decoration: none; color: inherit; }
 /* =========================
    CATEGORY GRID
 ========================= */
-/*
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -199,7 +199,7 @@ a { text-decoration: none; color: inherit; }
    FOOTER
 ========================= */
 
-/* footer {
+ footer {
   background: #020617;
   color: #94a3b8;
   padding: 50px 40px;
@@ -243,7 +243,7 @@ footer a:hover {
    SMARTMONEYTREK CARDS (FINAL)
 ========================= */
 
-/* .card {
+ .card {
   background: #ffffff;
   border-radius: 14px;
   padding: 28px;
@@ -252,7 +252,7 @@ footer a:hover {
   flex-direction: column;
   justify-content: space-between;
   transition: none; /* no float */
-/*}
+}
 
 .card:hover {
   transform: none;
@@ -279,12 +279,12 @@ footer a:hover {
 
 
 /* Strong CTA for Read Guide links */
-/* .read-guide {
+ .read-guide {
   display: inline-block;
   margin-top: 12px;
   padding: 10px 16px;
   background: #0f766e; /* SmartMoneyTrek brand */
-/*  color: #ffffff !important;
+  color: #ffffff !important;
   font-weight: 700;
   font-size: 15px;
   border-radius: 6px;
@@ -294,7 +294,7 @@ footer a:hover {
 
 .read-guide:hover {
   background: #0a5cff; /* brand blue */
-/*  transform: translateY(-1px);
+  transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
    }
    
@@ -302,7 +302,7 @@ footer a:hover {
    MOBILE: 2 CARDS PER ROW
 ========================= */
 
-/* @media (max-width: 768px) {
+ @media (max-width: 768px) {
 
 .grid{
 grid-template-columns: repeat(2, 1fr);
@@ -339,7 +339,7 @@ box-shadow:0 12px 28px rgba(0,0,0,0.08);
 
 /* To structure category pages properly*/
 /* ===== INTRO ===== */
-/* .intro {
+ .intro {
   max-width: 900px;
   margin: 30px auto;
   padding: 25px 22px;
@@ -352,7 +352,7 @@ box-shadow:0 12px 28px rgba(0,0,0,0.08);
 }
 
 /* ===== EVERGREEN ===== */
-/* .evergreen-note {
+ .evergreen-note {
   max-width: 900px;
   margin: 20px auto 40px;
   padding: 18px 20px;
@@ -368,10 +368,10 @@ box-shadow:0 12px 28px rgba(0,0,0,0.08);
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 22px;
   margin-top: 20px;
-}
+}*/
 
 /* ===== CARD ===== */
-/* .card {
+ .card {
   background: #fff;
   border-radius: 14px;
   padding: 20px;
@@ -386,14 +386,14 @@ box-shadow:0 12px 28px rgba(0,0,0,0.08);
 }
 
 /* ===== FULL LINK ===== */
-/* .card-link {
+ .card-link {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
 /* ===== LABEL ===== */
-/* .card-label {
+ .card-label {
   font-size: 12px;
   font-weight: bold;
   color: #2a7be4;
@@ -402,20 +402,20 @@ box-shadow:0 12px 28px rgba(0,0,0,0.08);
 }
 
 /* ===== TITLE ===== */
-/* .card h3 {
+ .card h3 {
   font-size: 18px;
   margin-bottom: 10px;
   color: #111;
 }
 
 /* ===== TEXT ===== */
-/* .card p {
+ .card p {
   font-size: 14.5px;
   color: #555;
 }
 
 /* ===== CTA ===== */
-/* .read-guide {
+ .read-guide {
   font-size: 14px;
   font-weight: bold;
   color: #2a7be4;
@@ -428,7 +428,7 @@ box-shadow:0 12px 28px rgba(0,0,0,0.08);
 }
 
 /* ===== TOP ACCENT ===== */
-/* .card::before {
+ .card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -439,351 +439,11 @@ box-shadow:0 12px 28px rgba(0,0,0,0.08);
 }
 
 /* ===== FEATURED CARD (OPTIONAL) ===== */
-/* .featured {
+ .featured {
   grid-column: span 2;
   background: linear-gradient(135deg, #ffffff, #f5f9ff);
   border: 1px solid #dbeafe;
-   }*/
+   }
 
 
-
-
-/* =========================
-   GLOBAL PAGE BASE
-========================= */
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f8fafc;
-  color: #1f2937;
-}
-
-a { text-decoration: none; color: inherit; }
-
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-  height: 80px;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-section[id] {
-  scroll-margin-top: 90px;
-}
-
-@media (max-width: 768px) {
-  section[id] {
-    scroll-margin-top: 75px;
-  }
-}
-
-.logo {
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.logo img {
-  height: 110px;
-  filter: drop-shadow(0 5px 8px rgba(0,0,0,0.35));
-}
-
-.nav-links {
-  margin-left: auto;
-  display: flex;
-  gap: 28px;
-}
-
-.nav-links a {
-  font-weight: 700;
-  font-size: 15px;
-  color: #0f172a;
-  position: relative;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: #0f766e;
-  transition: 0.3s;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-}
-
-/* MOBILE NAV */
-@media (max-width: 768px) {
-
-  header {
-    padding: 0 20px;
-    height: 70px;
-  }
-
-  .logo {
-    position: static;
-    transform: none;
-  }
-
-  .logo img {
-    height: 48px;
-    filter: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    flex-direction: column;
-    display: none;
-    border-top: 1px solid #e5e7eb;
-    padding: 15px 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-  background: linear-gradient(135deg, #ecfeff, #ffffff);
-  padding: 80px 40px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 40px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 850px;
-  margin: auto;
-  color: #334155;
-}
-
-
-/* =========================
-   SECTIONS
-========================= */
-
-.section {
-  padding: 60px 40px;
-  margin: auto;
-  max-width: 1300px;
-}
-
-.section h2 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
-}
-
-
-/* =========================
-   INTRO + EVERGREEN
-========================= */
-
-.intro {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 25px;
-  background: linear-gradient(135deg, #f8fbff, #eef6ff);
-  border-left: 5px solid #2a7be4;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  line-height: 1.7;
-  margin-bottom: 40px;
-}
-
-.evergreen-note {
-  max-width: 900px;
-  margin: 20px auto 40px;
-  padding: 18px;
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
-  border-radius: 10px;
-  color: #065f46;
-  margin-bottom: 50px;
-}
-
-
-
-/* ===== GRID (4 / 3 / 2) ===== */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 30px;
-}
-
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
-/* =========================
-   CARDS (PREMIUM STRUCTURE)
-========================= */
-
-.card {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-  display: flex;
-  flex-direction: column;
-  transition: all 0.25s ease;
-   border: 1px solid #eef2f7;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 26px rgba(0,0,0,0.1);
-  transform: translateY(-4px);
-  transition: 0.2s ease;
-   
-}
-
-.card-link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-/* TOP BAR */
-.card-label {
-  background: linear-gradient(90deg, #0f766e, #0ea5e9);
-  color: #fff;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 6px 10px;
-  text-transform: uppercase;
-}
-
-/* CONTENT */
-.card-content {
-  padding: 14px;
-  flex-grow: 1;
-}
-
-.card h3 {
-  font-size: 15px;
-  margin-bottom: 6px;
-  color: #111;
-}
-
-.card p {
-  font-size: 13.5px;
-  color: #555;
-}
-
-/* FOOTER CTA */
-.card-footer {
-  padding: 10px 14px;
-  background: #f9fafb;
-  border-top: 1px solid #eee;
-  background: #f8fafc;
-  border-top: 1px solid #e5e7eb;
-}
-
-.read-guide {
-  font-size: 13px;
-  font-weight: bold;
-  color: #0f766e;
-}
-
-/* CTA HOVER */
-.card:hover .read-guide {
-  transform: translateX(4px);
-}
-
-
-/* =========================
-   FEATURED CARD
-========================= */
-
-.featured {
-  grid-column: span 2;
-  border: 1px solid #dbeafe;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  background: #020617;
-  color: #94a3b8;
-  padding: 50px 40px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-}
-
-footer h4 {
-  color: #e2e8f0;
-}
-
-footer a {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 14px;
-}
-
-footer a:hover {
-  color: #fff;
-}
-
-.footer-bottom {
-  text-align: center;
-  font-size: 14px;
-}
 
