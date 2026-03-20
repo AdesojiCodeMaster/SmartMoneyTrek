@@ -199,7 +199,7 @@ header {
    FOOTER
 ========================= */
 
- footer {
+/* footer {
   background: #020617;
   color: #94a3b8;
   padding: 50px 40px;
@@ -237,8 +237,44 @@ footer a:hover {
 .line {
   color: #ffffff;
 }
+*/
 
 
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #020617;
+  color: #94a3b8;
+  padding: 50px 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+footer h4 {
+  color: #e2e8f0;
+}
+
+footer a {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+}
 /* =========================
    SMARTMONEYTREK CARDS (FINAL)
 ========================= */
