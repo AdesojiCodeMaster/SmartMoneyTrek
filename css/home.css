@@ -825,3 +825,47 @@ color: #ffffff;
   object-fit: cover;
   z-index: 1;
   }
+
+/* Homepage Intro Section */
+.homepage-intro {
+  background: #f9fafb;
+  padding: 60px 20px;
+}
+
+.intro-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.homepage-intro h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.intro-line {
+  width: 60px;
+  height: 4px;
+  background: #16a34a;
+  margin: 0 auto 25px;
+  border-radius: 2px;
+}
+
+.homepage-intro p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+/* Add subtle card feel on larger screens */
+@media (min-width: 768px) {
+  .intro-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  }
+}
