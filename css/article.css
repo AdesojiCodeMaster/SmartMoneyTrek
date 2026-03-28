@@ -590,3 +590,13 @@ margin-top:0;
   background: #fff7ed;
   border: 1px solid #fed7aa;
    }
+
+.affiliate-img {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.affiliate-box:hover .affiliate-img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+   }
