@@ -600,3 +600,49 @@ margin-top:0;
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
    }
+
+
+
+/* AFFILIATE BOX STYLING */
+.affiliate-box {
+  border: 1px solid #e2e8f0;
+  padding: 18px;
+  margin: 35px 0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.affiliate-box h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.affiliate-box p {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.affiliate-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.affiliate-box li {
+  margin-bottom: 14px;
+}
+
+.affiliate-box a {
+  color: #0ea5e9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.affiliate-box a:hover {
+  text-decoration: underline;
+}
+
+.affiliate-box.highlight {
+  background: #fff7ed;
+  border: 1px solid #fb923c;
+}
