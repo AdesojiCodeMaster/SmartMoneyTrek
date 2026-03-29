@@ -141,9 +141,9 @@
 }
   </script>
 
-  <style>
-    /* ===== AFFILIATE BOX CONTAINER ===== */
-.affiliate-box {
+<style>
+/* ===== AMAZON STYLE BOX ===== */
+.amazon-box {
   display: flex;
   gap: 20px;
   border: 1px solid #e5e7eb;
@@ -151,107 +151,90 @@
   padding: 18px;
   margin: 30px 0;
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
   align-items: center;
-  transition: all 0.25s ease;
 }
 
-/* Subtle hover lift (boosts engagement) */
-.affiliate-box:hover {
-  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
-  transform: translateY(-2px);
-}
-
-/* ===== IMAGE ===== */
-.affiliate-image {
-  flex-shrink: 0;
-}
-
-.affiliate-image img {
-  width: 150px;
+/* LEFT IMAGE */
+.amazon-left img {
+  width: 160px;
   height: auto;
   border-radius: 10px;
-  object-fit: cover;
 }
 
-/* ===== CONTENT ===== */
-.affiliate-content {
+/* RIGHT CONTENT */
+.amazon-right {
   flex: 1;
 }
 
-.affiliate-content h3 {
+/* BADGE */
+.amazon-badge {
+  display: inline-block;
+  background: #ecfeff;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* TITLE */
+.amazon-title {
   font-size: 18px;
   margin-bottom: 10px;
   color: #111827;
-  line-height: 1.4;
 }
 
-.affiliate-content p {
+/* DESCRIPTION */
+.amazon-description {
   font-size: 14.5px;
   color: #374151;
   margin-bottom: 12px;
   line-height: 1.6;
 }
 
-/* ===== BENEFITS LIST ===== */
-.affiliate-content ul {
+/* BENEFITS */
+.amazon-benefits {
   margin-bottom: 14px;
   padding-left: 18px;
 }
 
-.affiliate-content li {
-  font-size: 14px;
+.amazon-benefits li {
   margin-bottom: 6px;
-  color: #111827;
+  font-size: 14px;
 }
 
-/* ===== CTA BUTTON ===== */
-.affiliate-btn {
+/* BUTTON */
+.amazon-btn {
   display: inline-block;
   background: #0f766e;
-  color: #ffffff;
-  padding: 10px 16px;
+  color: #fff;
+  padding: 11px 16px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  transition: all 0.2s ease;
 }
 
-/* Hover effect */
-.affiliate-btn:hover {
+.amazon-btn:hover {
   background: #115e59;
-  transform: translateY(-1px);
 }
 
-/* ===== OPTIONAL BADGE (BEST PICK) ===== */
-.affiliate-badge {
-  display: inline-block;
-  background: #ecfeff;
-  color: #0f766e;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 6px;
-  margin-bottom: 8px;
-}
-
-/* ===== MOBILE RESPONSIVE ===== */
+/* MOBILE */
 @media (max-width: 768px) {
-  .affiliate-box {
+  .amazon-box {
     flex-direction: column;
     text-align: center;
   }
 
-  .affiliate-image img {
-    width: 120px;
-    margin-bottom: 10px;
+  .amazon-left img {
+    width: 130px;
   }
 
-  .affiliate-content ul {
+  .amazon-benefits {
     text-align: left;
   }
-  }
+    }
   </style>
   </head>
 <body>
