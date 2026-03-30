@@ -210,22 +210,53 @@
 </script>
 
   <style>
-    /* Comparison upgrades */
-.comparison-item.best {
-  border: 2px solid #22c55e;
-  position: relative;
+
+/* AMAZON BOX (MAIN DESIGN) */
+.amazon-box {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px 0;
+  background: #ffffff;
 }
 
-.badge {
+.amazon-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.amazon-content img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.amazon-text {
+  flex: 1;
+}
+
+.amazon-text h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.amazon-text ul {
+  padding-left: 18px;
+}
+
+/* ⭐ BEST PICK BADGE */
+.best-pick {
+  display: inline-block;
   background: #22c55e;
   color: #fff;
+  padding: 4px 10px;
   font-size: 12px;
-  padding: 4px 8px;
   border-radius: 6px;
-  display: inline-block;
   margin-bottom: 8px;
 }
 
+/* ⭐ STAR RATINGS */
 .stars {
   color: #f59e0b;
   font-size: 14px;
@@ -237,13 +268,13 @@
   font-size: 13px;
 }
 
-/* Price emphasis */
-.price {
-  font-weight: bold;
-  color: #0f172a;
+/* 💰 PRICE TEXT */
+.price-note {
+  font-size: 14px;
+  color: #475569;
 }
 
-/* Button upgrade */
+/* 🔥 BUTTON (PRO VERSION) */
 .amazon-btn {
   display: inline-block;
   margin-top: 12px;
@@ -259,6 +290,47 @@
 .amazon-btn:hover {
   transform: translateY(-2px);
   opacity: 0.95;
+}
+
+/* 🔥 COMPARISON BOX */
+.comparison-box {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px 0;
+  background: #ffffff;
+}
+
+.comparison-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.comparison-item {
+  flex: 1;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.comparison-item.best {
+  border: 2px solid #22c55e;
+}
+
+.badge {
+  background: #22c55e;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: #0f172a;
 }
 
     </style>
