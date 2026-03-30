@@ -130,6 +130,213 @@
 ]
 }
 </script>
+ <style>
+
+/* AMAZON BLOCK CORE */
+.amazon-box {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 30px 0;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.amazon-box:hover {
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+/* BADGE */
+.amazon-badge {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  background: #f59e0b;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* GRID LAYOUT */
+.amazon-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+/* IMAGE */
+.amazon-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.amazon-content h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* BENEFITS */
+.amazon-benefits {
+  padding-left: 18px;
+  margin-bottom: 12px;
+}
+
+.amazon-benefits li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* BUTTON */
+.amazon-btn {
+  display: inline-block;
+  background: #f59e0b;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+.amazon-btn:hover {
+  background: #d97706;
+  transform: translateY(-1px);
+}
+
+/* NOTE */
+.amazon-note {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 8px;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .amazon-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .amazon-image img {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .amazon-benefits {
+    text-align: left;
+  }
+   }
+
+  /* COMPARISON SECTION */
+.comparison-box {
+  margin: 40px 0;
+}
+
+.comparison-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.comparison-sub {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.comparison-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* ITEM */
+.comparison-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.comparison-item:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* FEATURED */
+.featured {
+  border: 2px solid #f59e0b;
+  transform: scale(1.02);
+}
+
+.comparison-badge {
+  background: #f59e0b;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* IMAGE */
+.comparison-item img {
+  width: 100%;
+  max-width: 120px;
+  margin: 10px auto;
+}
+
+/* TEXT */
+.comparison-item h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.comparison-item ul {
+  text-align: left;
+  padding-left: 18px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* BUTTON */
+.comparison-btn {
+  display: inline-block;
+  background: #f59e0b;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.comparison-btn:hover {
+  background: #d97706;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .comparison-table {
+    grid-template-columns: 1fr;
+  }
+
+  .featured {
+    transform: none;
+  }
+ }
+  </style>
   
   </head>
 <body>
@@ -212,37 +419,87 @@ modern users can adapt the system for today's digital economy.</p>
 <p>If you're looking for a full budgeting system beyond percentage-based planning,
     read our <a href="/how-to-create-a-monthly-budget">complete
       monthly budgeting guide</a>.</p>
+</section>
+<hr>
+ <div class="comparison-box">
 
-  <div class="affiliate-box">
-  <div class="affiliate-content">
- <picture>
-  <source srcset="/images/affiliate-envelope.jpg" type="image/jpg">
-  <img src="/images/affiliate-envelope.jpg" 
-       alt="Envelope budgeting system with labeled cash envelopes and money"
-       width="1200"
-       height="675"
-       loading="lazy"
-       decoding="async"
-       class="affiliate-img">
+  <h2>Best Envelope Budgeting Kits for Beginners</h2>
+  <p class="comparison-sub">
+    If you're starting envelope budgeting, these are the most practical tools to help you stay organized and avoid overspending.
+  </p>
 
-     <p style="font-size:13px;color:#64748b;margin-bottom:6px;">
-      Recommended tool for beginners:
-    </p>
-    </picture>
+  <div class="comparison-table">
 
-    <div class="affiliate-text">
-      <h3>🧾 Start Envelope Budgeting the Easy Way</h3>
-      <p>
-       A simple envelope budgeting kit designed to help beginners stay organized and avoid overspending.
-      </p>
+    <!-- PRODUCT 1 -->
+    <div class="comparison-item featured">
+      <div class="comparison-badge">Best Overall</div>
 
-      <a href="https://www.amazon.com/s?k=clever+fox+cash+envelope+budget+system&tag=smartmoneytrek-20" target="_blank" rel="nofollow sponsored" class="affiliate-btn" style="color:#FFFFFF;">
-        View on Amazon
+      <img src="/images/affiliate-envelope.webp"
+           alt="cash envelope budgeting binder system"
+           loading="lazy">
+
+      <h3>Envelope Budget Binder System</h3>
+
+      <ul>
+        <li>✔ Complete budgeting setup</li>
+        <li>✔ Multiple labeled envelopes</li>
+        <li>✔ Ideal for beginners</li>
+      </ul>
+
+      <a href="https://www.amazon.com/s?k=clever+fox+cash+envelope+budget+system&tag=smartmoneytrek-20"
+         target="_blank"
+         rel="nofollow sponsored"
+         class="comparison-btn">
+         Check Price
       </a>
     </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="comparison-item">
+      <img src="/images/envelope-wallet.webp"
+           alt="cash envelope wallet organizer"
+           loading="lazy">
+
+      <h3>Envelope Wallet Organizer</h3>
+
+      <ul>
+        <li>✔ Compact and portable</li>
+        <li>✔ Great for daily spending</li>
+        <li>✔ Keeps categories separate</li>
+      </ul>
+
+      <a href="https://www.amazon.com/s?k=cash+envelope+wallet+binder&tag=smartmoneytrek-20"
+         target="_blank"
+         rel="nofollow sponsored"
+         class="comparison-btn">
+         View Option
+      </a>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="comparison-item">
+      <img src="/images/budget-planner.webp"
+           alt="budget planner notebook for envelope budgeting"
+           loading="lazy">
+
+      <h3>Budget Planner Notebook</h3>
+
+      <ul>
+        <li>✔ Tracks spending clearly</li>
+        <li>✔ Supports envelope system</li>
+        <li>✔ Improves consistency</li>
+      </ul>
+
+      <a href="https://www.amazon.com/s?k=budget+planner+notebook&tag=smartmoneytrek-20"
+         target="_blank"
+         rel="nofollow sponsored"
+         class="comparison-btn">
+         See Details
+      </a>
+    </div>
+
   </div>
-  </div>
-</section>
+         </div>
  <hr>
  <div class="key-takeaways">
 <h2>Envelope Budgeting System: Key Takeaways</h2>
@@ -254,6 +511,41 @@ modern users can adapt the system for today's digital economy.</p>
 <li>Digital versions now allow envelope budgeting without using physical cash.</li>
 </ul>
  </div>
+ <hr>
+
+ <div class="amazon-box">
+  <div class="amazon-badge">Best for Beginners</div>
+
+  <div class="amazon-grid">
+
+    <div class="amazon-image">
+      <img src="/images/affiliate-envelope.webp"
+           alt="cash envelope budgeting system binder for beginners"
+           loading="lazy">
+    </div>
+
+    <div class="amazon-content">
+      <h3>Beginner Cash Envelope Budgeting Binder</h3>
+
+      <ul class="amazon-benefits">
+        <li>✔ Pre-labeled envelopes for groceries, bills, and spending</li>
+        <li>✔ Makes budgeting simple without apps or spreadsheets</li>
+        <li>✔ Helps stop overspending immediately</li>
+        <li>✔ Ideal for building your first budgeting habit</li>
+      </ul>
+
+      <a href="https://www.amazon.com/s?k=clever+fox+cash+envelope+budget+system&tag=smartmoneytrek-20"
+         target="_blank"
+         rel="nofollow sponsored"
+         class="amazon-btn">
+         Start Envelope Budgeting Today
+      </a>
+
+      <p class="amazon-note">✔ Perfect if you're just starting and need structure</p>
+    </div>
+
+  </div>
+</div>
 <hr>
   
 <p style="font-style:italic;color:#64748b;">
@@ -454,19 +746,39 @@ This disciplined approach creates clear, visible spending limits and reinforces 
 <p>By physically separating your money, the system introduces a <strong>natural control mechanism 
 that helps prevent accidental overspending</strong>.</p>
 
-<div class="affiliate-inline">
-  <h4>📊 Make Budgeting Easier</h4>
-  <p>
-    A reusable budget planner helps you track every envelope, monitor spending, 
-    and stay consistent each month without guesswork.
-  </p>
+   <div class="amazon-box">
+  <div class="amazon-badge">Make It Easier</div>
 
-  <a href="https://www.amazon.com/s?k=budget+planner+notebook&tag=smartmoneytrek-20" target="_blank" rel="nofollow sponsored">
-    👉 See Best Budget Planners on Amazon
-  </a>
-</div>
+  <div class="amazon-grid">
 
-   
+    <div class="amazon-image">
+      <img src="/images/budget-planner.webp"
+           alt="budget planner notebook for tracking envelope budgeting categories"
+           loading="lazy">
+    </div>
+
+    <div class="amazon-content">
+      <h3>Monthly Budget Planner for Envelope Tracking</h3>
+
+      <ul class="amazon-benefits">
+        <li>✔ Tracks each envelope category clearly</li>
+        <li>✔ Helps you plan before spending starts</li>
+        <li>✔ Prevents money from “disappearing” mid-month</li>
+        <li>✔ Keeps your budget consistent every month</li>
+      </ul>
+
+      <a href="https://www.amazon.com/s?k=budget+planner+notebook&tag=smartmoneytrek-20"
+         target="_blank"
+         rel="nofollow sponsored"
+         class="amazon-btn">
+         View Budget Planners
+      </a>
+
+      <p class="amazon-note">✔ Best for staying consistent with your budget</p>
+    </div>
+
+  </div>
+   </div>
 
 <h3>5. Track and Adjust</h3>
 <p>Budgeting is a dynamic process that improves with regular review. At the end of each month, 
@@ -514,15 +826,6 @@ respected because of the powerful financial discipline it reinforces.</p>
 <p>One of the greatest strengths of envelope budgeting is its built-in spending limit. 
 Once an envelope is empty, spending in that category stops.</p>
  
- <div class="affiliate-soft">
-  <p>
-    💡 Tip: Using a dedicated cash wallet or envelope binder makes it much easier 
-    to stick to spending limits without mixing categories.
-    <a href="https://www.amazon.com/s?k=cash+envelope+wallet+binder&tag=smartmoneytrek-20" target="_blank" rel="nofollow sponsored">
-      Check popular envelope wallets here
-    </a>
-  </p>
- </div>
 
 <p>Unlike digital payments that make overspending easy, this system removes the temptation 
 to swipe a card or exceed your budget. As a result, it remains one of the <strong>most effective 
@@ -815,17 +1118,39 @@ financial decisions.</p>
 <p>Whether you use physical envelopes or digital budgeting tools, the envelope system can transform your
 relationship with money and help you build a stronger financial future.</p>
 
- <div class="affiliate-box final-box">
-  <h3>🚀 Ready to Start Envelope Budgeting Today?</h3>
-  <p>
-    Get a complete envelope budgeting kit and take control of your spending immediately.
-  </p>
+<div class="amazon-box">
+  <div class="amazon-badge">Stay Organized</div>
 
-  <a href="https://www.amazon.com/s?k=cash+envelope+budgeting+system&tag=smartmoneytrek-20" target="_blank" rel="nofollow sponsored" class="affiliate-btn" style="color:#FFFFFF;">
-    Get Your Budget Kit on Amazon
-  </a>
- </div>
+  <div class="amazon-grid">
 
+    <div class="amazon-image">
+      <img src="/images/envelope-wallet.webp"
+           alt="cash envelope wallet organizer for budgeting categories"
+           loading="lazy">
+    </div>
+
+    <div class="amazon-content">
+      <h3>Cash Envelope Wallet Organizer</h3>
+
+      <ul class="amazon-benefits">
+        <li>✔ Separates spending categories physically</li>
+        <li>✔ Makes it harder to overspend</li>
+        <li>✔ Easy to carry for daily expenses</li>
+        <li>✔ Keeps your budgeting system structured</li>
+      </ul>
+
+      <a href="https://www.amazon.com/s?k=cash+envelope+wallet+binder&tag=smartmoneytrek-20"
+         target="_blank"
+         rel="nofollow sponsored"
+         class="amazon-btn">
+         Check Available Options
+      </a>
+
+      <p class="amazon-note">✔ Ideal for maintaining discipline daily</p>
+    </div>
+
+  </div>
+</div>
   
   <div class="cta-box">
   <h3>Ready to Apply This Budgeting Method?</h3>
