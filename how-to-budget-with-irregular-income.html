@@ -208,7 +208,139 @@
 ]
 }
 </script>
+<style>
+/* PRODUCT BOX */
+.amt-product-box {
+  display: flex;
+  gap: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  margin: 25px 0;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  align-items: center;
+}
 
+.amt-product-img img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.amt-product-content {
+  flex: 1;
+}
+
+.amt-product-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.amt-product-desc {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.amt-product-features {
+  font-size: 14px;
+  margin-bottom: 12px;
+  padding-left: 18px;
+}
+
+.amt-product-features li {
+  margin-bottom: 4px;
+}
+
+.amt-btn {
+  display: inline-block;
+  background: #ff9900;
+  color: #111;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.amt-btn:hover {
+  background: #e68a00;
+}
+
+/* BADGES */
+.amt-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.badge-best {
+  background: #16a34a;
+  color: #fff;
+}
+
+.badge-editor {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* COMPARISON TABLE */
+.amt-compare {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  font-size: 14px;
+}
+
+.amt-compare th,
+.amt-compare td {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  text-align: center;
+}
+
+.amt-compare th {
+  background: #0f172a;
+  color: #fff;
+}
+
+.amt-compare td {
+  background: #fff;
+}
+
+.amt-compare img {
+  width: 80px;
+  border-radius: 6px;
+}
+
+.amt-compare .amt-btn {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+/* MOBILE FIX (VERY IMPORTANT) */
+@media (max-width: 768px) {
+  .amt-product-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .amt-product-img img {
+    width: 100px;
+  }
+
+  .amt-compare th,
+  .amt-compare td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+</style>
  
 </head>
 <body>
@@ -532,6 +664,78 @@ of <strong>freelance financial planning</strong>.</p>
 <a href="/save-money">step-by-step emergency fund guide</a>
 to build financial security faster.</p>
 </section>
+<hr>
+ <div class="amt-product-box">
+  <div class="amt-product-img">
+    <img src="https://m.media-amazon.com/images/I/71BudgetPlanner.jpg" alt="Budget Planner Notebook">
+  </div>
+  <div class="amt-product-content">
+    <span class="amt-badge badge-best">🏆 Best Pick</span>
+    <div class="amt-product-title">Monthly Budget Planner & Expense Tracker</div>
+    <div class="amt-product-desc">
+      The most practical tool for freelancers managing irregular income and tracking monthly cash flow.
+    </div>
+    <ul class="amt-product-features">
+      <li>✔ Designed for irregular income</li>
+      <li>✔ Simple monthly tracking system</li>
+      <li>✔ Ideal for beginners</li>
+    </ul>
+    <a href="https://www.amazon.com/dp/YOUR-LINK?tag=smartmoneytrek-20" class="amt-btn" target="_blank" rel="nofollow sponsored">Check Price on Amazon</a>
+  </div>
+     </div>
+ <h3 style="margin-top:30px;">Compare Budgeting Tools for Freelancers</h3>
+<hr>
+<table class="amt-compare">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Best For</th>
+      <th>Ease of Use</th>
+      <th>Format</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <img src="https://m.media-amazon.com/images/I/71BudgetPlanner.jpg"><br>
+        Budget Planner
+      </td>
+      <td>Beginners</td>
+      <td>⭐⭐⭐⭐⭐</td>
+      <td>Notebook</td>
+      <td>
+        <a href="https://www.amazon.com/dp/YOUR-LINK?tag=smartmoneytrek-20" class="amt-btn" target="_blank" rel="nofollow sponsored">View</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="https://m.media-amazon.com/images/I/71ExpenseTracker.jpg"><br>
+        Expense Tracker
+      </td>
+      <td>Finance separation</td>
+      <td>⭐⭐⭐⭐☆</td>
+      <td>Notebook</td>
+      <td>
+        <a href="https://www.amazon.com/dp/YOUR-LINK?tag=smartmoneytrek-20" class="amt-btn" target="_blank" rel="nofollow sponsored">View</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="https://m.media-amazon.com/images/I/71BudgetSpreadsheet.jpg"><br>
+        Finance Organizer
+      </td>
+      <td>Advanced tracking</td>
+      <td>⭐⭐⭐⭐☆</td>
+      <td>Planner</td>
+      <td>
+        <a href="https://www.amazon.com/dp/YOUR-LINK?tag=smartmoneytrek-20" class="amt-btn" target="_blank" rel="nofollow sponsored">View</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <hr>
   <section>
@@ -572,6 +776,25 @@ control.</p>
       dollar a specific purpose.</p>
     
   </section>
+ <hr>
+ <div class="amt-product-box">
+  <div class="amt-product-img">
+    <img src="https://m.media-amazon.com/images/I/71ExpenseTracker.jpg" alt="Expense Tracker Book">
+  </div>
+  <div class="amt-product-content">
+    <span class="amt-badge badge-editor">⭐ Editor’s Choice</span>
+    <div class="amt-product-title">Expense Tracker Notebook for Freelancers</div>
+    <div class="amt-product-desc">
+      Best for separating business and personal finances without complicated tools.
+    </div>
+    <ul class="amt-product-features">
+      <li>✔ Business vs personal tracking</li>
+      <li>✔ Helps with tax preparation</li>
+      <li>✔ Clean and structured layout</li>
+    </ul>
+    <a href="https://www.amazon.com/dp/YOUR-LINK?tag=smartmoneytrek-20" class="amt-btn" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+  </div>
+ </div>
   <hr>
 <p>
 High monthly bills often lead to debt. If that’s your situation, visit our 
@@ -826,6 +1049,24 @@ Ultimate Budget Kit</a> to track income, expenses, and savings more effectively.
 <p>Regular tracking strengthens financial awareness, allowing freelancers to identify trends early, adjust 
 spending when necessary, and prevent small financial issues from growing into major problems.</p>
   </section>
+<hr>
+ <div class="amt-product-box">
+  <div class="amt-product-img">
+    <img src="https://m.media-amazon.com/images/I/71BudgetSpreadsheet.jpg" alt="Budget Planner">
+  </div>
+  <div class="amt-product-content">
+    <div class="amt-product-title">Advanced Budget Planner & Finance Organizer</div>
+    <div class="amt-product-desc">
+      Ideal for freelancers who want deeper financial tracking and long-term planning.
+    </div>
+    <ul class="amt-product-features">
+      <li>✔ Tracks long-term finances</li>
+      <li>✔ Weekly & monthly overview</li>
+      <li>✔ Helps build discipline</li>
+    </ul>
+    <a href="https://www.amazon.com/dp/YOUR-LINK?tag=smartmoneytrek-20" class="amt-btn" target="_blank" rel="nofollow sponsored">See Details</a>
+  </div>
+ </div>
 <hr>
    <section>
 <h2  id="lifestyle">Step 13: Avoid Lifestyle Inflation</h2>
