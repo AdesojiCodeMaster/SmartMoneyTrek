@@ -209,34 +209,48 @@
 }
 </script>
  <style>
+/* ===== SMARTMONEYTREK AFFILIATE SYSTEM (FIXED) ===== */
 
-/* ===== FULLY ISOLATED SMARTMONEYTREK AFFILIATE SYSTEM ===== */
+.smt-affiliate {
+  margin: 30px 0;
+}
 
+/* AMAZON BOX */
 .smt-affiliate .amazon-box {
   border: 1px solid #e2e8f0;
   border-radius: 10px;
-  padding: 15px;
-  margin: 25px 0;
-  background: #ffffff;
+  padding: 16px;
+  background: #fff;
 }
 
-.smt-affiliate img {
-  width: 100%;
-  max-width: 240px;
-  display: block;
-  margin: 0 auto 12px auto;
+/* FLEX FIX (IMPORTANT) */
+.smt-affiliate .amazon-content {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.smt-affiliate .amazon-content img {
+  width: 140px;
   border-radius: 6px;
+}
+
+/* TEXT SIDE */
+.smt-affiliate .amazon-text {
+  flex: 1;
 }
 
 .smt-affiliate h3 {
   font-size: 18px;
-  margin-top: 0;
+  margin: 0 0 6px;
 }
 
 .smt-affiliate ul {
   padding-left: 18px;
+  margin: 8px 0;
 }
 
+/* BADGES */
 .smt-affiliate .best-pick {
   background: #22c55e;
   color: #fff;
@@ -247,17 +261,20 @@
   margin-bottom: 6px;
 }
 
+/* STARS */
 .smt-affiliate .stars {
   color: #f59e0b;
   font-size: 14px;
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
+/* PRICE */
 .smt-affiliate .price-note {
   font-size: 13px;
   color: #475569;
 }
 
+/* BUTTON */
 .smt-affiliate .amazon-btn {
   display: inline-block;
   margin-top: 10px;
@@ -269,23 +286,28 @@
   font-weight: bold;
 }
 
-/* ===== COMPARISON BLOCK SAFE ===== */
+/* ===== COMPARISON BLOCK (FIXED GRID) ===== */
 
 .smt-affiliate .comparison-box {
   border: 1px solid #e2e8f0;
   border-radius: 10px;
-  padding: 15px;
-  margin: 25px 0;
-  background: #ffffff;
+  padding: 16px;
+  background: #fff;
+}
+
+/* THIS WAS MISSING */
+.smt-affiliate .comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 15px;
 }
 
 .smt-affiliate .comparison-item {
-  border-bottom: 1px solid #e2e8f0;
-  padding: 10px 0;
-}
-
-.smt-affiliate .comparison-item:last-child {
-  border-bottom: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
 }
 
 .smt-affiliate .badge {
@@ -296,9 +318,9 @@
   border-radius: 5px;
   display: inline-block;
   margin-bottom: 5px;
-}
-
- </style>
+ }
+  </style>
+ 
 </head>
 <body>
 
