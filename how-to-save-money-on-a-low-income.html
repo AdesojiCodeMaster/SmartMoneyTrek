@@ -131,6 +131,227 @@
  ]
 }
 </script>
+ <style>
+
+/* =========================
+   AMAZON PRO BOX (CORE)
+========================= */
+.amazon-pro-box {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 30px 0;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.amazon-pro-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   BADGE
+========================= */
+.amazon-pro-badge {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: #f59e0b;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+/* =========================
+   CONTENT LAYOUT
+========================= */
+.amazon-pro-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.amazon-pro-image img {
+  width: 150px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* =========================
+   DETAILS
+========================= */
+.amazon-pro-details {
+  flex: 1;
+}
+
+.amazon-pro-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.amazon-pro-rating {
+  color: #f59e0b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.amazon-pro-desc {
+  font-size: 15px;
+  color: #334155;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* =========================
+   BENEFITS LIST
+========================= */
+.amazon-pro-benefits {
+  padding-left: 18px;
+  margin-bottom: 12px;
+}
+
+.amazon-pro-benefits li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.amazon-pro-btn {
+  display: inline-block;
+  background: #16a34a;
+  color: #ffffff !important;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.amazon-pro-btn:hover {
+  background: #15803d;
+  transform: scale(1.03);
+}
+
+/* =========================
+   FINAL CTA VARIANT
+========================= */
+.final-cta {
+  text-align: center;
+}
+
+.final-cta .amazon-pro-btn {
+  font-size: 16px;
+  padding: 12px 22px;
+}
+
+/* =========================
+   COMPARISON TABLE
+========================= */
+.amazon-pro-comparison {
+  margin: 40px 0;
+}
+
+.amazon-pro-comparison h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.comparison-sub {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.amazon-pro-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.amazon-pro-table th {
+  background: #0f172a;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+}
+
+.amazon-pro-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.amazon-pro-table tr:hover {
+  background: #f8fafc;
+}
+
+/* =========================
+   TABLE BUTTON
+========================= */
+.table-btn {
+  background: #16a34a;
+  color: #fff !important;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.table-btn:hover {
+  background: #15803d;
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+@media (max-width: 768px) {
+
+  .amazon-pro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .amazon-pro-image img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .amazon-pro-details {
+    width: 100%;
+  }
+
+  .amazon-pro-title {
+    font-size: 16px;
+  }
+
+  .amazon-pro-desc {
+    font-size: 14px;
+  }
+
+  .amazon-pro-btn {
+    width: 100%;
+  }
+
+  .amazon-pro-table th,
+  .amazon-pro-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+ </style>
 </head>
 <body>
 
@@ -332,29 +553,37 @@ to see where your money is leaking and how to plug those holes.
 </p>
 </section>
  <hr>
-<div class="product-box">
-  <div class="product-content">
+<div class="amazon-pro-box">
+  <div class="amazon-pro-badge">⭐ Best Pick</div>
+
+  <div class="amazon-pro-content">
     
-    <h3>📒 Best Budget Planner for Beginners</h3>
-    
-    <p class="product-desc">
-      Want to finally take control of your money? This top-rated budget planner helps you track expenses, plan savings, and stay consistent every month.
-    </p>
+    <div class="amazon-pro-image">
+      <img src="https://m.media-amazon.com/images/I/71cY6kR7mLL._AC_SL1500_.jpg" alt="Clever Fox Budget Planner">
+    </div>
 
-    <ul class="product-benefits">
-      <li>✔ Track every expense easily</li>
-      <li>✔ Build a consistent saving habit</li>
-      <li>✔ Stay organized with monthly plans</li>
-    </ul>
+    <div class="amazon-pro-details">
+      <h3 class="amazon-pro-title">Clever Fox Budget Planner – Take Control of Your Money</h3>
 
-    <a href="https://www.amazon.com/s?k=clever+fox+budget+planner&tag=smartmoneytrek-20" 
-       target="_blank" rel="nofollow sponsored" class="product-btn"  style="color:#FFFFFF;">
-       👉 Check Price on Amazon
-    </a>
+      <div class="amazon-pro-rating">⭐⭐⭐⭐⭐ (40,000+ Reviews)</div>
 
-    <p class="product-note">⭐ One of the most popular budgeting planners used by beginners.</p>
+      <p class="amazon-pro-desc">
+        If you struggle to track spending, this planner gives you a simple system to organize your money, control expenses, and build consistent savings — even on a low income.
+      </p>
+
+      <ul class="amazon-pro-benefits">
+        <li>✔ Track income, bills, and daily expenses</li>
+        <li>✔ Build a consistent saving habit</li>
+        <li>✔ Perfect for beginners and low-income budgeting</li>
+      </ul>
+
+      <a href="https://www.amazon.com/s?k=clever+fox+budget+planner&tag=smartmoneytrek-20"
+         target="_blank" rel="nofollow sponsored"
+         class="amazon-pro-btn">👉 Check Price on Amazon</a>
+    </div>
+
   </div>
- </div>
+</div>
  
   <hr>
   <section>
@@ -408,31 +637,37 @@ that keeps grocery spending controlled every month.
     </p>
   </section>
 <hr>
- 
- <div class="product-box">
-  <div class="product-content">
+<div class="amazon-pro-box">
+  <div class="amazon-pro-badge">💡 Smart Saver</div>
+
+  <div class="amazon-pro-content">
     
-    <h3>🛒 Meal Planning Tool to Cut Food Costs</h3>
-    
-    <p class="product-desc">
-      Stop overspending on groceries. A simple meal planner helps you organize meals, avoid impulse buying, and reduce food waste.
-    </p>
+    <div class="amazon-pro-image">
+      <img src="https://m.media-amazon.com/images/I/81qR7X0o7VL._AC_SL1500_.jpg" alt="Meal Planner Notebook">
+    </div>
 
-    <ul class="product-benefits">
-      <li>✔ Plan meals for the entire week</li>
-      <li>✔ Reduce grocery spending</li>
-      <li>✔ Avoid last-minute takeout</li>
-    </ul>
+    <div class="amazon-pro-details">
+      <h3 class="amazon-pro-title">Weekly Meal Planner Notebook – Cut Grocery Spending Fast</h3>
 
-    <a href="https://www.amazon.com/s?k=meal+planner+notebook&tag=smartmoneytrek-20" 
-       target="_blank" rel="nofollow sponsored" class="product-btn" style="color:#FFFFFF;">
-       👉 View Best Meal Planners
-    </a>
+      <div class="amazon-pro-rating">⭐⭐⭐⭐⭐ (10,000+ Reviews)</div>
 
-    <p class="product-note">💡 One of the easiest ways to save $100+ monthly on food.</p>
+      <p class="amazon-pro-desc">
+        One of the easiest ways to save money is to plan meals ahead. This planner helps you avoid impulse buying, reduce food waste, and stay within budget every week.
+      </p>
+
+      <ul class="amazon-pro-benefits">
+        <li>✔ Plan meals for the entire week</li>
+        <li>✔ Reduce grocery bills instantly</li>
+        <li>✔ Avoid takeout and impulse spending</li>
+      </ul>
+
+      <a href="https://www.amazon.com/s?k=meal+planner+notebook&tag=smartmoneytrek-20"
+         target="_blank" rel="nofollow sponsored"
+         class="amazon-pro-btn">👉 View Best Meal Planners</a>
+    </div>
+
   </div>
 </div>
- 
 <hr>
   <div class="income-table-wrapper">
   <table class="income-table">
@@ -616,28 +851,35 @@ to dip into them, because <strong>money you don’t see is much harder to spend.
    spending in that area stops. 
     This simple system creates immediate discipline and makes it much easier to control your expenses.
  </p>
+<div class="amazon-pro-box">
+  <div class="amazon-pro-badge">🔥 Highly Effective</div>
 
-<div class="product-box">
-  <div class="product-content">
+  <div class="amazon-pro-content">
     
-    <h3>💵 Stop Overspending Instantly</h3>
-    
-    <p class="product-desc">
-      The cash envelope system forces discipline by limiting spending. When the cash is gone, you stop spending — simple and effective.
-    </p>
+    <div class="amazon-pro-image">
+      <img src="https://m.media-amazon.com/images/I/71vT0R7ZP-L._AC_SL1500_.jpg" alt="Cash Envelope Budget System">
+    </div>
 
-    <ul class="product-benefits">
-      <li>✔ Prevent impulse spending</li>
-      <li>✔ Stay within budget easily</li>
-      <li>✔ Perfect for food & daily expenses</li>
-    </ul>
+    <div class="amazon-pro-details">
+      <h3 class="amazon-pro-title">Cash Envelope Budget System Wallet</h3>
 
-    <a href="https://www.amazon.com/s?k=cash+envelope+wallet+budget+system&tag=smartmoneytrek-20" 
-       target="_blank" rel="nofollow sponsored" class="product-btn"  style="color:#FFFFFF;">
-       👉 See Top Envelope Systems
-    </a>
+      <div class="amazon-pro-rating">⭐⭐⭐⭐⭐ (15,000+ Reviews)</div>
 
-    <p class="product-note">🔥 One of the most effective budgeting systems for beginners.</p>
+      <p class="amazon-pro-desc">
+        This system forces discipline by limiting spending. When the money in each category is gone, you stop spending — making it one of the most effective budgeting tools available.
+      </p>
+
+      <ul class="amazon-pro-benefits">
+        <li>✔ Stop overspending instantly</li>
+        <li>✔ Stay within budget easily</li>
+        <li>✔ Perfect for food, transport & daily expenses</li>
+      </ul>
+
+      <a href="https://www.amazon.com/s?k=cash+envelope+wallet+budget+system&tag=smartmoneytrek-20"
+         target="_blank" rel="nofollow sponsored"
+         class="amazon-pro-btn">👉 See Top Envelope Systems</a>
+    </div>
+
   </div>
 </div>
 
@@ -777,6 +1019,64 @@ Small, steady actions create powerful financial futures.
       </div>
   </div>
   </section>
+<hr>
+ <div class="amazon-pro-comparison">
+
+  <h2>📊 Best Budgeting Tools for Low-Income Earners</h2>
+  <p class="comparison-sub">Choose the system that fits your lifestyle and start saving immediately.</p>
+
+  <table class="amazon-pro-table">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Best For</th>
+        <th>Key Benefit</th>
+        <th>Rating</th>
+        <th>Check Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td><strong>Clever Fox Budget Planner</strong></td>
+        <td>Beginners</td>
+        <td>Full money tracking system</td>
+        <td>⭐⭐⭐⭐⭐</td>
+        <td>
+          <a href="https://www.amazon.com/s?k=clever+fox+budget+planner&tag=smartmoneytrek-20"
+             target="_blank" rel="nofollow sponsored"
+             class="table-btn">View</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Meal Planner Notebook</strong></td>
+        <td>Food Budgeting</td>
+        <td>Reduces grocery spending</td>
+        <td>⭐⭐⭐⭐⭐</td>
+        <td>
+          <a href="https://www.amazon.com/s?k=meal+planner+notebook&tag=smartmoneytrek-20"
+             target="_blank" rel="nofollow sponsored"
+             class="table-btn">View</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Cash Envelope System</strong></td>
+        <td>Overspenders</td>
+        <td>Forces spending discipline</td>
+        <td>⭐⭐⭐⭐⭐</td>
+        <td>
+          <a href="https://www.amazon.com/s?k=cash+envelope+wallet+budget+system&tag=smartmoneytrek-20"
+             target="_blank" rel="nofollow sponsored"
+             class="table-btn">View</a>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+       </div>
   <hr>
    <section>
   <h2 id="final-thoughts">How to Save Money on a Low Income (Final Action Plan)</h2>
@@ -791,19 +1091,26 @@ You don’t need a higher salary to get started. You need a smarter plan.
 Many people remain trapped because they never learn how to stop living paycheck to paycheck.
 The strategies in this guide are designed to break that cycle permanently.
   </p>
+    <hr>
+<div class="amazon-pro-box final-cta">
+  <div class="amazon-pro-content">
 
-    <div class="affiliate-box">
-  <h3>🚀 Ready to Take Control of Your Money?</h3>
-  
-  <p>
-    If you’re serious about saving money consistently, using a structured planner makes all the difference.
-  </p>
+    <div class="amazon-pro-details" style="text-align:center; width:100%;">
 
-  <a href="https://www.amazon.com/s?k=budget+planner+notebook&tag=smartmoneytrek-20" 
-     target="_blank" rel="nofollow sponsored" class="affiliate-btn" style="color:#FFFFFF;">
-     👉 Find the Best Budget Planner for You
-  </a>
+      <h2 class="amazon-pro-title">🚀 Ready to Finally Take Control of Your Money?</h2>
+
+      <p class="amazon-pro-desc">
+        The fastest way to start saving consistently is to use a structured system. A simple budget planner helps you track every dollar, stay disciplined, and build real financial progress — even on a low income.
+      </p>
+
+      <a href="https://www.amazon.com/s?k=budget+planner+notebook&tag=smartmoneytrek-20"
+         target="_blank" rel="nofollow sponsored"
+         class="amazon-pro-btn">👉 Find the Best Budget Planner</a>
+
     </div>
+
+  </div>
+</div>
   
   <div class="cta-box">
 <h3>Ready to take control?</h3>
