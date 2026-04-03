@@ -156,6 +156,86 @@
 .faq-answer {
     margin-top: 8px;
    }
+   /* ===== AMAZON PRO AFFILIATE BOX ===== */
+.affiliate-box {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px;
+  margin: 30px 0;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.affiliate-img {
+  flex: 0 0 120px;
+}
+
+.affiliate-img img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.affiliate-content {
+  flex: 1;
+}
+
+.affiliate-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 6px;
+}
+
+.affiliate-rating {
+  color: #f59e0b;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.affiliate-desc {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.affiliate-benefits {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.affiliate-benefits li {
+  margin-bottom: 6px;
+}
+
+.affiliate-btn {
+  display: inline-block;
+  background: #ff9900;
+  color: #111;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.affiliate-btn:hover {
+  background: #e68a00;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .affiliate-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .affiliate-img {
+    flex: none;
+  }
+   }
 
 </style>
 </head>
@@ -579,6 +659,32 @@ If you prefer a simple manual system, a structured planner like this can help yo
  </ul>
 <p>Ultimately, the most effective tool is not the most advanced, it’s the one you can use consistently.</p>
 </section>
+ <hr>
+ <div class="affiliate-box">
+  <div class="affiliate-img">
+    <img src="https://m.media-amazon.com/images/I/71pV2Xz5bUL._AC_SL1500_.jpg" alt="Budget Planner Notebook">
+  </div>
+
+  <div class="affiliate-content">
+    <div class="affiliate-title">Clever Fox Budget Planner – Monthly Finance Organizer</div>
+    
+    <div class="affiliate-rating">★★★★★ 4.6/5 (10,000+ reviews)</div>
+
+    <div class="affiliate-desc">
+      A structured budgeting planner designed to help you plan, track, and control your money in one place.
+    </div>
+
+    <ul class="affiliate-benefits">
+      <li>✔ Monthly budgeting + expense tracking pages</li>
+      <li>✔ Goal setting and savings tracking</li>
+      <li>✔ Perfect for beginners and low-income budgeting</li>
+    </ul>
+
+    <a href="https://www.amazon.com/dp/B07XQJH8QL?tag=smartmoneytrek-20" target="_blank" class="affiliate-btn">
+      View on Amazon
+    </a>
+  </div>
+</div>
 <hr>
 <section>
   <h2 id="start-with">Which Should You Start With?</h2>
