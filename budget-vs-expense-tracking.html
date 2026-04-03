@@ -156,27 +156,37 @@
 .faq-answer {
     margin-top: 8px;
    }
-   /* ===== AMAZON PRO AFFILIATE BOX ===== */
-.affiliate-box {
+.affiliate-card {
   display: flex;
-  gap: 20px;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 18px;
-  margin: 30px 0;
+  gap: 16px;
+  padding: 16px;
+  margin: 35px 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   align-items: center;
-  flex-wrap: wrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.affiliate-img {
-  flex: 0 0 120px;
+.affiliate-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.affiliate-badge {
+  background: #16a34a;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 6px;
 }
 
 .affiliate-img img {
-  width: 100%;
-  border-radius: 6px;
+  width: 110px;
+  border-radius: 8px;
 }
 
 .affiliate-content {
@@ -184,59 +194,58 @@
 }
 
 .affiliate-title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   color: #0a2540;
   margin-bottom: 6px;
 }
 
 .affiliate-rating {
-  color: #f59e0b;
   font-size: 14px;
-  margin-bottom: 10px;
+  color: #f59e0b;
+  margin-bottom: 8px;
 }
 
 .affiliate-desc {
   font-size: 14px;
-  color: #374151;
-  margin-bottom: 12px;
+  color: #475569;
+  margin-bottom: 10px;
 }
 
-.affiliate-benefits {
+.affiliate-features {
   font-size: 14px;
   margin-bottom: 12px;
 }
 
-.affiliate-benefits li {
-  margin-bottom: 6px;
+.affiliate-features li {
+  margin-bottom: 5px;
 }
 
 .affiliate-btn {
   display: inline-block;
-  background: #ff9900;
+  background: linear-gradient(135deg, #ff9900, #ffb84d);
   color: #111;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
   text-decoration: none;
-  transition: 0.3s ease;
 }
 
 .affiliate-btn:hover {
-  background: #e68a00;
+  opacity: 0.9;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .affiliate-box {
+  .affiliate-card {
     flex-direction: column;
     text-align: center;
   }
-  .affiliate-img {
-    flex: none;
+  .affiliate-img img {
+    width: 140px;
   }
-   }
-
+}
+   
 </style>
 </head>
 <body>
@@ -646,6 +655,33 @@ matter more than sophistication.</p>
  <p>
 If you prefer a simple manual system, a structured planner like this can help you stay consistent:
 </p>
+ <div class="affiliate-card">
+  <div class="affiliate-img">
+    <img src="https://m.media-amazon.com/images/I/71pV2Xz5bUL._AC_SL1500_.jpg" alt="Budget Planner">
+  </div>
+
+  <div class="affiliate-content">
+    <span class="affiliate-badge">Best for Beginners</span>
+    
+    <div class="affiliate-title">Clever Fox Budget Planner</div>
+    
+    <div class="affiliate-rating">★★★★★ 4.6/5</div>
+
+    <div class="affiliate-desc">
+      A powerful all-in-one budgeting planner designed to help you organize your finances and stay consistent every month.
+    </div>
+
+    <ul class="affiliate-features">
+      <li>✔ Monthly budget + expense tracking pages</li>
+      <li>✔ Built-in savings goals system</li>
+      <li>✔ Ideal for structured money control</li>
+    </ul>
+
+    <a href="https://www.amazon.com/dp/B07XQJH8QL?tag=smartmoneytrek-20" target="_blank" class="affiliate-btn">
+      View on Amazon
+    </a>
+  </div>
+ </div>
  <ul>
 <li><strong>Spreadsheets</strong>: Excel or Google Sheets for structured planning and flexibility</li>
 <li><strong>Budgeting Apps</strong>: Automated tools that simplify allocation and tracking</li>
