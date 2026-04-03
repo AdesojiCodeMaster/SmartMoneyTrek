@@ -156,93 +156,93 @@
 .faq-answer {
     margin-top: 8px;
    }
-.affiliate-card {
-  display: flex;
-  gap: 16px;
+
+/* ===== SMARTMONEYTREK AFFILIATE (SAFE) ===== */
+.smt-affiliate {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
   padding: 16px;
-  margin: 35px 0;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
+  margin: 40px 0;
   background: #ffffff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  align-items: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
 }
 
-.affiliate-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+.smt-affiliate-inner {
+  display: table;
+  width: 100%;
 }
 
-.affiliate-badge {
-  background: #16a34a;
-  color: #fff;
-  font-size: 11px;
-  padding: 4px 8px;
-  border-radius: 999px;
-  display: inline-block;
-  margin-bottom: 6px;
+.smt-affiliate-img {
+  display: table-cell;
+  width: 120px;
+  vertical-align: top;
 }
 
-.affiliate-img img {
-  width: 110px;
-  border-radius: 8px;
+.smt-affiliate-img img {
+  width: 100px;
+  border-radius: 6px;
 }
 
-.affiliate-content {
-  flex: 1;
+.smt-affiliate-content {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 15px;
 }
 
-.affiliate-title {
-  font-size: 17px;
-  font-weight: 700;
+.smt-title {
+  font-size: 16px;
+  font-weight: bold;
   color: #0a2540;
-  margin-bottom: 6px;
-}
-
-.affiliate-rating {
-  font-size: 14px;
-  color: #f59e0b;
-  margin-bottom: 8px;
-}
-
-.affiliate-desc {
-  font-size: 14px;
-  color: #475569;
-  margin-bottom: 10px;
-}
-
-.affiliate-features {
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.affiliate-features li {
   margin-bottom: 5px;
 }
 
-.affiliate-btn {
+.smt-rating {
+  color: #f59e0b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.smt-desc {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.smt-list {
+  margin: 0 0 10px 18px;
+  font-size: 14px;
+}
+
+.smt-btn {
   display: inline-block;
-  background: linear-gradient(135deg, #ff9900, #ffb84d);
+  background: #ff9900;
   color: #111;
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
   text-decoration: none;
 }
 
-.affiliate-btn:hover {
-  opacity: 0.9;
+.smt-btn:hover {
+  background: #e68a00;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .affiliate-card {
-    flex-direction: column;
-    text-align: center;
+/* Mobile fix */
+@media (max-width: 600px) {
+  .smt-affiliate-inner,
+  .smt-affiliate-img,
+  .smt-affiliate-content {
+    display: block;
+    width: 100%;
+    padding: 0;
   }
-  .affiliate-img img {
-    width: 140px;
+
+  .smt-affiliate-img {
+    margin-bottom: 10px;
+  }
+
+  .smt-affiliate-img img {
+    width: 120px;
   }
 }
    
@@ -655,33 +655,31 @@ matter more than sophistication.</p>
  <p>
 If you prefer a simple manual system, a structured planner like this can help you stay consistent:
 </p>
- <div class="affiliate-card">
-  <div class="affiliate-img">
-    <img src="https://m.media-amazon.com/images/I/71pV2Xz5bUL._AC_SL1500_.jpg" alt="Budget Planner">
-  </div>
+<div class="smt-affiliate">
+  <div class="smt-affiliate-inner">
 
-  <div class="affiliate-content">
-    <span class="affiliate-badge">Best for Beginners</span>
-    
-    <div class="affiliate-title">Clever Fox Budget Planner</div>
-    
-    <div class="affiliate-rating">★★★★★ 4.6/5</div>
-
-    <div class="affiliate-desc">
-      A powerful all-in-one budgeting planner designed to help you organize your finances and stay consistent every month.
+    <div class="smt-affiliate-img">
+      <img src="https://m.media-amazon.com/images/I/71pV2Xz5bUL._AC_SL1500_.jpg" alt="Budget Planner">
     </div>
 
-    <ul class="affiliate-features">
-      <li>✔ Monthly budget + expense tracking pages</li>
-      <li>✔ Built-in savings goals system</li>
-      <li>✔ Ideal for structured money control</li>
-    </ul>
+    <div class="smt-affiliate-content">
+      <div class="smt-title">Clever Fox Budget Planner</div>
+      <div class="smt-rating">★★★★★ 4.6/5</div>
+      <div class="smt-desc">A complete budgeting planner to organize your income, expenses, and savings in one place.</div>
 
-    <a href="https://www.amazon.com/dp/B07XQJH8QL?tag=smartmoneytrek-20" target="_blank" class="affiliate-btn">
-      View on Amazon
-    </a>
+      <ul class="smt-list">
+        <li>Monthly budget pages</li>
+        <li>Expense tracking system</li>
+        <li>Beginner-friendly layout</li>
+      </ul>
+
+      <a href="https://www.amazon.com/dp/B07XQJH8QL?tag=smartmoneytrek-20" target="_blank" class="smt-btn">
+        View on Amazon
+      </a>
+    </div>
+
   </div>
- </div>
+</div>
  <ul>
 <li><strong>Spreadsheets</strong>: Excel or Google Sheets for structured planning and flexibility</li>
 <li><strong>Budgeting Apps</strong>: Automated tools that simplify allocation and tracking</li>
