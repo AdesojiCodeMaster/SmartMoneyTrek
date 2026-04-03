@@ -160,57 +160,91 @@
  
 .single-affiliate {
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 16px;
-  margin: 30px 0;
-  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 35px 0;
+  background: #ffffff;
   display: flex;
-  gap: 15px;
-  align-items: center;
+  gap: 18px;
+  align-items: flex-start;
   transition: 0.3s ease;
 }
 
 .single-affiliate:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .single-affiliate img {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
 }
 
+/* Content */
 .aff-content {
   flex: 1;
 }
 
+/* Title */
 .aff-title {
+  font-size: 17px;
   font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 5px;
   color: #0a2540;
-}
-
-.aff-rating {
-  color: #f59e0b;
-  font-size: 14px;
   margin-bottom: 6px;
 }
 
-.aff-desc {
+/* Rating */
+.aff-rating {
+  color: #f59e0b;
   font-size: 14px;
   margin-bottom: 8px;
-  color: #444;
 }
 
+/* Description */
+.aff-desc {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Benefits */
+.aff-benefits {
+  font-size: 14px;
+  margin-left: 18px;
+  margin-bottom: 12px;
+}
+
+.aff-benefits li {
+  margin-bottom: 6px;
+}
+
+/* CTA */
 .aff-btn {
   display: inline-block;
   background: #ff9900;
   color: #111;
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 10px 14px;
+  border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
+  transition: 0.2s;
+}
+
+.aff-btn:hover {
+  background: #e68a00;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .single-affiliate {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aff-benefits {
+    text-align: left;
+  }
 }
 
 </style>
@@ -351,21 +385,30 @@ It is forward-looking, meaning it focuses on directing your money with intention
 <strong><em>👉 “Where do I want my money to go?”</em></strong></p>
 </section>
  <hr>
- <div class="single-affiliate">
+<div class="single-affiliate">
   <img src="https://m.media-amazon.com/images/I/71pV2Xz5bUL._AC_SL1500_.jpg" alt="Clever Fox Budget Planner">
 
   <div class="aff-content">
     <div class="aff-title">Clever Fox Budget Planner</div>
-    <div class="aff-rating">★★★★★ 4.6/5</div>
+
+    <div class="aff-rating">★★★★★ 4.6/5 (10,000+ reviews)</div>
+
     <div class="aff-desc">
-      A powerful budgeting planner to organize your income, expenses, and savings.
+      If you want a structured way to plan your finances, this planner helps you create a clear monthly budget,
+      track expenses, and stay consistent with your financial goals.
     </div>
+
+    <ul class="aff-benefits">
+      <li>✔ Monthly budgeting & expense tracking pages</li>
+      <li>✔ Built-in goal setting and savings tracking</li>
+      <li>✔ Perfect for beginners and low-income budgeting</li>
+    </ul>
 
     <a href="https://www.amazon.com/dp/B07XQJH8QL?tag=smartmoneytrek-20" target="_blank" class="aff-btn">
       View on Amazon
     </a>
   </div>
- </div>
+</div>
 <hr>
 <p>To build a strong foundation, learn how to 
 <a href="/how-to-create-a-monthly-budget">create a monthly budget step-by-step</a>
