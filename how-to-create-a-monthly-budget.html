@@ -287,6 +287,103 @@
   font-weight: 600;
   }
 
+    /* === AFFILIATE COMPARISON SECTION === */
+
+.affiliate-comparison {
+  margin: 40px 0;
+}
+
+.affiliate-intro {
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 20px;
+}
+
+.compare-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.compare-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.compare-card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.compare-card .desc {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.compare-card ul {
+  text-align: left;
+  font-size: 13px;
+  margin: 10px 0;
+  padding-left: 18px;
+}
+
+.compare-card li {
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ff9900;
+  color: #111;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: #16a34a;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.badge.alt {
+  background: #2563eb;
+}
+
+.premium-badge {
+  background: #7c3aed;
+}
+
+/* Highlight best */
+.compare-card.best {
+  border: 2px solid #16a34a;
+  transform: scale(1.02);
+}
+
+.compare-card.premium {
+  border: 2px solid #7c3aed;
+    }
+
   </style>
 </head>
 <body>
