@@ -39,7 +39,7 @@
   border-radius: 14px;
   padding: 18px;
   margin: 30px 0;
-  background: #ffffff;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   transition: 0.3s ease;
 }
@@ -66,6 +66,7 @@
   font-weight: 700;
   margin-bottom: 8px;
   line-height: 1.4;
+  color: #0f172a;
 }
 
 /* ===== DESCRIPTION ===== */
@@ -96,7 +97,7 @@
 }
 
 .affiliate-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px) scale(1.01);
   box-shadow: 0 10px 22px rgba(0,0,0,0.08);
 }
 
@@ -124,27 +125,34 @@
   line-height: 1.5;
 }
 
-/* ===== BUTTON ===== */
+/* ===== BUTTON (FIXED & OPTIMIZED) ===== */
 .affiliate-btn {
-  display: inline-block;
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+
   background: #ff9900;
-  color: #111;
+  color: #111 !important;
   padding: 10px 14px;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: none !important;
+  text-align: center;
+
+  box-shadow: 0 4px 10px rgba(255,153,0,0.3);
   transition: 0.25s ease;
 }
 
 .affiliate-btn:hover {
   background: #e68900;
+  transform: translateY(-1px);
 }
 
 /* ===== BEST PICK BADGE ===== */
 .best-pick {
-  border: 2px solid #16a34a;
-  background: #f0fdf4;
+  border: 2px solid #16a34a !important;
+  background: #f0fdf4 !important;
   position: relative;
 }
 
@@ -206,18 +214,14 @@
     height: 120px;
   }
 
-}
-    .affiliate-box {
-  background: linear-gradient(180deg, #ffffff, #f8fafc);
-}
+  .affiliate-grid {
+    grid-template-columns: 1fr;
+  }
 
-.affiliate-btn {
-  box-shadow: 0 4px 10px rgba(255,153,0,0.3);
+  .affiliate-btn {
+    width: 100%;
+  }
 }
-
-.affiliate-card:hover {
-  transform: translateY(-6px) scale(1.01);
-    }
 
   </style>
 
