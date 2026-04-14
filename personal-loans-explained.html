@@ -252,6 +252,57 @@
     text-align: center;
   }
 }
+
+.loan-intro-box {
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #2563eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.loan-intro-box p {
+  margin-bottom: 12px;
+}
+
+.loan-intro-box ul {
+  padding-left: 18px;
+  margin: 10px 0 15px;
+}
+
+.loan-intro-box li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.loan-intro-box li::marker {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.loan-intro-highlight {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.loan-intro-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #fff;
+  background: #2563eb;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.loan-intro-link:hover {
+  background: #1d4ed8;
+    }
 </style>
   </head>
 <body>
@@ -284,29 +335,26 @@
     Read: 9 Minutes | Written and Reviewed by SmartMoneyTrek Financial Research Team.
 </p>
     
-<div style="background: linear-gradient(135deg, #f8fafc, #eef2ff); border: 1px solid #e5e7eb; border-left: 5px solid #2563eb; border-radius: 12px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+<div class="loan-intro-box">
 
-  <p style="margin-bottom:12px;">
-    <strong>Personal loans explained in simple terms:</strong>
-  </p>
+  <p><strong>Personal loans explained in simple terms:</strong></p>
 
-  <ul style="padding-left:18px; margin:10px 0 15px;">
-    <li style="margin-bottom:8px; font-size:15px; color:#1f2937;">✔ How personal loans actually work</li>
-    <li style="margin-bottom:8px; font-size:15px; color:#1f2937;">✔ How interest rates and APR affect your total cost</li>
-    <li style="margin-bottom:8px; font-size:15px; color:#1f2937;">✔ The hidden risks most borrowers miss before signing</li>
+  <ul>
+    <li>How personal loans actually work</li>
+    <li>How interest rates and APR affect your total cost</li>
+    <li>The hidden risks most borrowers miss before signing</li>
   </ul>
 
-  <p style="margin-bottom:12px; color:#374151;">
+  <p>
     If you're considering borrowing, this guide walks you through everything step-by-step so you can make a smart, informed decision and avoid expensive mistakes.
   </p>
 
-  <p style="margin-bottom:10px; color:#2563eb; font-weight:600;">
+  <p class="loan-intro-highlight">
     Before you proceed, understand the bigger picture:
   </p>
 
-  <a href="/loans-debt"
-     style="display:inline-block; background:#2563eb; color:#ffffff; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
-     Explore Complete Loans & Debt Management Guide →
+  <a href="/loans-debt" class="loan-intro-link">
+    Explore Complete Loans & Debt Management Guide →
   </a>
 
 </div>
