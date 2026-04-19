@@ -185,6 +185,8 @@
 .smt-img {
   width: 100%;
   border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .smt-title {
@@ -234,6 +236,96 @@
 .smt-btn:hover {
   background: #1e293b;
 }
+
+
+/* =========================
+   MOBILE OPTIMIZATION FIX
+   ========================= */
+@media (max-width: 768px) {
+
+  .smt-box {
+    padding: 14px;
+    margin: 22px 0;
+  }
+
+  .smt-grid {
+    grid-template-columns: 1fr; /* stack layout */
+    gap: 12px;
+  }
+
+  .smt-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .smt-title {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .smt-desc {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .smt-benefits {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .smt-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+}
+
+/* =========================
+   TABLE RESPONSIVENESS FIX
+   ========================= */
+.income-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.income-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px; /* prevents squishing */
+}
+
+.income-table th,
+.income-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+}
+
+/* Optional: better mobile readability */
+@media (max-width: 768px) {
+  .income-table th,
+  .income-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+
+ @media (max-width: 768px) {
+  .smt-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .smt-img {
+    order: -1; /* forces image to top */
+  }
+ }
 </style>
  </head>
 <body>
@@ -276,46 +368,72 @@
   </p>
 </div>
 </section>
-<hr>
- <section>
-  <h2 id="budgeting-meaning">What Budgeting Really Means</h2>
- <img 
-  src="/images/what-budgeting-really-means.webp" 
-  alt="What budgeting really means – control your money and plan your financial life with clarity"
-  width="1200"
-  height="675"
-  loading="lazy"
-  decoding="async">
-<p>At its core, budgeting is straightforward:</p>
-<p><strong>It is a plan for how you will use your money before it is spent.</strong> That’s it, no restriction, no punishment, and it does not need to be complicated.</p>
-<p>A budget is best understood as three powerful things at once:</p>
-<ul>
-<li><strong>A decision-making tool</strong> — guiding your choices before money leaves your hands</li>
-<li><strong>A financial blueprint</strong> — giving structure and direction to your income</li>
-<li><strong>A reflection of your priorities</strong> — showing, in clear terms, what truly matters to you</li>
-</ul>
-<p>When you approach budgeting this way, everything changes.
-You stop reacting to your finances after the fact, asking:
-<strong>“Where did my money go?”</strong>
-And instead, you begin to take control upfront, deciding:
-<strong>“Where should my money go?”</strong></p>
+ <hr> 
+ <section style="background:linear-gradient(135deg,#ecfdf5,#f0f9ff); border:1px solid #d1fae5; border-left:6px solid #16a34a; padding:20px; border-radius:16px; margin:28px 0; box-shadow:0 8px 20px rgba(0,0,0,0.06);">
 
-<p>That shift from passive tracking to intentional planning is what turns budgeting from a chore into a
- powerful system 
-for building financial stability and long-term progress.</p>
-  <p>To see how budgeting works in practice, read our 
-<a href="/how-to-create-a-monthly-budget">step-by-step budgeting guide</a>.</p>
-</section>
- <hr>
- <section>
- <h2>Simple Budgeting Example</h2>
-<p>For example, if you earn $1,000 per month:</p>
-<ul>
-<li>$500 for needs</li>
-<li>$300 for wants</li>
-<li>$200 for savings</li>
-</ul>
+  <h2 style="font-size:20px; font-weight:700; margin-bottom:8px; color:#065f46;">
+    🚀 Quick Start: Begin Budgeting in Minutes
+  </h2>
+
+  <p style="font-size:14.5px; color:#475569; margin-bottom:16px;">
+    Follow these simple steps to take control of your money immediately—even if you're starting from scratch.
+  </p>
+
+  <!-- STEP 1 -->
+  <div style="display:flex; gap:12px; background:#fff; padding:14px; border-radius:12px; border:1px solid #e5e7eb; margin-bottom:12px;">
+    <div style="min-width:32px; height:32px; background:#16a34a; color:#fff; font-weight:bold; border-radius:50%; display:flex; align-items:center; justify-content:center;">1</div>
+    <div>
+      <div style="font-weight:600; font-size:15px;">Track Your Spending</div>
+      <div style="font-size:13.5px; color:#475569;">Monitor every expense for 30 days to understand where your money goes.</div>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div style="display:flex; gap:12px; background:#fff; padding:14px; border-radius:12px; border:1px solid #e5e7eb; margin-bottom:12px;">
+    <div style="min-width:32px; height:32px; background:#16a34a; color:#fff; font-weight:bold; border-radius:50%; display:flex; align-items:center; justify-content:center;">2</div>
+    <div>
+      <div style="font-weight:600; font-size:15px;">List All Income Sources</div>
+      <div style="font-size:13.5px; color:#475569;">Include salary, side hustles, and any extra income streams.</div>
+    </div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div style="display:flex; gap:12px; background:#fff; padding:14px; border-radius:12px; border:1px solid #e5e7eb; margin-bottom:12px;">
+    <div style="min-width:32px; height:32px; background:#16a34a; color:#fff; font-weight:bold; border-radius:50%; display:flex; align-items:center; justify-content:center;">3</div>
+    <div>
+      <div style="font-weight:600; font-size:15px;">Identify Money Leaks</div>
+      <div style="font-size:13.5px; color:#475569;">Spot unnecessary spending and areas you can cut immediately.</div>
+    </div>
+  </div>
+
+  <!-- STEP 4 -->
+  <div style="display:flex; gap:12px; background:#fff; padding:14px; border-radius:12px; border:1px solid #e5e7eb; margin-bottom:12px;">
+    <div style="min-width:32px; height:32px; background:#16a34a; color:#fff; font-weight:bold; border-radius:50%; display:flex; align-items:center; justify-content:center;">4</div>
+    <div>
+      <div style="font-weight:600; font-size:15px;">Choose a Budgeting Method</div>
+      <div style="font-size:13.5px; color:#475569;">Pick a simple system like 50/30/20 or zero-based budgeting.</div>
+    </div>
+  </div>
+
+  <!-- STEP 5 -->
+  <div style="display:flex; gap:12px; background:#fff; padding:14px; border-radius:12px; border:1px solid #e5e7eb;">
+    <div style="min-width:32px; height:32px; background:#16a34a; color:#fff; font-weight:bold; border-radius:50%; display:flex; align-items:center; justify-content:center;">5</div>
+    <div>
+      <div style="font-weight:600; font-size:15px;">Start Small & Adjust Weekly</div>
+      <div style="font-size:13.5px; color:#475569;">Don’t aim for perfection—review and improve consistently.</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="margin-top:18px;">
+    <a href="/how-to-create-a-monthly-budget" 
+       style="display:block; text-align:center; background:#0f172a; color:#fff; padding:12px; border-radius:10px; font-size:14px; font-weight:600; text-decoration:none;">
+       Create Your First Budget →
+    </a>
+  </div>
+
  </section>
+
 <hr>
 
 <details class="toc">
@@ -349,16 +467,11 @@ for building financial stability and long-term progress.</p>
 </details>
  
  <section>
-  
-<h2 id="intro">Introduction: Budgeting Isn’t About Money—It’s About Direction</h2>
-
+ <h2 id="intro">Introduction: Budgeting Isn’t About Money—It’s About Direction</h2>
 <div class="article-intro">
 <p><strong>Budgeting is not about restriction; it’s about direction.</strong> Instead of limiting your lifestyle, a good budget gives your money purpose and helps you make confident financial decisions without stress or guilt.</p>
-
 <p>Without a clear plan, money is often spent based on impulse or habit. A structured approach allows you to stay in control, align your spending with your priorities, and build long-term financial stability.</p>
-
 <p><strong>Important:</strong> This guide focuses on the mindset and foundation you need before creating a budget, so your system actually works in real life.</p>
-
 <p>If you're ready to build your budget, follow our 
 <a href="/budgeting">step-by-step budgeting guide</a> or learn how to 
 <a href="/how-to-create-a-monthly-budget">create a monthly budget</a>.</p>
@@ -368,18 +481,49 @@ for building financial stability and long-term progress.</p>
 </div>
 </div>
  </section>
-<hr>
- <section class="quick-start">
-<h2>Quick Start: If You Want to Begin Immediately</h2>
-<ol>
-<li>Track your spending for 30 days</li>
-<li>List all income sources</li>
-<li>Identify unnecessary expenses</li>
-<li>Choose a budgeting method</li>
-<li>Start small and adjust weekly</li>
-</ol>
+ <hr> 
+  <section>
+  <h2 id="budgeting-meaning">What Budgeting Really Means</h2>
+ <img 
+  src="/images/what-budgeting-really-means.webp" 
+  alt="What budgeting really means – control your money and plan your financial life with clarity"
+  width="1200"
+  height="675"
+  loading="lazy"
+  decoding="async">
+<p>At its core, budgeting is straightforward:</p>
+<p><strong>It is a plan for how you will use your money before it is spent.</strong> That’s it, no restriction, no punishment, and it does not need to be complicated.</p>
+<p>A budget is best understood as three powerful things at once:</p>
+<ul>
+<li><strong>A decision-making tool</strong> — guiding your choices before money leaves your hands</li>
+<li><strong>A financial blueprint</strong> — giving structure and direction to your income</li>
+<li><strong>A reflection of your priorities</strong> — showing, in clear terms, what truly matters to you</li>
+</ul>
+<p>When you approach budgeting this way, everything changes.
+You stop reacting to your finances after the fact, asking:
+<strong>“Where did my money go?”</strong>
+And instead, you begin to take control upfront, deciding:
+<strong>“Where should my money go?”</strong></p>
 
-  <h3>Best Budgeting Tools for Beginners (Simple & Effective)</h3>
+<p>That shift from passive tracking to intentional planning is what turns budgeting from a chore into a
+ powerful system 
+for building financial stability and long-term progress.</p>
+  <p>To see how budgeting works in practice, read our 
+<a href="/how-to-create-a-monthly-budget">step-by-step budgeting guide</a>.</p>
+</section>
+ <hr>
+<section>
+ <h2>Simple Budgeting Example</h2>
+<p>For example, if you earn $1,000 per month:</p>
+<ul>
+<li>$500 for needs</li>
+<li>$300 for wants</li>
+<li>$200 for savings</li>
+</ul>
+</section>
+<hr>
+<section>
+<h3>Best Budgeting Tools for Beginners (Simple & Effective)</h3>
  <p>If you struggle to stay consistent with budgeting, using a simple physical system can make tracking your money much easier. Below is one of the best tools for beginners:</p>
   
   <div class="smt-box">
