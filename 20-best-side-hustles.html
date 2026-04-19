@@ -303,10 +303,20 @@
   .comparison-table td {
     font-size: 13px;
     padding: 10px;
+    white-space: nowrap; /* prevents ugly wrapping */
   }
 }
+    /* ===== TABLE RESPONSIVE FIX ===== */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
-</style> 
+.table-responsive table {
+  min-width: 600px; /* prevents crushing */
+    }
+
   </style>
 </head>
   <body>
