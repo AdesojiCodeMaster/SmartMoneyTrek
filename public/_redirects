@@ -1,17 +1,5 @@
 # Force HTTPS
 http://smartmoneytrek.com/* https://smartmoneytrek.com/:splat 301!
 
-# Remove www (CRITICAL FIX)
+# Force non-www
 https://www.smartmoneytrek.com/* https://smartmoneytrek.com/:splat 301!
-
-# Handle http + www together (extra safety)
-http://www.smartmoneytrek.com/* https://smartmoneytrek.com/:splat 301!
-
-# Remove trailing slash
-https://smartmoneytrek.com/*/ https://smartmoneytrek.com/:splat 301!
-
-# Remove .html
-# https://smartmoneytrek.com/*.html https://smartmoneytrek.com/:splat 301!
-
-
-
