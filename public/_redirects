@@ -1,5 +1,1 @@
-# Force HTTPS
-http://smartmoneytrek.com/* https://smartmoneytrek.com/:splat 301!
-
-# Force non-www
-https://www.smartmoneytrek.com/* https://smartmoneytrek.com/:splat 301!
+/* https://smartmoneytrek.com/:splat 301!
