@@ -1,1 +1,3 @@
 https://smartmoneytrek.netlify.app/* https://smartmoneytrek.com/:splat 301!
+http://smartmoneytrek.com/* https://smartmoneytrek.com/:splat 301!
+https://www.smartmoneytrek.com/* https://smartmoneytrek.com/:splat 301!
