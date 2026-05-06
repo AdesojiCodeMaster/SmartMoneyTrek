@@ -5,8 +5,17 @@
 
 <meta charset="UTF-8">
   
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661006834095596"
-     crossorigin="anonymous"></script>  
+<script>
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    var s = document.createElement('script');
+    s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661006834095596";
+    s.async = true;
+    s.crossOrigin = "anonymous";
+    document.head.appendChild(s);
+  }, 3000);
+});
+  </script>
 
   <meta name="msvalidate.01" content="765BC171A70D37833DB53C4095F16942" />
   
@@ -38,8 +47,14 @@
 <meta name="twitter:description" content="Save money, budget better, and increase your income with practical personal finance strategies.">
 <meta name="twitter:image" content="https://smartmoneytrek.com/images/money-hero.webp">
 
+
+
+<link rel="preload" href="/css/base.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="/css/home.css" as="style" onload="this.rel='stylesheet'">
+<noscript>
 <link rel="stylesheet" href="/css/base.css">
 <link rel="stylesheet" href="/css/home.css">
+</noscript>
 
 <!-- ✅ Structured Data: Website -->
 <script type="application/ld+json">
@@ -77,7 +92,7 @@
 
 <header>
   <a href="/" class="logo">
-    <img src="/images/logo.png" alt="SmartMoneyTrek Logo">
+    <img src="/images/logo.png" width="120" height="60" alt="SmartMoneyTrek Logo">
   </a>
 
   <button class="menu-toggle" aria-label="Toggle menu">☰</button>
@@ -93,22 +108,19 @@
 </header>
 
 <section class="hero">
-
 <img
-  src="/images/money-hero.webp"
+  src="/images/money-hero-optimized.webp"
+  width="1200"
+  height="600"
+  loading="eager"
+  fetchpriority="high"
   alt="Smart money management"
   class="hero-image"
-  width="1200"
-  height="900"
-  fetchpriority="high"
-  loading="eager"
   decoding="async"
+
 >
 
-  
-  
-  
-    <div class="hero-content">
+<div class="hero-content">
   <h1>SmartMoneyTrek – Practical Personal Finance Tips to Save, Budget & Make Money</h1>
   <h2>Your complete guide to smarter personal finance</h2>
 <div class="hero-cta">
@@ -195,8 +207,14 @@
 <section class="section reviewer-section">
   <div class="reviewer-card">
     <img src="/images/reviewer.jpg" 
-         alt="Content reviewed by banking professional at SmartMoneyTrek" 
-         class="reviewer-img">
+      alt="Content reviewed by banking professional at SmartMoneyTrek" 
+      loading="lazy" 
+      width="300" 
+      height="300"
+      class="reviewer-img"
+      >
+
+    
 
     <div class="reviewer-info">
       <h3>Content Reviewed By</h3>
@@ -239,10 +257,6 @@
       No spam. Unsubscribe anytime. No financial services offered.
     </div>
   </div>
-
-  <form name="newsletter" data-netlify="true">
-  <input type="hidden" name="form-name" value="newsletter">
-  </form>
 </section>
 
   
@@ -362,7 +376,7 @@
 
 </footer>
 
-<script>
+<script defer>
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-links');
 toggle.addEventListener('click', () => {
