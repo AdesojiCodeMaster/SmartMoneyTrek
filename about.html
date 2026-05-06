@@ -285,8 +285,7 @@ button:focus {
   </a>
 
 
-  <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
-
+<button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
   <nav role="navigation">
     <a href="/">Home</a>
     <a href="/save-money">Save Money</a>
@@ -472,7 +471,8 @@ const nav = document.querySelector('nav');
 
 if (toggle && nav) {
   toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+  const isOpen = nav.classList.toggle('active');
+  toggle.setAttribute('aria-expanded', isOpen);
   });
   }
 </script>
